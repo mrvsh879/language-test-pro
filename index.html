@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Профессиональный адаптивный тест уровня языка для HR" />
+  <title>Language Test Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">HR LANGUAGE ASSESSMENT</span>
+        <h1>Language Test Pro</h1>
+      </div>
+      <div class="status" id="sessionStatus">Новая сессия</div>
+    </header>
+
+    <section class="panel" id="introScreen">
+      <div class="hero-grid">
+        <div>
+          <span class="pill">CEFR A1–C2</span>
+          <h2>Проверка языка кандидата без лишней воды</h2>
+          <p class="lead">Адаптивный тест оценивает грамматику, лексику и понимание текста. Итог показывает уровень, профиль навыков, надёжность прохождения и рекомендации HR.</p>
+        </div>
+        <div class="feature-card">
+          <strong>Что фиксируется</strong>
+          <ul>
+            <li>точность по навыкам;</li>
+            <li>время на каждый вопрос;</li>
+            <li>уходы со вкладки;</li>
+            <li>подозрительно быстрые ответы;</li>
+            <li>диапазон уверенности результата.</li>
+          </ul>
+        </div>
+      </div>
+
+      <form id="candidateForm" class="form-grid">
+        <label>Имя и фамилия<input name="name" required maxlength="80" autocomplete="name" /></label>
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Вакансия<input name="position" required maxlength="80" /></label>
+        <label>ID кандидата<input name="candidateId" maxlength="50" placeholder="необязательно" /></label>
+        <label>Язык теста<select name="language"><option value="de">Deutsch</option></select></label>
+        <label>Целевой уровень<select name="target"><option>B1</option><option selected>B2</option><option>C1</option></select></label>
+        <label class="check-row"><input type="checkbox" name="honesty" required /> Подтверждаю прохождение без переводчика и посторонней помощи.</label>
+        <button class="primary" type="submit">Начать тест</button>
+      </form>
+      <p class="note">Это предварительная оценка для HR, а не официальный языковой сертификат.</p>
+    </section>
+
+    <section class="panel hidden" id="testScreen">
+      <div class="test-head">
+        <div><span class="eyebrow" id="sectionLabel">Диагностический блок</span><h2 id="questionCounter">Вопрос 1</h2></div>
+        <div class="timer" id="timer">00:00</div>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <article class="question-card">
+        <div class="skill-tag" id="skillTag">Grammar</div>
+        <div id="passage" class="passage hidden"></div>
+        <h3 id="prompt"></h3>
+        <div id="options" class="options"></div>
+      </article>
+      <div class="test-actions">
+        <button class="secondary" id="prevBtn" type="button">Назад</button>
+        <button class="primary" id="nextBtn" type="button">Далее</button>
+      </div>
+    </section>
+
+    <section class="panel hidden" id="resultScreen">
+      <div class="result-hero">
+        <div><span class="eyebrow">РЕЗУЛЬТАТ КАНДИДАТА</span><h2 id="resultName"></h2><p id="resultMeta" class="lead"></p></div>
+        <div class="level-card"><span>Оценочный уровень</span><strong id="finalLevel">—</strong><small id="confidenceRange">—</small></div>
+      </div>
+      <div class="metric-grid" id="metricGrid"></div>
+      <div class="two-col">
+        <div class="subpanel"><h3>Профиль навыков</h3><div id="skillProfile"></div></div>
+        <div class="subpanel"><h3>Сигналы надёжности</h3><div id="riskProfile"></div></div>
+      </div>
+      <div class="subpanel"><h3>Рекомендация HR</h3><p id="recommendation"></p></div>
+      <div class="result-actions">
+        <button class="secondary" id="printBtn">Печать / PDF</button>
+        <button class="primary" id="downloadBtn">Скачать JSON-отчёт</button>
+        <button class="secondary" id="restartBtn">Новая сессия</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
