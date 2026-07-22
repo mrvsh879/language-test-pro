@@ -104,8 +104,14 @@ def main() -> None:
     if skill_counts != Counter({"grammar": 42, "vocabulary": 42, "reading": 36}):
         raise ValueError(f"Unexpected skill distribution: {skill_counts}")
 
-    listening = merge_files(["de-listening.json", "de-listening-*.json"], expected_skill="listening")
-    speaking = merge_files(["de-speaking.json", "de-speaking-*.json"], expected_skill="speaking")
+    listening = merge_files(
+        ["de-listening.json", "de-listening-*.json", "de-professional-listening-*.json"],
+        expected_skill="listening",
+    )
+    speaking = merge_files(
+        ["de-speaking.json", "de-speaking-*.json", "de-professional-speaking-*.json"],
+        expected_skill="speaking",
+    )
 
     listening_levels = Counter(q["level"] for q in listening)
     speaking_levels = Counter(q["level"] for q in speaking)
