@@ -1,0 +1,41 @@
+{
+  "language":"de",
+  "version":"1.0.0",
+  "questions":[
+    {"id":"de-a1-g-01","level":"A1","skill":"grammar","prompt":"Ich ___ aus Prag.","options":["komme","kommt","kommen","kommst"],"answer":0},
+    {"id":"de-a1-v-01","level":"A1","skill":"vocabulary","prompt":"Was bedeutet „Mittwoch“?","options":["Montag","Mittwoch","Freitag","Sonntag"],"answer":1},
+    {"id":"de-a1-r-01","level":"A1","skill":"reading","passage":"Café Morgen\nMontag–Freitag: 07:00–18:00\nSamstag: 08:00–14:00\nSonntag: geschlossen","prompt":"Wann öffnet das Café am Samstag?","options":["Um 7 Uhr","Um 8 Uhr","Um 14 Uhr","Es ist geschlossen"],"answer":1},
+    {"id":"de-a1-g-02","level":"A1","skill":"grammar","prompt":"Das ist Anna. ___ wohnt in Berlin.","options":["Er","Sie","Es","Wir"],"answer":1},
+    {"id":"de-a1-v-02","level":"A1","skill":"vocabulary","prompt":"Welches Wort passt? Ich trinke jeden Morgen ___.","options":["Kaffee","Tisch","Schule","Wetter"],"answer":0},
+
+    {"id":"de-a2-g-01","level":"A2","skill":"grammar","prompt":"Gestern ___ ich lange gearbeitet.","options":["habe","bin","hat","war"],"answer":0},
+    {"id":"de-a2-v-01","level":"A2","skill":"vocabulary","prompt":"Welches Wort ist das Gegenteil von „teuer“?","options":["billig","langsam","schwer","spät"],"answer":0},
+    {"id":"de-a2-r-01","level":"A2","skill":"reading","passage":"Hallo Mia,\nich komme heute etwa 20 Minuten später zum Kurs. Der Bus ist ausgefallen. Kannst du der Lehrerin bitte Bescheid sagen?\nLiebe Grüße\nNora","prompt":"Warum kommt Nora später?","options":["Sie hat den Kurs vergessen.","Ihr Bus fährt nicht.","Sie muss länger arbeiten.","Die Lehrerin kommt später."],"answer":1},
+    {"id":"de-a2-g-02","level":"A2","skill":"grammar","prompt":"Ich interessiere mich ___ Musik.","options":["an","für","mit","über"],"answer":1},
+    {"id":"de-a2-v-02","level":"A2","skill":"vocabulary","prompt":"Was bedeutet „eine Entscheidung treffen“?","options":["sich entscheiden","etwas verlieren","eine Reise buchen","jemanden besuchen"],"answer":0},
+
+    {"id":"de-b1-g-01","level":"B1","skill":"grammar","prompt":"Ich bleibe zu Hause, weil ich krank ___.","options":["bin","bist","sein","warst"],"answer":0},
+    {"id":"de-b1-v-01","level":"B1","skill":"vocabulary","prompt":"Welches Verb passt? Bitte ___ Sie das Formular vollständig aus.","options":["füllen","machen","stellen","legen"],"answer":0},
+    {"id":"de-b1-r-01","level":"B1","skill":"reading","passage":"Viele Unternehmen bieten ihren Mitarbeitenden inzwischen flexible Arbeitszeiten an. Das kann die Vereinbarkeit von Beruf und Privatleben verbessern. Gleichzeitig braucht ein Team klare Absprachen, damit Projekte nicht ins Stocken geraten.","prompt":"Welche Aussage entspricht dem Text?","options":["Flexible Arbeitszeiten lösen alle Probleme.","Klare Absprachen bleiben wichtig.","Teams sollten nie gleichzeitig arbeiten.","Privatleben spielt im Beruf keine Rolle."],"answer":1},
+    {"id":"de-b1-g-02","level":"B1","skill":"grammar","prompt":"Der Bericht muss bis Freitag ___ werden.","options":["fertiggestellt","fertigstellen","fertigstellte","fertig"],"answer":0},
+    {"id":"de-b1-v-02","level":"B1","skill":"vocabulary","prompt":"Was bedeutet „zuverlässig“ am ehesten?","options":["man kann sich auf jemanden verlassen","jemand spricht sehr laut","jemand arbeitet nur langsam","jemand ist oft unentschlossen"],"answer":0},
+
+    {"id":"de-b2-g-01","level":"B2","skill":"grammar","prompt":"Wenn ich mehr Zeit gehabt hätte, ___ ich an der Schulung teilgenommen.","options":["hätte","wäre","würde","bin"],"answer":0},
+    {"id":"de-b2-v-01","level":"B2","skill":"vocabulary","prompt":"Welcher Ausdruck passt? Wir müssen die Risiken sorgfältig ___.","options":["abwägen","abstellen","aufheben","ausgeben"],"answer":0},
+    {"id":"de-b2-r-01","level":"B2","skill":"reading","passage":"Die Einführung neuer Software scheitert selten ausschließlich an technischen Problemen. Häufiger fehlt es an klarer Kommunikation, ausreichender Schulung und einer realistischen Planung der Umstellung. Mitarbeitende akzeptieren Veränderungen eher, wenn sie den Nutzen verstehen und frühzeitig einbezogen werden.","prompt":"Was ist die zentrale Aussage?","options":["Technische Probleme sind immer die Hauptursache.","Neue Software sollte ohne Schulung eingeführt werden.","Erfolgreiche Umstellungen brauchen Kommunikation und Beteiligung.","Mitarbeitende lehnen jede Veränderung grundsätzlich ab."],"answer":2},
+    {"id":"de-b2-g-02","level":"B2","skill":"grammar","prompt":"Obwohl die Frist sehr knapp war, gelang es dem Team, das Projekt rechtzeitig ___.","options":["abzuschließen","abgeschlossen","abschließen","schloss ab"],"answer":0},
+    {"id":"de-b2-v-02","level":"B2","skill":"vocabulary","prompt":"„Eine Maßnahme ergreifen“ bedeutet …","options":["handeln","zögern","bezweifeln","berichten"],"answer":0},
+
+    {"id":"de-c1-g-01","level":"C1","skill":"grammar","prompt":"Die Ergebnisse sind überzeugend, zumal sie unter schwierigen Bedingungen ___ wurden.","options":["erzielt","erzielen","erzielend","zu erzielen"],"answer":0},
+    {"id":"de-c1-v-01","level":"C1","skill":"vocabulary","prompt":"Welches Wort passt stilistisch? Die Studie liefert ___ Hinweise auf einen Zusammenhang.","options":["belastbare","lockere","flüchtige","bequeme"],"answer":0},
+    {"id":"de-c1-r-01","level":"C1","skill":"reading","passage":"Die Debatte über Produktivität wird oft auf die Zahl geleisteter Arbeitsstunden reduziert. Dabei sagt reine Anwesenheit wenig über die Qualität der Ergebnisse aus. Entscheidend sind vielmehr Priorisierung, Konzentration und die Fähigkeit, unnötige Prozesse zu vermeiden.","prompt":"Welche Position vertritt der Text?","options":["Mehr Arbeitsstunden führen automatisch zu besseren Ergebnissen.","Produktivität sollte nicht nur über Anwesenheit bewertet werden.","Priorisierung ist im Arbeitsalltag unwichtig.","Unnötige Prozesse erhöhen die Qualität."],"answer":1},
+    {"id":"de-c1-g-02","level":"C1","skill":"grammar","prompt":"Es ist unerlässlich, dass alle Beteiligten rechtzeitig informiert ___.","options":["werden","würden","worden","wurden sein"],"answer":0},
+    {"id":"de-c1-v-02","level":"C1","skill":"vocabulary","prompt":"Was bedeutet „etwas in Kauf nehmen“?","options":["einen Nachteil bewusst akzeptieren","etwas günstig kaufen","eine Entscheidung zurücknehmen","eine Rechnung prüfen"],"answer":0},
+
+    {"id":"de-c2-g-01","level":"C2","skill":"grammar","prompt":"Kaum ___ die Verhandlungen begonnen, zeichneten sich bereits erste Konflikte ab.","options":["hatten","haben","waren","würden"],"answer":0},
+    {"id":"de-c2-v-01","level":"C2","skill":"vocabulary","prompt":"Welches Wort passt am genauesten? Seine Darstellung war bewusst ___ und vermied jede unnötige Zuspitzung.","options":["nuanciert","beliebig","lautstark","sprunghaft"],"answer":0},
+    {"id":"de-c2-r-01","level":"C2","skill":"reading","passage":"Die Forderung nach vollständiger Transparenz klingt zunächst unanfechtbar. Doch auch Transparenz kann zur bloßen Inszenierung werden, wenn eine Fülle irrelevanter Informationen den Blick auf das Wesentliche verstellt. Entscheidend ist daher nicht die maximale, sondern die zweckmäßige Offenlegung.","prompt":"Welche Schlussfolgerung legt der Text nahe?","options":["Je mehr Informationen veröffentlicht werden, desto besser.","Transparenz ist grundsätzlich abzulehnen.","Offenlegung ist nur dann sinnvoll, wenn relevante Informationen erkennbar bleiben.","Irrelevante Informationen erhöhen die Nachvollziehbarkeit."],"answer":2},
+    {"id":"de-c2-g-02","level":"C2","skill":"grammar","prompt":"So überzeugend der Vorschlag auf den ersten Blick auch ___, seine Umsetzung wirft erhebliche Fragen auf.","options":["erscheinen mag","erscheint mögen","erschienen hat","erscheinen würde haben"],"answer":0},
+    {"id":"de-c2-v-02","level":"C2","skill":"vocabulary","prompt":"„Eine Argumentation ist nicht stichhaltig“ bedeutet …","options":["sie ist nicht überzeugend begründet","sie ist besonders ausführlich","sie ist sprachlich sehr elegant","sie enthält viele Beispiele"],"answer":0}
+  ]
+}
