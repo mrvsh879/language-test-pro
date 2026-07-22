@@ -1,0 +1,28 @@
+name: Improve speaking results
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/improve-speaking-results.mjs
+jobs:
+  improve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/improve-speaking-results.mjs
+      - name: Add speaking score styles
+        run: |
+          cat >> styles.css <<'EOF'
+          .record-preview{width:100%;margin-top:14px}.score-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}.score-grid>div{background:#f7f9fd;border:1px solid var(--line);border-radius:12px;padding:10px}.score-grid span,.score-grid b{display:block}.score-grid span{font-size:12px;color:var(--muted)}.score-grid b{font-size:20px;margin-top:4px}@media(max-width:620px){.score-grid{grid-template-columns:1fr 1fr}}
+          EOF
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.js styles.css
+          git diff --cached --quiet || git commit -m "Improve Czech reading aloud scoring UI"
+          git push
