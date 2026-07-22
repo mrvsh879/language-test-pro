@@ -22,9 +22,17 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
-function normalizeText(text) {
+function localeFor(language) {
+  return language === "de" ? "de-DE" : "cs-CZ";
+}
+
+function languageName(language) {
+  return language === "de" ? "German" : "Czech";
+}
+
+function normalizeText(text, language = "cs") {
   return String(text || "")
-    .toLocaleLowerCase("cs-CZ")
+    .toLocaleLowerCase(localeFor(language))
     .replace(/[^\p{L}\p{N}\s]/gu, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -46,25 +54,25 @@ function levenshtein(a, b) {
   return matrix[b.length][a.length];
 }
 
-function textMatchScore(reference, transcript) {
-  const expected = normalizeText(reference);
-  const actual = normalizeText(transcript);
+function textMatchScore(reference, transcript, language) {
+  const expected = normalizeText(reference, language);
+  const actual = normalizeText(transcript, language);
   if (!expected || !actual) return 0;
   const distance = levenshtein(expected, actual);
   return clamp(Math.round((1 - distance / Math.max(expected.length, actual.length)) * 100), 0, 100);
 }
 
-function completenessScore(reference, transcript) {
-  const expectedWords = normalizeText(reference).split(" ").filter(Boolean).length;
-  const actualWords = normalizeText(transcript).split(" ").filter(Boolean).length;
+function completenessScore(reference, transcript, language) {
+  const expectedWords = normalizeText(reference, language).split(" ").filter(Boolean).length;
+  const actualWords = normalizeText(transcript, language).split(" ").filter(Boolean).length;
   if (!expectedWords || !actualWords) return 0;
   return clamp(Math.round((Math.min(expectedWords, actualWords) / expectedWords) * 100), 0, 100);
 }
 
-function paceScore(reference, durationSec, level) {
-  const words = normalizeText(reference).split(" ").filter(Boolean).length;
+function paceScore(reference, durationSec, level, language) {
+  const words = normalizeText(reference, language).split(" ").filter(Boolean).length;
   const seconds = Number(durationSec || 0);
-  if (!words || seconds < 1) return 0;
+  if (!words || seconds < 1) return { score: 0, wpm: 0 };
   const wpm = (words / seconds) * 60;
   const idealMin = level === "A1" ? 50 : 60;
   const idealMax = level === "A1" ? 105 : 120;
@@ -75,9 +83,7 @@ function paceScore(reference, durationSec, level) {
 
 function confidenceScore(logprobs) {
   if (!Array.isArray(logprobs) || !logprobs.length) return 65;
-  const values = logprobs
-    .map(item => Number(item?.logprob))
-    .filter(Number.isFinite);
+  const values = logprobs.map(item => Number(item?.logprob)).filter(Number.isFinite);
   if (!values.length) return 65;
   const average = values.reduce((sum, value) => sum + value, 0) / values.length;
   return clamp(Math.round(Math.exp(average) * 100), 0, 100);
@@ -91,7 +97,12 @@ export default {
 
     const url = new URL(request.url);
     if (request.method !== "POST" || url.pathname !== "/analyze-reading") {
-      return json({ status: "ok", service: "language-test-api", endpoint: "/analyze-reading" });
+      return json({
+        status: "ok",
+        service: "language-test-api",
+        endpoint: "/analyze-reading",
+        languages: ["cs", "de"],
+      });
     }
 
     try {
@@ -106,6 +117,8 @@ export default {
       const referenceText = String(formData.get("referenceText") || "");
       const level = String(formData.get("level") || "A2");
       const durationSec = Number(formData.get("durationSec") || 0);
+      const requestedLanguage = String(formData.get("language") || "cs").toLowerCase();
+      const language = ["cs", "de"].includes(requestedLanguage) ? requestedLanguage : "cs";
 
       if (!(audio instanceof File)) return json({ error: "Audio file is required" }, 400);
       if (!referenceText.trim()) return json({ error: "Reference text is required" }, 400);
@@ -119,16 +132,23 @@ export default {
 
       await env.RECORDINGS.put(objectKey, audioBuffer, {
         httpMetadata: { contentType: audio.type || "audio/webm" },
-        customMetadata: { candidateId, sessionId, questionId, level, durationSec: String(durationSec) },
+        customMetadata: {
+          candidateId,
+          sessionId,
+          questionId,
+          level,
+          language,
+          durationSec: String(durationSec),
+        },
       });
 
       const transcriptionForm = new FormData();
       transcriptionForm.append("file", new File([audioBuffer], `reading.${extension}`, { type: audio.type || "audio/webm" }));
       transcriptionForm.append("model", "gpt-4o-mini-transcribe");
-      transcriptionForm.append("language", "cs");
+      transcriptionForm.append("language", language);
       transcriptionForm.append("response_format", "json");
       transcriptionForm.append("include[]", "logprobs");
-      transcriptionForm.append("prompt", `The speaker is reading this Czech text aloud: ${referenceText}`);
+      transcriptionForm.append("prompt", `The speaker is reading a ${languageName(language)} text aloud. Transcribe only what is actually audible. Reference text: ${referenceText}`);
 
       const transcriptionResponse = await fetch("https://api.openai.com/v1/audio/transcriptions", {
         method: "POST",
@@ -149,14 +169,15 @@ export default {
         return json({ error: "No speech was recognized. Please record again." }, 422);
       }
 
-      const textMatch = textMatchScore(referenceText, transcript);
-      const completeness = completenessScore(referenceText, transcript);
+      const textMatch = textMatchScore(referenceText, transcript, language);
+      const completeness = completenessScore(referenceText, transcript, language);
       const confidence = confidenceScore(transcription.logprobs);
-      const pace = paceScore(referenceText, durationSec, level);
+      const pace = paceScore(referenceText, durationSec, level, language);
       const overall = clamp(Math.round(textMatch * 0.45 + completeness * 0.2 + confidence * 0.25 + pace.score * 0.1), 0, 96);
 
       return json({
         success: true,
+        language,
         recordingKey: objectKey,
         transcript,
         scores: {
