@@ -1,90 +1,85 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Профессиональный адаптивный тест уровня языка для HR" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Language Test Pro — адаптивная языковая оценка для HR">
   <title>Language Test Pro</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <div>
-        <span class="eyebrow">HR LANGUAGE ASSESSMENT</span>
-        <h1>Language Test Pro</h1>
-      </div>
-      <div class="status" id="sessionStatus">Новая сессия</div>
-    </header>
+<div class="app">
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-mark">LT</span><span><strong>Language Test Pro</strong><small>HR assessment platform</small></span></a>
+    <div class="top-actions"><select id="uiLang" aria-label="Язык интерфейса"><option value="ru">RU</option><option value="uk">UA</option><option value="en">EN</option></select><span id="sessionStatus" class="status">Новая сессия</span></div>
+  </header>
 
-    <section class="panel" id="introScreen">
-      <div class="hero-grid">
-        <div>
-          <span class="pill">CEFR A1–C2</span>
-          <h2>Проверка языка кандидата без лишней воды</h2>
-          <p class="lead">Адаптивный тест оценивает грамматику, лексику и понимание текста. Итог показывает уровень, профиль навыков, надёжность прохождения и рекомендации HR.</p>
+  <main>
+    <section id="introScreen" class="screen">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="overline">ADAPTIVE CEFR SCREENING • A1–C2</span>
+          <h1 data-i18n="heroTitle">Профессиональная проверка языка кандидата</h1>
+          <p data-i18n="heroText">Адаптивный тест оценивает грамматику, лексику и понимание текста, фиксирует надёжность прохождения и формирует понятный отчёт для HR.</p>
+          <div class="trust-row"><span>8 языков</span><span>Адаптивный маршрут</span><span>HR-отчёт</span></div>
         </div>
-        <div class="feature-card">
-          <strong>Что фиксируется</strong>
-          <ul>
-            <li>точность по навыкам;</li>
-            <li>время на каждый вопрос;</li>
-            <li>уходы со вкладки;</li>
-            <li>подозрительно быстрые ответы;</li>
-            <li>диапазон уверенности результата.</li>
-          </ul>
-        </div>
+        <aside class="hero-card">
+          <div class="hero-card-head"><span data-i18n="assessment">Что оценивается</span><strong>3 skills</strong></div>
+          <div class="skill-preview"><div><i>G</i><span><b data-i18n="grammar">Грамматика</b><small data-i18n="grammarDesc">Точность форм и конструкций</small></span></div><div><i>V</i><span><b data-i18n="vocab">Лексика</b><small data-i18n="vocabDesc">Словарь, коллокации, регистр</small></span></div><div><i>R</i><span><b data-i18n="reading">Чтение</b><small data-i18n="readingDesc">Смысл, детали и выводы</small></span></div></div>
+        </aside>
       </div>
 
-      <form id="candidateForm" class="form-grid">
-        <label>Имя и фамилия<input name="name" required maxlength="80" autocomplete="name" /></label>
-        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
-        <label>Вакансия<input name="position" required maxlength="80" /></label>
-        <label>ID кандидата<input name="candidateId" maxlength="50" placeholder="необязательно" /></label>
-        <label>Язык теста<select name="language"><option value="de">Deutsch</option></select></label>
-        <label>Целевой уровень<select name="target"><option>B1</option><option selected>B2</option><option>C1</option></select></label>
-        <label class="check-row"><input type="checkbox" name="honesty" required /> Подтверждаю прохождение без переводчика и посторонней помощи.</label>
-        <button class="primary" type="submit">Начать тест</button>
+      <form id="candidateForm" class="panel form-panel">
+        <div class="section-head"><div><span class="overline" data-i18n="candidateData">ДАННЫЕ КАНДИДАТА</span><h2 data-i18n="startAssessment">Начать оценивание</h2></div><span class="time-chip">≈ 10–18 min</span></div>
+        <div class="form-grid">
+          <label><span data-i18n="fullName">Имя и фамилия</span><input name="name" required maxlength="80" autocomplete="name"></label>
+          <label><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+          <label><span data-i18n="position">Вакансия</span><input name="position" required maxlength="80"></label>
+          <label><span data-i18n="candidateId">ID кандидата</span><input name="candidateId" maxlength="50" placeholder="optional"></label>
+          <label><span data-i18n="testLanguage">Язык теста</span><select name="language" id="testLanguage"></select></label>
+          <label><span data-i18n="targetLevel">Целевой уровень</span><select name="target"><option>A2</option><option>B1</option><option selected>B2</option><option>C1</option><option>C2</option></select></label>
+        </div>
+        <label class="consent"><input type="checkbox" name="honesty" required><span data-i18n="honesty">Подтверждаю прохождение без переводчика и посторонней помощи.</span></label>
+        <div class="form-actions"><p data-i18n="disclaimer">Предварительная HR-оценка, не официальный сертификат CEFR.</p><button class="primary" type="submit" data-i18n="start">Начать тест</button></div>
       </form>
-      <p class="note">Это предварительная оценка для HR, а не официальный языковой сертификат.</p>
     </section>
 
-    <section class="panel hidden" id="testScreen">
-      <div class="test-head">
-        <div><span class="eyebrow" id="sectionLabel">Диагностический блок</span><h2 id="questionCounter">Вопрос 1</h2></div>
-        <div class="timer" id="timer">00:00</div>
-      </div>
-      <div class="progress"><div id="progressBar"></div></div>
-      <article class="question-card">
-        <div class="skill-tag" id="skillTag">Grammar</div>
-        <div id="passage" class="passage hidden"></div>
-        <h3 id="prompt"></h3>
-        <div id="options" class="options"></div>
-      </article>
-      <div class="test-actions">
-        <button class="secondary" id="prevBtn" type="button">Назад</button>
-        <button class="primary" id="nextBtn" type="button">Далее</button>
+    <section id="testScreen" class="screen hidden">
+      <div class="test-layout">
+        <aside class="test-sidebar panel">
+          <span class="overline" data-i18n="session">СЕССИЯ</span>
+          <h3 id="candidateName">—</h3>
+          <dl><div><dt data-i18n="language">Язык</dt><dd id="sideLanguage">—</dd></div><div><dt data-i18n="target">Цель</dt><dd id="sideTarget">—</dd></div><div><dt data-i18n="time">Время</dt><dd id="timer">00:00</dd></div></dl>
+          <div class="route-box"><span data-i18n="route">Маршрут</span><div id="routePills"></div></div>
+          <div class="security-note" data-i18n="securityNote">Переходы между вкладками фиксируются как сигнал надёжности.</div>
+        </aside>
+        <section class="panel question-panel">
+          <div class="question-top"><div><span id="blockLabel" class="overline">DIAGNOSTIC BLOCK</span><h2 id="questionCounter">Вопрос 1</h2></div><span id="skillTag" class="skill-badge">Grammar</span></div>
+          <div class="progress"><div id="progressBar"></div></div>
+          <div id="passage" class="passage hidden"></div>
+          <h3 id="prompt" class="prompt"></h3>
+          <div id="options" class="options"></div>
+          <div class="question-actions"><button id="prevBtn" class="secondary" type="button" data-i18n="back">Назад</button><button id="nextBtn" class="primary" type="button" data-i18n="next">Далее</button></div>
+        </section>
       </div>
     </section>
 
-    <section class="panel hidden" id="resultScreen">
-      <div class="result-hero">
-        <div><span class="eyebrow">РЕЗУЛЬТАТ КАНДИДАТА</span><h2 id="resultName"></h2><p id="resultMeta" class="lead"></p></div>
-        <div class="level-card"><span>Оценочный уровень</span><strong id="finalLevel">—</strong><small id="confidenceRange">—</small></div>
+    <section id="resultScreen" class="screen hidden">
+      <div class="result-header panel">
+        <div><span class="overline" data-i18n="candidateResult">РЕЗУЛЬТАТ КАНДИДАТА</span><h1 id="resultName">—</h1><p id="resultMeta">—</p></div>
+        <div class="level-orb"><span data-i18n="estimatedLevel">Оценочный уровень</span><strong id="finalLevel">—</strong><small id="confidenceRange">—</small></div>
       </div>
-      <div class="metric-grid" id="metricGrid"></div>
-      <div class="two-col">
-        <div class="subpanel"><h3>Профиль навыков</h3><div id="skillProfile"></div></div>
-        <div class="subpanel"><h3>Сигналы надёжности</h3><div id="riskProfile"></div></div>
+      <div id="metricGrid" class="metric-grid"></div>
+      <div class="result-grid">
+        <section class="panel"><div class="section-head"><h2 data-i18n="skillProfileTitle">Профиль навыков</h2></div><div id="skillProfile"></div></section>
+        <section class="panel"><div class="section-head"><h2 data-i18n="reliabilityTitle">Надёжность</h2></div><div id="riskProfile"></div></section>
       </div>
-      <div class="subpanel"><h3>Рекомендация HR</h3><p id="recommendation"></p></div>
-      <div class="result-actions">
-        <button class="secondary" id="printBtn">Печать / PDF</button>
-        <button class="primary" id="downloadBtn">Скачать JSON-отчёт</button>
-        <button class="secondary" id="restartBtn">Новая сессия</button>
-      </div>
+      <section class="panel recommendation"><span class="overline">HR RECOMMENDATION</span><h2 data-i18n="decisionSupport">Рекомендация по следующему шагу</h2><p id="recommendation"></p></section>
+      <section class="panel"><div class="section-head"><div><span class="overline" data-i18n="answerReview">РАЗБОР ОТВЕТОВ</span><h2 data-i18n="errorsAndExplanations">Ошибки и пояснения</h2></div><button id="toggleReview" class="secondary" data-i18n="show">Показать</button></div><div id="reviewList" class="review-list hidden"></div></section>
+      <div class="result-actions"><button id="printBtn" class="secondary" data-i18n="print">Печать / PDF</button><button id="downloadBtn" class="primary" data-i18n="download">Скачать отчёт</button><button id="restartBtn" class="ghost" data-i18n="newSession">Новая сессия</button></div>
     </section>
   </main>
-  <script type="module" src="app.js"></script>
+</div>
+<script type="module" src="app.js"></script>
 </body>
 </html>
