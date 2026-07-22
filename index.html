@@ -43,6 +43,7 @@
           <label><span data-i18n="testLanguage">Язык теста</span><select name="language" id="testLanguage"></select></label>
           <label class="target-level-field"><span id="targetLevelLabel">Необхідний рівень для вакансії</span><select name="target" id="targetLevelSelect"><option selected>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select><small id="targetLevelHelp">A2 — базове спілкування у звичних робочих і побутових ситуаціях.</small></label>
         </div>
+        <div class="self-level-hint"><strong id="selfLevelHintTitle">Визначаєте свій рівень?</strong><span id="selfLevelHintText">Оберіть A2. Тест адаптивно підвищить або знизить складність залежно від ваших відповідей.</span></div>
         <div class="headphones-hint"><span class="headphones-icon">🎧</span><div><strong data-i18n="headphonesTitle">Рекомендуємо проходити тест у навушниках</strong><p data-i18n="headphonesHint">Це допоможе краще чути завдання з аудіювання та підвищить точність результату.</p></div></div>
         <label class="consent"><input type="checkbox" name="honesty" required><span data-i18n="honesty">Подтверждаю прохождение без переводчика и посторонней помощи.</span></label>
         <div class="form-actions form-actions-end"><button class="primary" type="submit" data-i18n="start">Начать тест</button></div>
@@ -112,6 +113,8 @@
   const targetLevelCopy = {
     uk: {
       label: 'Необхідний рівень для вакансії',
+      selfTitle: 'Визначаєте свій рівень?',
+      selfText: 'Оберіть A2. Тест адаптивно підвищить або знизить складність залежно від ваших відповідей.',
       A2: 'A2 — базове спілкування у звичних робочих і побутових ситуаціях.',
       B1: 'B1 — самостійне спілкування у більшості повсякденних і стандартних робочих ситуацій.',
       B2: 'B2 — впевнена робота мовою, участь в обговореннях і розуміння складних інструкцій.',
@@ -120,6 +123,8 @@
     },
     ru: {
       label: 'Требуемый уровень для вакансии',
+      selfTitle: 'Определяете свой уровень?',
+      selfText: 'Выберите A2. Тест адаптивно повысит или понизит сложность в зависимости от ваших ответов.',
       A2: 'A2 — базовое общение в привычных рабочих и бытовых ситуациях.',
       B1: 'B1 — самостоятельное общение в большинстве повседневных и стандартных рабочих ситуаций.',
       B2: 'B2 — уверенная работа на языке, участие в обсуждениях и понимание сложных инструкций.',
@@ -128,6 +133,8 @@
     },
     en: {
       label: 'Required level for the vacancy',
+      selfTitle: 'Checking your own level?',
+      selfText: 'Choose A2. The adaptive test will raise or lower the difficulty based on your answers.',
       A2: 'A2 — basic communication in familiar work and everyday situations.',
       B1: 'B1 — independent communication in most everyday and standard work situations.',
       B2: 'B2 — confident professional use, discussions and understanding complex instructions.',
@@ -150,6 +157,8 @@
     const select = document.getElementById('targetLevelSelect');
     document.getElementById('targetLevelLabel').textContent = copy.label;
     document.getElementById('targetLevelHelp').textContent = copy[select?.value || 'A2'];
+    document.getElementById('selfLevelHintTitle').textContent = copy.selfTitle;
+    document.getElementById('selfLevelHintText').textContent = copy.selfText;
   }
   document.addEventListener('DOMContentLoaded', () => {
     const uiSelect = document.getElementById('uiLang');
