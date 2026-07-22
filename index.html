@@ -22,7 +22,7 @@
           <span class="overline">ADAPTIVE CEFR SCREENING • A1–C2</span>
           <h1 data-i18n="heroTitle">Профессиональная проверка языка кандидата</h1>
           <p data-i18n="heroText">Адаптивный тест оценивает грамматику, лексику, чтение и аудирование, фиксирует надёжность прохождения и формирует понятный отчёт для HR.</p>
-          <div class="trust-row"><span>8 языков</span><span>Адаптивный маршрут</span><span>HR-отчёт</span></div>
+          <div class="trust-row"><span id="languagesCountBadge">8 мов</span><span id="adaptiveRouteBadge">Адаптивний маршрут</span><span id="hrReportBadge">HR-звіт</span></div>
         </div>
         <aside class="hero-card">
           <div class="hero-card-head"><span data-i18n="assessment">Что оценивается</span><strong>4 skills</strong></div>
@@ -82,24 +82,14 @@
         </div>
         <p id="levelPlainExplanation" class="level-plain-explanation">—</p>
         <div class="final-columns">
-          <div>
-            <h3>Как сформирован результат</h3>
-            <div id="levelBreakdown" class="level-breakdown"></div>
-          </div>
-          <div>
-            <h3>Что это означает на практике</h3>
-            <p id="practicalLevelDescription">—</p>
-            <p id="nextLevelStatus" class="next-level-status">—</p>
-          </div>
+          <div><h3>Как сформирован результат</h3><div id="levelBreakdown" class="level-breakdown"></div></div>
+          <div><h3>Что это означает на практике</h3><p id="practicalLevelDescription">—</p><p id="nextLevelStatus" class="next-level-status">—</p></div>
         </div>
       </section>
       <section class="panel ai-conclusion-panel">
         <div class="section-head"><div><span class="overline">AI ANALYSIS</span><h2>Итоговое заключение</h2></div><span id="aiConclusionStatus" class="confidence-chip">Анализ</span></div>
         <p id="aiConclusionText">Формируется итоговый разбор…</p>
-        <div class="final-columns compact">
-          <div><h3>Сильные стороны</h3><ul id="resultStrengths"></ul></div>
-          <div><h3>Зоны роста</h3><ul id="resultWeaknesses"></ul></div>
-        </div>
+        <div class="final-columns compact"><div><h3>Сильные стороны</h3><ul id="resultStrengths"></ul></div><div><h3>Зоны роста</h3><ul id="resultWeaknesses"></ul></div></div>
         <div class="next-step-box"><strong>Следующий шаг</strong><p id="personalNextStep">—</p></div>
         <small class="ai-note">Основной уровень рассчитывается по ответам и проходным порогам. AI только объясняет результат и не может самостоятельно повысить уровень.</small>
       </section>
@@ -113,6 +103,26 @@
     </section>
   </main>
 </div>
+<script>
+  const trustBadgeTranslations = {
+    uk: ['8 мов', 'Адаптивний маршрут', 'HR-звіт'],
+    ru: ['8 языков', 'Адаптивный маршрут', 'HR-отчёт'],
+    en: ['8 languages', 'Adaptive route', 'HR report']
+  };
+  function updateTrustBadges() {
+    const select = document.getElementById('uiLang');
+    const lang = select?.value || localStorage.getItem('ltp_ui') || 'uk';
+    const labels = trustBadgeTranslations[lang] || trustBadgeTranslations.uk;
+    document.getElementById('languagesCountBadge').textContent = labels[0];
+    document.getElementById('adaptiveRouteBadge').textContent = labels[1];
+    document.getElementById('hrReportBadge').textContent = labels[2];
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('uiLang');
+    select?.addEventListener('change', updateTrustBadges);
+    setTimeout(updateTrustBadges, 0);
+  });
+</script>
 <script type="module" src="app.js"></script>
 </body>
 </html>
