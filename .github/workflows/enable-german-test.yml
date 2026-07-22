@@ -1,0 +1,50 @@
+name: Enable German test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/enable-german-test.mjs'
+      - 'data/de-listening.json'
+      - 'data/de-speaking.json'
+      - '.github/workflows/enable-german-test.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/enable-german-test.mjs
+      - name: Commit frontend integration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.js
+          git diff --cached --quiet || git commit -m "Enable German listening and speaking"
+          git push
+
+  generate-audio:
+    runs-on: ubuntu-latest
+    needs: integrate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/generate-de-audio.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Commit German MP3 files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio/de
+          git diff --cached --quiet || git commit -m "Add German listening audio"
+          git pull --rebase
+          git push
