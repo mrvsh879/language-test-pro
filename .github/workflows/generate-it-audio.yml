@@ -1,0 +1,36 @@
+name: Generate Italian listening audio
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/it-listening.json'
+      - 'scripts/generate-it-audio.mjs'
+      - '.github/workflows/generate-it-audio.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate missing Italian MP3 files
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/generate-it-audio.mjs
+      - name: Commit generated MP3 files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio/it
+          if git diff --cached --quiet; then
+            echo "No new audio files"
+          else
+            git commit -m "Generate Italian listening audio"
+            git push
+          fi
