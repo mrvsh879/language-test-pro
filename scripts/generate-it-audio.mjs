@@ -34,3 +34,5 @@ for (const q of bank.questions) {
   await fs.writeFile(out, Buffer.from(await response.arrayBuffer()));
   console.log('created', out);
 }
+
+// Trigger marker: 2026-07-22
