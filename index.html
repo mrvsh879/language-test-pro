@@ -76,6 +76,34 @@
         <div class="level-orb"><span data-i18n="estimatedLevel">Оценочный уровень</span><strong id="finalLevel">—</strong><small id="confidenceRange">—</small></div>
       </div>
       <div id="metricGrid" class="metric-grid"></div>
+      <section class="panel final-summary-panel">
+        <div class="final-summary-head">
+          <div><span class="overline">LANGUAGE LEVEL</span><h2 id="confirmedLevelTitle">Ваш подтверждённый уровень</h2></div>
+          <span id="assessmentConfidence" class="confidence-chip">—</span>
+        </div>
+        <p id="levelPlainExplanation" class="level-plain-explanation">—</p>
+        <div class="final-columns">
+          <div>
+            <h3>Как сформирован результат</h3>
+            <div id="levelBreakdown" class="level-breakdown"></div>
+          </div>
+          <div>
+            <h3>Что это означает на практике</h3>
+            <p id="practicalLevelDescription">—</p>
+            <p id="nextLevelStatus" class="next-level-status">—</p>
+          </div>
+        </div>
+      </section>
+      <section class="panel ai-conclusion-panel">
+        <div class="section-head"><div><span class="overline">AI ANALYSIS</span><h2>Итоговое заключение</h2></div><span id="aiConclusionStatus" class="confidence-chip">Анализ</span></div>
+        <p id="aiConclusionText">Формируется итоговый разбор…</p>
+        <div class="final-columns compact">
+          <div><h3>Сильные стороны</h3><ul id="resultStrengths"></ul></div>
+          <div><h3>Зоны роста</h3><ul id="resultWeaknesses"></ul></div>
+        </div>
+        <div class="next-step-box"><strong>Следующий шаг</strong><p id="personalNextStep">—</p></div>
+        <small class="ai-note">Основной уровень рассчитывается по ответам и проходным порогам. AI только объясняет результат и не может самостоятельно повысить уровень.</small>
+      </section>
       <div class="result-grid">
         <section class="panel"><div class="section-head"><h2 data-i18n="skillProfileTitle">Профиль навыков</h2></div><div id="skillProfile"></div></section>
         <section class="panel"><div class="section-head"><h2 data-i18n="reliabilityTitle">Надёжность</h2></div><div id="riskProfile"></div></section>
