@@ -1,0 +1,33 @@
+name: Build Italian professional assessment
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build-italian-professional.py'
+      - '.github/workflows/build-italian-professional.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and validate Italian banks
+        run: python scripts/build-italian-professional.py
+      - name: Commit generated Italian assessment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/it.json data/it-listening.json data/it-speaking.json app.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Build professional Italian assessment"
+            git push
+          fi
