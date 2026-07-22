@@ -41,7 +41,7 @@
           <label><span data-i18n="fullName">Имя и фамилия</span><input name="name" required maxlength="80" autocomplete="name"></label>
           <label><span data-i18n="position">Вакансия</span><input name="position" required maxlength="80"></label>
           <label><span data-i18n="testLanguage">Язык теста</span><select name="language" id="testLanguage"></select></label>
-          <label><span data-i18n="targetLevel">Целевой уровень</span><select name="target"><option>A2</option><option>B1</option><option selected>B2</option><option>C1</option><option>C2</option></select></label>
+          <label class="target-level-field"><span id="targetLevelLabel">Необхідний рівень для вакансії</span><select name="target" id="targetLevelSelect"><option selected>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select><small id="targetLevelHelp">A2 — базове спілкування у звичних робочих і побутових ситуаціях.</small></label>
         </div>
         <div class="headphones-hint"><span class="headphones-icon">🎧</span><div><strong data-i18n="headphonesTitle">Рекомендуємо проходити тест у навушниках</strong><p data-i18n="headphonesHint">Це допоможе краще чути завдання з аудіювання та підвищить точність результату.</p></div></div>
         <label class="consent"><input type="checkbox" name="honesty" required><span data-i18n="honesty">Подтверждаю прохождение без переводчика и посторонней помощи.</span></label>
@@ -109,18 +109,60 @@
     ru: ['8 языков', 'Адаптивный маршрут', 'HR-отчёт'],
     en: ['8 languages', 'Adaptive route', 'HR report']
   };
+  const targetLevelCopy = {
+    uk: {
+      label: 'Необхідний рівень для вакансії',
+      A2: 'A2 — базове спілкування у звичних робочих і побутових ситуаціях.',
+      B1: 'B1 — самостійне спілкування у більшості повсякденних і стандартних робочих ситуацій.',
+      B2: 'B2 — впевнена робота мовою, участь в обговореннях і розуміння складних інструкцій.',
+      C1: 'C1 — вільне професійне спілкування, складні переговори, тексти та презентації.',
+      C2: 'C2 — майже рівень носія: точне розуміння відтінків і дуже складної професійної мови.'
+    },
+    ru: {
+      label: 'Требуемый уровень для вакансии',
+      A2: 'A2 — базовое общение в привычных рабочих и бытовых ситуациях.',
+      B1: 'B1 — самостоятельное общение в большинстве повседневных и стандартных рабочих ситуаций.',
+      B2: 'B2 — уверенная работа на языке, участие в обсуждениях и понимание сложных инструкций.',
+      C1: 'C1 — свободное профессиональное общение, сложные переговоры, тексты и презентации.',
+      C2: 'C2 — почти уровень носителя: точное понимание оттенков и очень сложной профессиональной речи.'
+    },
+    en: {
+      label: 'Required level for the vacancy',
+      A2: 'A2 — basic communication in familiar work and everyday situations.',
+      B1: 'B1 — independent communication in most everyday and standard work situations.',
+      B2: 'B2 — confident professional use, discussions and understanding complex instructions.',
+      C1: 'C1 — fluent professional communication, complex negotiations, texts and presentations.',
+      C2: 'C2 — near-native command with precise understanding of nuance and highly complex language.'
+    }
+  };
+  function currentUiLanguage() {
+    return document.getElementById('uiLang')?.value || localStorage.getItem('ltp_ui') || 'uk';
+  }
   function updateTrustBadges() {
-    const select = document.getElementById('uiLang');
-    const lang = select?.value || localStorage.getItem('ltp_ui') || 'uk';
-    const labels = trustBadgeTranslations[lang] || trustBadgeTranslations.uk;
+    const labels = trustBadgeTranslations[currentUiLanguage()] || trustBadgeTranslations.uk;
     document.getElementById('languagesCountBadge').textContent = labels[0];
     document.getElementById('adaptiveRouteBadge').textContent = labels[1];
     document.getElementById('hrReportBadge').textContent = labels[2];
   }
+  function updateTargetLevelHelp() {
+    const lang = currentUiLanguage();
+    const copy = targetLevelCopy[lang] || targetLevelCopy.uk;
+    const select = document.getElementById('targetLevelSelect');
+    document.getElementById('targetLevelLabel').textContent = copy.label;
+    document.getElementById('targetLevelHelp').textContent = copy[select?.value || 'A2'];
+  }
   document.addEventListener('DOMContentLoaded', () => {
-    const select = document.getElementById('uiLang');
-    select?.addEventListener('change', updateTrustBadges);
-    setTimeout(updateTrustBadges, 0);
+    const uiSelect = document.getElementById('uiLang');
+    const targetSelect = document.getElementById('targetLevelSelect');
+    uiSelect?.addEventListener('change', () => {
+      updateTrustBadges();
+      updateTargetLevelHelp();
+    });
+    targetSelect?.addEventListener('change', updateTargetLevelHelp);
+    setTimeout(() => {
+      updateTrustBadges();
+      updateTargetLevelHelp();
+    }, 0);
   });
 </script>
 <script type="module" src="app.js"></script>
