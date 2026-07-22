@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - '.github/workflows/build-german-professional.yml'
       - 'scripts/build_german_professional.py'
       - 'data/de-professional-*.json'
       - 'data/de-listening*.json'
