@@ -93,7 +93,7 @@ def patch_app() -> None:
 
 
 def main() -> None:
-    professional = merge_files(["de-professional-*.json"])
+    professional = merge_files([f"de-professional-{level.lower()}.json" for level in LEVELS])
     by_level = defaultdict(list)
     for q in professional:
         by_level[q["level"]].append(q)
