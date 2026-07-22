@@ -7,9 +7,11 @@ CSS = ROOT / 'styles.css'
 
 
 def replace_once(text: str, old: str, new: str, label: str) -> str:
-    if new in text:
+    if new and new in text:
         return text
     if old not in text:
+        if not new:
+            return text
         raise RuntimeError(f'Marker not found: {label}')
     return text.replace(old, new, 1)
 
