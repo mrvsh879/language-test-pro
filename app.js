@@ -1,34 +1,191 @@
-const LEVELS=['A1','A2','B1','B2','C1','C2'];
-const LANGUAGES={de:'Deutsch',pl:'Polski',cs:'Čeština',sk:'Slovenčina',fr:'Français',it:'Italiano',ro:'Română',en:'English'};
-const I18N={
-ru:{heroTitle:'Профессиональная проверка языка кандидата',heroText:'Адаптивный тест оценивает грамматику, лексику, чтение и аудирование, фиксирует надёжность прохождения и формирует понятный отчёт для HR.',assessment:'Что оценивается',grammar:'Грамматика',grammarDesc:'Точность форм и конструкций',vocab:'Лексика',vocabDesc:'Словарь, коллокации, регистр',reading:'Чтение',readingDesc:'Смысл, детали и выводы',listening:'Аудирование',candidateData:'ДАННЫЕ КАНДИДАТА',startAssessment:'Начать оценивание',fullName:'Имя и фамилия',position:'Вакансия',candidateId:'ID кандидата',testLanguage:'Язык теста',targetLevel:'Целевой уровень',honesty:'Подтверждаю прохождение без переводчика и посторонней помощи.',disclaimer:'Предварительная HR-оценка, не официальный сертификат CEFR.',start:'Начать тест',session:'СЕССИЯ',language:'Язык',target:'Цель',time:'Время',route:'Маршрут',securityNote:'Переходы между вкладками фиксируются как сигнал надёжности.',back:'Назад',next:'Далее',candidateResult:'РЕЗУЛЬТАТ КАНДИДАТА',estimatedLevel:'Оценочный уровень',skillProfileTitle:'Профиль навыков',reliabilityTitle:'Надёжность',decisionSupport:'Рекомендация по следующему шагу',answerReview:'РАЗБОР ОТВЕТОВ',errorsAndExplanations:'Ошибки и пояснения',show:'Показать',hide:'Скрыть',print:'Печать / PDF',download:'Скачать отчёт',newSession:'Новая сессия',question:'Вопрос',diagnostic:'ДИАГНОСТИЧЕСКИЙ БЛОК',adaptive:'АДАПТИВНЫЙ БЛОК',choose:'Выберите ответ перед продолжением.',accuracy:'Общая точность',reliability:'Надёжность',questions:'Вопросов',tabSwitches:'Уходы со вкладки',outside:'Вне вкладки',fast:'Ответы быстрее 3 сек.',testedRoute:'Проверенные уровни',range:'Диапазон',correctAnswer:'Правильный ответ',yourAnswer:'Ответ кандидата',notAnswered:'Нет ответа',recommendRetry:'Результат требует повторного прохождения под наблюдением или подтверждения на разговорном интервью.',recommendPass:'Кандидат достиг целевого уровня. Рекомендуется допустить к разговорному интервью и проверить устную речь.',recommendNear:'Кандидат находится рядом с целевым уровнем. Рекомендуется короткое интервью с рабочими сценариями.',recommendLow:'Результат заметно ниже целевого уровня. Для вакансии потребуется дополнительное обучение.',play:'Прослушать',playsLeft:'Осталось прослушиваний',listenHint:'Прослушайте запись и выберите правильный ответ.',audioUnavailable:'На этом устройстве недоступен синтез речи. Используйте современный Chrome, Edge или Safari.'},
-uk:{heroTitle:'Професійна перевірка мови кандидата',heroText:'Адаптивний тест оцінює граматику, лексику, читання й аудіювання, фіксує надійність проходження та формує зрозумілий звіт для HR.',assessment:'Що оцінюється',grammar:'Граматика',grammarDesc:'Точність форм і конструкцій',vocab:'Лексика',vocabDesc:'Словник, колокації, регістр',reading:'Читання',readingDesc:'Зміст, деталі та висновки',listening:'Аудіювання',candidateData:'ДАНІ КАНДИДАТА',startAssessment:'Почати оцінювання',fullName:'Ім’я та прізвище',position:'Вакансія',candidateId:'ID кандидата',testLanguage:'Мова тесту',targetLevel:'Цільовий рівень',honesty:'Підтверджую проходження без перекладача та сторонньої допомоги.',disclaimer:'Попередня HR-оцінка, не офіційний сертифікат CEFR.',start:'Почати тест',session:'СЕСІЯ',language:'Мова',target:'Ціль',time:'Час',route:'Маршрут',securityNote:'Переходи між вкладками фіксуються як сигнал надійності.',back:'Назад',next:'Далі',candidateResult:'РЕЗУЛЬТАТ КАНДИДАТА',estimatedLevel:'Оціночний рівень',skillProfileTitle:'Профіль навичок',reliabilityTitle:'Надійність',decisionSupport:'Рекомендація щодо наступного кроку',answerReview:'РОЗБІР ВІДПОВІДЕЙ',errorsAndExplanations:'Помилки та пояснення',show:'Показати',hide:'Сховати',print:'Друк / PDF',download:'Завантажити звіт',newSession:'Нова сесія',question:'Питання',diagnostic:'ДІАГНОСТИЧНИЙ БЛОК',adaptive:'АДАПТИВНИЙ БЛОК',choose:'Оберіть відповідь перед продовженням.',accuracy:'Загальна точність',reliability:'Надійність',questions:'Питань',tabSwitches:'Виходи з вкладки',outside:'Поза вкладкою',fast:'Відповіді швидше 3 сек.',testedRoute:'Перевірені рівні',range:'Діапазон',correctAnswer:'Правильна відповідь',yourAnswer:'Відповідь кандидата',notAnswered:'Немає відповіді',recommendRetry:'Результат потребує повторного проходження під наглядом або підтвердження на розмовній співбесіді.',recommendPass:'Кандидат досяг цільового рівня. Рекомендовано допустити до розмовної співбесіди та перевірити усне мовлення.',recommendNear:'Кандидат близький до цільового рівня. Рекомендовано коротку співбесіду з робочими сценаріями.',recommendLow:'Результат помітно нижчий за цільовий рівень. Для вакансії потрібне додаткове навчання.',play:'Прослухати',playsLeft:'Залишилось прослуховувань',listenHint:'Прослухайте запис і виберіть правильну відповідь.',audioUnavailable:'На цьому пристрої недоступний синтез мовлення.'},
-en:{heroTitle:'Professional candidate language assessment',heroText:'The adaptive test evaluates grammar, vocabulary, reading and listening, records reliability signals and creates a clear HR report.',assessment:'What is assessed',grammar:'Grammar',grammarDesc:'Accuracy of forms and structures',vocab:'Vocabulary',vocabDesc:'Words, collocations and register',reading:'Reading',readingDesc:'Meaning, detail and inference',listening:'Listening',candidateData:'CANDIDATE DETAILS',startAssessment:'Start assessment',fullName:'Full name',position:'Position',candidateId:'Candidate ID',testLanguage:'Test language',targetLevel:'Target level',honesty:'I confirm that I will complete the test without translators or outside help.',disclaimer:'Preliminary HR screening, not an official CEFR certificate.',start:'Start test',session:'SESSION',language:'Language',target:'Target',time:'Time',route:'Route',securityNote:'Leaving the browser tab is recorded as a reliability signal.',back:'Back',next:'Next',candidateResult:'CANDIDATE RESULT',estimatedLevel:'Estimated level',skillProfileTitle:'Skill profile',reliabilityTitle:'Reliability',decisionSupport:'Recommended next step',answerReview:'ANSWER REVIEW',errorsAndExplanations:'Errors and explanations',show:'Show',hide:'Hide',print:'Print / PDF',download:'Download report',newSession:'New session',question:'Question',diagnostic:'DIAGNOSTIC BLOCK',adaptive:'ADAPTIVE BLOCK',choose:'Select an answer before continuing.',accuracy:'Overall accuracy',reliability:'Reliability',questions:'Questions',tabSwitches:'Tab switches',outside:'Time outside tab',fast:'Answers under 3 sec.',testedRoute:'Tested levels',range:'Range',correctAnswer:'Correct answer',yourAnswer:'Candidate answer',notAnswered:'No answer',recommendRetry:'The result should be repeated under supervision or confirmed in a speaking interview.',recommendPass:'The candidate reached the target level. Proceed to a speaking interview and verify oral communication.',recommendNear:'The candidate is close to the target level. Use a short interview with job-related scenarios.',recommendLow:'The result is clearly below the target level. Additional training would be needed for this position.',play:'Play audio',playsLeft:'Plays remaining',listenHint:'Listen to the recording and choose the correct answer.',audioUnavailable:'Speech synthesis is unavailable on this device.'}
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+const LANGUAGES = { de: 'Deutsch', pl: 'Polski', cs: 'Čeština', sk: 'Slovenčina', fr: 'Français', it: 'Italiano', ro: 'Română', en: 'English' };
+
+const I18N = {
+  ru: {
+    heroTitle: 'Профессиональная проверка языка кандидата', heroText: 'Адаптивный тест оценивает грамматику, лексику, чтение и аудирование, фиксирует надёжность прохождения и формирует понятный отчёт для HR.', assessment: 'Что оценивается', grammar: 'Грамматика', grammarDesc: 'Точность форм и конструкций', vocab: 'Лексика', vocabDesc: 'Словарь, коллокации, регистр', reading: 'Чтение', readingDesc: 'Смысл, детали и выводы', listening: 'Аудирование', candidateData: 'ДАННЫЕ КАНДИДАТА', startAssessment: 'Начать оценивание', fullName: 'Имя и фамилия', position: 'Вакансия', candidateId: 'ID кандидата', testLanguage: 'Язык теста', targetLevel: 'Целевой уровень', honesty: 'Подтверждаю прохождение без переводчика и посторонней помощи.', disclaimer: 'Предварительная HR-оценка, не официальный сертификат CEFR.', start: 'Начать тест', session: 'СЕССИЯ', language: 'Язык', target: 'Цель', time: 'Время', route: 'Маршрут', securityNote: 'Переходы между вкладками фиксируются как сигнал надёжности.', back: 'Назад', next: 'Далее', candidateResult: 'РЕЗУЛЬТАТ КАНДИДАТА', estimatedLevel: 'Оценочный уровень', skillProfileTitle: 'Профиль навыков', reliabilityTitle: 'Надёжность', decisionSupport: 'Рекомендация по следующему шагу', answerReview: 'РАЗБОР ОТВЕТОВ', errorsAndExplanations: 'Ошибки и пояснения', show: 'Показать', hide: 'Скрыть', print: 'Печать / PDF', download: 'Скачать отчёт', newSession: 'Новая сессия', question: 'Вопрос', diagnostic: 'ДИАГНОСТИЧЕСКИЙ БЛОК', adaptive: 'АДАПТИВНЫЙ БЛОК', choose: 'Выберите ответ перед продолжением.', accuracy: 'Общая точность', reliability: 'Надёжность', questions: 'Вопросов', tabSwitches: 'Уходы со вкладки', outside: 'Вне вкладки', fast: 'Ответы быстрее 3 сек.', testedRoute: 'Проверенные уровни', range: 'Диапазон', correctAnswer: 'Правильный ответ', yourAnswer: 'Ответ кандидата', notAnswered: 'Нет ответа', recommendRetry: 'Результат требует повторного прохождения под наблюдением или подтверждения на разговорном интервью.', recommendPass: 'Кандидат достиг целевого уровня. Рекомендуется допустить к разговорному интервью и проверить устную речь.', recommendNear: 'Кандидат находится рядом с целевым уровнем. Рекомендуется короткое интервью с рабочими сценариями.', recommendLow: 'Результат заметно ниже целевого уровня. Для вакансии потребуется дополнительное обучение.', play: 'Прослушать', playsLeft: 'Осталось прослушиваний', listenHint: 'Прослушайте запись и выберите правильный ответ.', audioUnavailable: 'На этом устройстве недоступен синтез речи.', noCzechVoice: 'На устройстве не установлен чешский голос. Английский голос использоваться не будет. Откройте тест в Chrome или Edge и установите чешский языковой пакет, либо используйте устройство с голосом cs-CZ.', loadingVoice: 'Загрузка чешского голоса…'
+  },
+  uk: {
+    heroTitle: 'Професійна перевірка мови кандидата', heroText: 'Адаптивний тест оцінює граматику, лексику, читання й аудіювання, фіксує надійність проходження та формує зрозумілий звіт для HR.', assessment: 'Що оцінюється', grammar: 'Граматика', grammarDesc: 'Точність форм і конструкцій', vocab: 'Лексика', vocabDesc: 'Словник, колокації, регістр', reading: 'Читання', readingDesc: 'Зміст, деталі та висновки', listening: 'Аудіювання', candidateData: 'ДАНІ КАНДИДАТА', startAssessment: 'Почати оцінювання', fullName: 'Ім’я та прізвище', position: 'Вакансія', candidateId: 'ID кандидата', testLanguage: 'Мова тесту', targetLevel: 'Цільовий рівень', honesty: 'Підтверджую проходження без перекладача та сторонньої допомоги.', disclaimer: 'Попередня HR-оцінка, не офіційний сертифікат CEFR.', start: 'Почати тест', session: 'СЕСІЯ', language: 'Мова', target: 'Ціль', time: 'Час', route: 'Маршрут', securityNote: 'Переходи між вкладками фіксуються як сигнал надійності.', back: 'Назад', next: 'Далі', candidateResult: 'РЕЗУЛЬТАТ КАНДИДАТА', estimatedLevel: 'Оціночний рівень', skillProfileTitle: 'Профіль навичок', reliabilityTitle: 'Надійність', decisionSupport: 'Рекомендація щодо наступного кроку', answerReview: 'РОЗБІР ВІДПОВІДЕЙ', errorsAndExplanations: 'Помилки та пояснення', show: 'Показати', hide: 'Сховати', print: 'Друк / PDF', download: 'Завантажити звіт', newSession: 'Нова сесія', question: 'Питання', diagnostic: 'ДІАГНОСТИЧНИЙ БЛОК', adaptive: 'АДАПТИВНИЙ БЛОК', choose: 'Оберіть відповідь перед продовженням.', accuracy: 'Загальна точність', reliability: 'Надійність', questions: 'Питань', tabSwitches: 'Виходи з вкладки', outside: 'Поза вкладкою', fast: 'Відповіді швидше 3 сек.', testedRoute: 'Перевірені рівні', range: 'Діапазон', correctAnswer: 'Правильна відповідь', yourAnswer: 'Відповідь кандидата', notAnswered: 'Немає відповіді', recommendRetry: 'Результат потребує повторного проходження під наглядом або підтвердження на розмовній співбесіді.', recommendPass: 'Кандидат досяг цільового рівня. Рекомендовано допустити до розмовної співбесіди та перевірити усне мовлення.', recommendNear: 'Кандидат близький до цільового рівня. Рекомендовано коротку співбесіду з робочими сценаріями.', recommendLow: 'Результат помітно нижчий за цільовий рівень. Для вакансії потрібне додаткове навчання.', play: 'Прослухати', playsLeft: 'Залишилось прослуховувань', listenHint: 'Прослухайте запис і виберіть правильну відповідь.', audioUnavailable: 'На цьому пристрої недоступний синтез мовлення.', noCzechVoice: 'На пристрої немає чеського голосу. Англійський голос не використовуватиметься. Встановіть чеський мовний пакет або відкрийте тест на пристрої з голосом cs-CZ.', loadingVoice: 'Завантаження чеського голосу…'
+  },
+  en: {
+    heroTitle: 'Professional candidate language assessment', heroText: 'The adaptive test evaluates grammar, vocabulary, reading and listening, records reliability signals and creates a clear HR report.', assessment: 'What is assessed', grammar: 'Grammar', grammarDesc: 'Accuracy of forms and structures', vocab: 'Vocabulary', vocabDesc: 'Words, collocations and register', reading: 'Reading', readingDesc: 'Meaning, detail and inference', listening: 'Listening', candidateData: 'CANDIDATE DETAILS', startAssessment: 'Start assessment', fullName: 'Full name', position: 'Position', candidateId: 'Candidate ID', testLanguage: 'Test language', targetLevel: 'Target level', honesty: 'I confirm that I will complete the test without translators or outside help.', disclaimer: 'Preliminary HR screening, not an official CEFR certificate.', start: 'Start test', session: 'SESSION', language: 'Language', target: 'Target', time: 'Time', route: 'Route', securityNote: 'Leaving the browser tab is recorded as a reliability signal.', back: 'Back', next: 'Next', candidateResult: 'CANDIDATE RESULT', estimatedLevel: 'Estimated level', skillProfileTitle: 'Skill profile', reliabilityTitle: 'Reliability', decisionSupport: 'Recommended next step', answerReview: 'ANSWER REVIEW', errorsAndExplanations: 'Errors and explanations', show: 'Show', hide: 'Hide', print: 'Print / PDF', download: 'Download report', newSession: 'New session', question: 'Question', diagnostic: 'DIAGNOSTIC BLOCK', adaptive: 'ADAPTIVE BLOCK', choose: 'Select an answer before continuing.', accuracy: 'Overall accuracy', reliability: 'Reliability', questions: 'Questions', tabSwitches: 'Tab switches', outside: 'Time outside tab', fast: 'Answers under 3 sec.', testedRoute: 'Tested levels', range: 'Range', correctAnswer: 'Correct answer', yourAnswer: 'Candidate answer', notAnswered: 'No answer', recommendRetry: 'The result should be repeated under supervision or confirmed in a speaking interview.', recommendPass: 'The candidate reached the target level. Proceed to a speaking interview and verify oral communication.', recommendNear: 'The candidate is close to the target level. Use a short interview with job-related scenarios.', recommendLow: 'The result is clearly below the target level. Additional training would be needed for this position.', play: 'Play audio', playsLeft: 'Plays remaining', listenHint: 'Listen to the recording and choose the correct answer.', audioUnavailable: 'Speech synthesis is unavailable on this device.', noCzechVoice: 'No Czech voice is installed on this device. The app will not fall back to an English voice. Install a Czech language pack or use a device with a cs-CZ voice.', loadingVoice: 'Loading Czech voice…'
+  }
 };
-const $=s=>document.querySelector(s);const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));const idx=l=>LEVELS.indexOf(l);const shuffle=a=>{const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x};const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;const esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-let ui=localStorage.getItem('ltp_ui')||'ru';let timerHandle;let speaking=false;
-const state={candidate:null,bank:[],queue:[],current:0,answers:{},times:{},plays:{},questionStartedAt:0,startedAt:0,tabSwitches:0,hiddenMs:0,hiddenAt:null,visitedLevels:[],report:null};
-function t(k){return I18N[ui]?.[k]||I18N.ru[k]||k}
-function applyI18n(){document.documentElement.lang=ui;document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));$('#uiLang').value=ui;if(state.queue.length)renderQuestion(false)}
-Object.entries(LANGUAGES).forEach(([code,name])=>$('#testLanguage').add(new Option(name,code)));$('#uiLang').addEventListener('change',e=>{ui=e.target.value;localStorage.setItem('ltp_ui',ui);applyI18n()});applyI18n();
-function show(id){['introScreen','testScreen','resultScreen'].forEach(x=>$('#'+x).classList.toggle('hidden',x!==id));scrollTo({top:0,behavior:'smooth'})}
-async function loadBank(lang){const r=await fetch(`./data/${lang}.json`,{cache:'no-store'});if(!r.ok)throw new Error(`Question bank ${lang} is unavailable`);const data=await r.json();let questions=[...data.questions];if(lang==='cs'){const lr=await fetch('./data/cs-listening.json',{cache:'no-store'});if(lr.ok){const ld=await lr.json();questions.push(...ld.questions)}}state.bank=questions.map(q=>({...q,options:shuffle(q.options.map((text,original)=>({text,correct:original===q.answer}))) }));}
-function sampleLevel(level,count=8){const pool=shuffle(state.bank.filter(q=>q.level===level&&!state.queue.some(x=>x.id===q.id)));const chosen=[];const availableSkills=[...new Set(pool.map(q=>q.skill))];for(const skill of availableSkills){const item=pool.find(q=>q.skill===skill&&!chosen.includes(q));if(item)chosen.push(item)}for(const item of pool){if(chosen.length>=count)break;if(!chosen.includes(item))chosen.push(item)}return chosen}
-function addLevel(level){if(!state.visitedLevels.includes(level))state.visitedLevels.push(level);state.queue.push(...sampleLevel(level));renderRoute()}
-function startRoute(){state.queue=[];state.visitedLevels=[];addLevel('B1');if(state.candidate.language==='cs'){const listening=shuffle(state.bank.filter(q=>q.skill==='listening'&&(q.level==='A1'||q.level==='A2'))).slice(0,4);state.queue.push(...listening)}}
-function saveTime(){const q=state.queue[state.current];if(!q||!state.questionStartedAt)return;state.times[q.id]=(state.times[q.id]||0)+Math.max(0,Math.round((Date.now()-state.questionStartedAt)/1000));state.questionStartedAt=Date.now()}
-function statsFor(level){const qs=state.queue.filter(q=>q.level===level&&state.answers[q.id]);const correct=qs.filter(q=>state.answers[q.id].correct).length;return{total:qs.length,correct,rate:qs.length?correct/qs.length:0}}
-function extendRoute(){const level=state.queue[state.current].level,s=statsFor(level);let next=null;if(s.rate>=.75)next=LEVELS[clamp(idx(level)+1,0,5)];else if(s.rate<.5)next=LEVELS[clamp(idx(level)-1,0,5)];else if(level==='B1'&&!state.visitedLevels.includes('A2'))next='A2';if(!next||next===level||state.visitedLevels.includes(next)||state.visitedLevels.length>=4)return false;addLevel(next);return true}
-function renderRoute(){$('#routePills').innerHTML=state.visitedLevels.map(x=>`<span>${x}</span>`).join('')}
-function cancelSpeech(){if('speechSynthesis'in window){window.speechSynthesis.cancel();speaking=false}}
-function voiceFor(lang){const voices=speechSynthesis.getVoices();return voices.find(v=>v.lang.toLowerCase().startsWith(lang.toLowerCase()))||voices.find(v=>v.lang.toLowerCase().startsWith('cs'))||null}
-function renderAudio(q){let box=$('#audioBox');if(!box){box=document.createElement('div');box.id='audioBox';box.className='audio-box';$('#prompt').before(box)}if(q.skill!=='listening'){box.classList.add('hidden');box.innerHTML='';return}box.classList.remove('hidden');const used=state.plays[q.id]||0;const max=q.maxPlays||2;const left=Math.max(0,max-used);box.innerHTML=`<div class="audio-icon">▶</div><div class="audio-copy"><strong>${esc(t('listenHint'))}</strong><span>${esc(t('playsLeft'))}: <b>${left}</b></span></div><button id="playAudioBtn" class="audio-button" type="button" ${left===0?'disabled':''}>${esc(t('play'))}</button>`;const btn=$('#playAudioBtn');btn?.addEventListener('click',()=>{if(!('speechSynthesis'in window)){alert(t('audioUnavailable'));return}if((state.plays[q.id]||0)>=max||speaking)return;state.plays[q.id]=(state.plays[q.id]||0)+1;speaking=true;const utter=new SpeechSynthesisUtterance(q.transcript);utter.lang='cs-CZ';utter.rate=q.level==='A1'?.88:.96;const voice=voiceFor('cs');if(voice)utter.voice=voice;utter.onend=()=>{speaking=false;renderAudio(q)};utter.onerror=()=>{speaking=false;renderAudio(q)};speechSynthesis.cancel();speechSynthesis.speak(utter);renderAudio(q)})}
-function renderQuestion(resetTime=true){cancelSpeech();const q=state.queue[state.current];if(!q)return finish();$('#questionCounter').textContent=`${t('question')} ${state.current+1} / ${state.queue.length}`;$('#blockLabel').textContent=state.current<8?t('diagnostic'):t('adaptive');$('#skillTag').textContent=t(q.skill==='vocabulary'?'vocab':q.skill);$('#prompt').textContent=q.prompt;$('#passage').textContent=q.passage||'';$('#passage').classList.toggle('hidden',!q.passage);renderAudio(q);const host=$('#options');host.innerHTML='';q.options.forEach((opt,i)=>{const label=document.createElement('label');label.className='option'+(state.answers[q.id]?.optionIndex===i?' selected':'');label.innerHTML=`<input type="radio" name="answer" value="${i}" ${state.answers[q.id]?.optionIndex===i?'checked':''}><span>${esc(opt.text)}</span>`;label.addEventListener('click',()=>{host.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));label.classList.add('selected');state.answers[q.id]={optionIndex:i,correct:opt.correct,answerText:opt.text,answeredAt:new Date().toISOString()}});host.appendChild(label)});$('#progressBar').style.width=`${(state.current+1)/state.queue.length*100}%`;$('#prevBtn').disabled=state.current===0;$('#nextBtn').textContent=state.current===state.queue.length-1?(ui==='en'?'Finish block':ui==='uk'?'Завершити блок':'Завершить блок'):t('next');if(resetTime)state.questionStartedAt=Date.now()}
-$('#candidateForm').addEventListener('submit',async e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.currentTarget));state.candidate={name:d.name.trim(),email:d.email.trim(),position:d.position.trim(),candidateId:d.candidateId.trim(),language:d.language,target:d.target};try{await loadBank(d.language)}catch(err){alert(err.message);return}startRoute();state.startedAt=Date.now();state.questionStartedAt=Date.now();$('#candidateName').textContent=state.candidate.name;$('#sideLanguage').textContent=LANGUAGES[d.language];$('#sideTarget').textContent=d.target;$('#sessionStatus').textContent=state.candidate.name;show('testScreen');renderQuestion();startTimer()});
-$('#prevBtn').addEventListener('click',()=>{saveTime();if(state.current>0){state.current--;renderQuestion()}});$('#nextBtn').addEventListener('click',()=>{const q=state.queue[state.current];if(!state.answers[q.id]){alert(t('choose'));return}saveTime();if(state.current===state.queue.length-1){if(extendRoute()){state.current++;renderQuestion()}else finish()}else{state.current++;renderQuestion()}});
-document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'){state.tabSwitches++;state.hiddenAt=Date.now();cancelSpeech()}else if(state.hiddenAt){state.hiddenMs+=Date.now()-state.hiddenAt;state.hiddenAt=null}});
-function startTimer(){clearInterval(timerHandle);timerHandle=setInterval(()=>{$('#timer').textContent=fmt(Math.floor((Date.now()-state.startedAt)/1000))},1000)}
-function calculateReport(){const answered=state.queue.filter(q=>state.answers[q.id]);const byLevel={},bySkill={grammar:[],vocabulary:[],reading:[],listening:[]};for(const q of answered){(byLevel[q.level]??=[]).push(state.answers[q.id].correct);(bySkill[q.skill]??=[]).push(state.answers[q.id].correct)}const levelScores=Object.fromEntries(Object.entries(byLevel).map(([level,a])=>[level,{correct:a.filter(Boolean).length,total:a.length,rate:a.filter(Boolean).length/a.length}]));const skillScores=Object.fromEntries(Object.entries(bySkill).filter(([,a])=>a.length).map(([skill,a])=>[skill,{correct:a.filter(Boolean).length,total:a.length,rate:a.filter(Boolean).length/a.length}]));const tested=Object.keys(levelScores).sort((a,b)=>idx(a)-idx(b));let finalLevel='A1';for(const level of tested)if(levelScores[level].rate>=.6)finalLevel=level;const fr=levelScores[finalLevel]?.rate||0;const lower=LEVELS[clamp(idx(finalLevel)-(fr<.7?1:0),0,5)],upper=LEVELS[clamp(idx(finalLevel)+(fr>=.8?1:0),0,5)];const totalSec=Math.floor((Date.now()-state.startedAt)/1000),fast=answered.filter(q=>(state.times[q.id]||0)<3).length;const accuracy=answered.length?answered.filter(q=>state.answers[q.id].correct).length/answered.length:0;let reliability=clamp(100-state.tabSwitches*8-fast*5-Math.floor(state.hiddenMs/60000)*3,35,100);const targetIdx=idx(state.candidate.target),finalIdx=idx(finalLevel);const recommendation=reliability<65?t('recommendRetry'):finalIdx>=targetIdx?t('recommendPass'):finalIdx===targetIdx-1?t('recommendNear'):t('recommendLow');return{generatedAt:new Date().toISOString(),candidate:state.candidate,assessment:{level:finalLevel,range:lower===upper?finalLevel:`${lower}–${upper}`,accuracy,levelScores,skillScores,reliability,recommendation},session:{totalSec,questions:answered.length,tabSwitches:state.tabSwitches,hiddenSec:Math.round(state.hiddenMs/1000),fastAnswers:fast,route:state.visitedLevels,plays:state.plays},answers:answered.map(q=>({id:q.id,level:q.level,skill:q.skill,correct:state.answers[q.id].correct,timeSec:state.times[q.id]||0,plays:state.plays[q.id]||0,answer:state.answers[q.id].answerText,correctAnswer:q.options.find(x=>x.correct)?.text,explanation:q.explanation||''}))}}
-function finish(){saveTime();cancelSpeech();clearInterval(timerHandle);state.report=calculateReport();renderResult();show('resultScreen')}
-function renderResult(){const r=state.report;$('#resultName').textContent=r.candidate.name;$('#resultMeta').textContent=`${r.candidate.position} · ${r.candidate.email} · ${LANGUAGES[r.candidate.language]} · ${t('target')} ${r.candidate.target}`;$('#finalLevel').textContent=r.assessment.level;$('#confidenceRange').textContent=`${t('range')}: ${r.assessment.range}`;const metrics=[[t('accuracy'),`${Math.round(r.assessment.accuracy*100)}%`],[t('reliability'),`${r.assessment.reliability}%`],[t('time'),fmt(r.session.totalSec)],[t('questions'),r.session.questions]];$('#metricGrid').innerHTML=metrics.map(([l,v])=>`<div class="metric"><span>${esc(l)}</span><strong>${esc(v)}</strong></div>`).join('');$('#skillProfile').innerHTML=Object.entries(r.assessment.skillScores).map(([skill,d])=>`<div class="bar-row"><div class="bar-label"><span>${esc(t(skill==='vocabulary'?'vocab':skill))}</span><strong>${Math.round(d.rate*100)}%</strong></div><div class="mini-bar"><div style="width:${Math.round(d.rate*100)}%"></div></div></div>`).join('');const risks=[[t('tabSwitches'),r.session.tabSwitches],[t('outside'),`${r.session.hiddenSec} sec`],[t('fast'),r.session.fastAnswers],[t('testedRoute'),r.session.route.join(' → ')]];$('#riskProfile').innerHTML=risks.map(([l,v])=>`<div class="risk-item"><span>${esc(l)}</span><strong>${esc(v)}</strong></div>`).join('');$('#recommendation').textContent=r.assessment.recommendation;$('#reviewList').innerHTML=r.answers.map(a=>`<article class="review-item ${a.correct?'correct':'wrong'}"><span class="skill-badge">${esc(a.level)} · ${esc(t(a.skill==='vocabulary'?'vocab':a.skill))}</span><h4>${esc(a.id)}</h4><p><strong>${esc(t('yourAnswer'))}:</strong> ${esc(a.answer||t('notAnswered'))}</p>${a.correct?'':`<p><strong>${esc(t('correctAnswer'))}:</strong> ${esc(a.correctAnswer)}</p>`}<p>${esc(a.explanation)}</p></article>`).join('')}
-$('#toggleReview').addEventListener('click',()=>{const list=$('#reviewList');list.classList.toggle('hidden');$('#toggleReview').textContent=list.classList.contains('hidden')?t('show'):t('hide')});$('#printBtn').addEventListener('click',()=>window.print());$('#downloadBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(state.report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`language-test-${state.candidate.name.replace(/\s+/g,'-').toLowerCase()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});$('#restartBtn').addEventListener('click',()=>location.reload());
+
+const $ = selector => document.querySelector(selector);
+const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
+const idx = level => LEVELS.indexOf(level);
+const shuffle = array => { const copy = [...array]; for (let i = copy.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; };
+const fmt = seconds => `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
+const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
+
+let ui = localStorage.getItem('ltp_ui') || 'ru';
+let timerHandle;
+let speaking = false;
+let voicesReady = false;
+let cachedVoices = [];
+
+const state = { candidate: null, bank: [], queue: [], current: 0, answers: {}, times: {}, plays: {}, questionStartedAt: 0, startedAt: 0, tabSwitches: 0, hiddenMs: 0, hiddenAt: null, visitedLevels: [], report: null };
+
+function t(key) { return I18N[ui]?.[key] || I18N.ru[key] || key; }
+function applyI18n() { document.documentElement.lang = ui; document.querySelectorAll('[data-i18n]').forEach(el => el.textContent = t(el.dataset.i18n)); $('#uiLang').value = ui; if (state.queue.length) renderQuestion(false); }
+Object.entries(LANGUAGES).forEach(([code, name]) => $('#testLanguage').add(new Option(name, code)));
+$('#uiLang').addEventListener('change', event => { ui = event.target.value; localStorage.setItem('ltp_ui', ui); applyI18n(); });
+applyI18n();
+
+function show(id) { ['introScreen', 'testScreen', 'resultScreen'].forEach(x => $('#' + x).classList.toggle('hidden', x !== id)); scrollTo({ top: 0, behavior: 'smooth' }); }
+
+async function loadBank(lang) {
+  const response = await fetch(`./data/${lang}.json`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Question bank ${lang} is unavailable`);
+  const data = await response.json();
+  let questions = [...data.questions];
+  if (lang === 'cs') {
+    const listeningResponse = await fetch('./data/cs-listening.json', { cache: 'no-store' });
+    if (listeningResponse.ok) questions.push(...(await listeningResponse.json()).questions);
+  }
+  state.bank = questions.map(q => ({ ...q, options: shuffle(q.options.map((text, original) => ({ text, correct: original === q.answer }))) }));
+}
+
+function sampleLevel(level, count = 8) {
+  const pool = shuffle(state.bank.filter(q => q.level === level && !state.queue.some(x => x.id === q.id)));
+  const chosen = [];
+  for (const skill of [...new Set(pool.map(q => q.skill))]) {
+    const item = pool.find(q => q.skill === skill && !chosen.includes(q));
+    if (item) chosen.push(item);
+  }
+  for (const item of pool) { if (chosen.length >= count) break; if (!chosen.includes(item)) chosen.push(item); }
+  return chosen;
+}
+function addLevel(level) { if (!state.visitedLevels.includes(level)) state.visitedLevels.push(level); state.queue.push(...sampleLevel(level)); renderRoute(); }
+function startRoute() { state.queue = []; state.visitedLevels = []; addLevel('B1'); if (state.candidate.language === 'cs') state.queue.push(...shuffle(state.bank.filter(q => q.skill === 'listening' && ['A1', 'A2'].includes(q.level))).slice(0, 4)); }
+function saveTime() { const q = state.queue[state.current]; if (!q || !state.questionStartedAt) return; state.times[q.id] = (state.times[q.id] || 0) + Math.max(0, Math.round((Date.now() - state.questionStartedAt) / 1000)); state.questionStartedAt = Date.now(); }
+function statsFor(level) { const qs = state.queue.filter(q => q.level === level && state.answers[q.id]); const correct = qs.filter(q => state.answers[q.id].correct).length; return { total: qs.length, correct, rate: qs.length ? correct / qs.length : 0 }; }
+function extendRoute() { const level = state.queue[state.current].level; const s = statsFor(level); let next = null; if (s.rate >= .75) next = LEVELS[clamp(idx(level) + 1, 0, 5)]; else if (s.rate < .5) next = LEVELS[clamp(idx(level) - 1, 0, 5)]; else if (level === 'B1' && !state.visitedLevels.includes('A2')) next = 'A2'; if (!next || next === level || state.visitedLevels.includes(next) || state.visitedLevels.length >= 4) return false; addLevel(next); return true; }
+function renderRoute() { $('#routePills').innerHTML = state.visitedLevels.map(x => `<span>${x}</span>`).join(''); }
+
+function refreshVoices() { cachedVoices = window.speechSynthesis?.getVoices?.() || []; voicesReady = cachedVoices.length > 0; }
+if ('speechSynthesis' in window) {
+  refreshVoices();
+  window.speechSynthesis.onvoiceschanged = refreshVoices;
+}
+function cancelSpeech() { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); speaking = false; } }
+function czechVoice() {
+  refreshVoices();
+  return cachedVoices.find(v => /^cs(-|_)?cz$/i.test(v.lang))
+    || cachedVoices.find(v => /^cs(-|_)/i.test(v.lang))
+    || cachedVoices.find(v => /czech|čeština|cesky|česky/i.test(v.name))
+    || null;
+}
+
+function renderAudio(q) {
+  let box = $('#audioBox');
+  if (!box) { box = document.createElement('div'); box.id = 'audioBox'; box.className = 'audio-box'; $('#prompt').before(box); }
+  if (q.skill !== 'listening') { box.classList.add('hidden'); box.innerHTML = ''; return; }
+
+  box.classList.remove('hidden');
+  const used = state.plays[q.id] || 0;
+  const max = q.maxPlays || 2;
+  const left = Math.max(0, max - used);
+  const voice = czechVoice();
+  const unavailable = !('speechSynthesis' in window) || (voicesReady && !voice);
+
+  box.innerHTML = `<div class="audio-icon">▶</div><div class="audio-copy"><strong>${esc(t('listenHint'))}</strong><span>${esc(t('playsLeft'))}: <b>${left}</b>${unavailable ? ` · ${esc(t('noCzechVoice'))}` : ''}</span></div><button id="playAudioBtn" class="audio-button" type="button" ${left === 0 || unavailable ? 'disabled' : ''}>${esc(t('play'))}</button>`;
+
+  $('#playAudioBtn')?.addEventListener('click', () => {
+    if (!('speechSynthesis' in window)) { alert(t('audioUnavailable')); return; }
+    const selectedVoice = czechVoice();
+    if (!selectedVoice) { alert(t('noCzechVoice')); return; }
+    if ((state.plays[q.id] || 0) >= max || speaking) return;
+
+    state.plays[q.id] = (state.plays[q.id] || 0) + 1;
+    speaking = true;
+    const utterance = new SpeechSynthesisUtterance(q.transcript);
+    utterance.lang = 'cs-CZ';
+    utterance.voice = selectedVoice;
+    utterance.rate = q.level === 'A1' ? .82 : .9;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+    utterance.onend = () => { speaking = false; renderAudio(q); };
+    utterance.onerror = () => { speaking = false; renderAudio(q); };
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+    renderAudio(q);
+  });
+}
+
+function renderQuestion(resetTime = true) {
+  cancelSpeech();
+  const q = state.queue[state.current];
+  if (!q) return finish();
+  $('#questionCounter').textContent = `${t('question')} ${state.current + 1} / ${state.queue.length}`;
+  $('#blockLabel').textContent = state.current < 8 ? t('diagnostic') : t('adaptive');
+  $('#skillTag').textContent = t(q.skill === 'vocabulary' ? 'vocab' : q.skill);
+  $('#prompt').textContent = q.prompt;
+  $('#passage').textContent = q.passage || '';
+  $('#passage').classList.toggle('hidden', !q.passage);
+  renderAudio(q);
+  const host = $('#options'); host.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const label = document.createElement('label');
+    label.className = 'option' + (state.answers[q.id]?.optionIndex === i ? ' selected' : '');
+    label.innerHTML = `<input type="radio" name="answer" value="${i}" ${state.answers[q.id]?.optionIndex === i ? 'checked' : ''}><span>${esc(opt.text)}</span>`;
+    label.addEventListener('click', () => { host.querySelectorAll('.option').forEach(x => x.classList.remove('selected')); label.classList.add('selected'); state.answers[q.id] = { optionIndex: i, correct: opt.correct, answerText: opt.text, answeredAt: new Date().toISOString() }; });
+    host.appendChild(label);
+  });
+  $('#progressBar').style.width = `${(state.current + 1) / state.queue.length * 100}%`;
+  $('#prevBtn').disabled = state.current === 0;
+  $('#nextBtn').textContent = state.current === state.queue.length - 1 ? (ui === 'en' ? 'Finish block' : ui === 'uk' ? 'Завершити блок' : 'Завершить блок') : t('next');
+  if (resetTime) state.questionStartedAt = Date.now();
+}
+
+$('#candidateForm').addEventListener('submit', async event => {
+  event.preventDefault();
+  const d = Object.fromEntries(new FormData(event.currentTarget));
+  state.candidate = { name: d.name.trim(), email: d.email.trim(), position: d.position.trim(), candidateId: d.candidateId.trim(), language: d.language, target: d.target };
+  try { await loadBank(d.language); } catch (error) { alert(error.message); return; }
+  startRoute(); state.startedAt = Date.now(); state.questionStartedAt = Date.now();
+  $('#candidateName').textContent = state.candidate.name; $('#sideLanguage').textContent = LANGUAGES[d.language]; $('#sideTarget').textContent = d.target; $('#sessionStatus').textContent = state.candidate.name;
+  show('testScreen'); renderQuestion(); startTimer();
+});
+$('#prevBtn').addEventListener('click', () => { saveTime(); if (state.current > 0) { state.current--; renderQuestion(); } });
+$('#nextBtn').addEventListener('click', () => { const q = state.queue[state.current]; if (!state.answers[q.id]) { alert(t('choose')); return; } saveTime(); if (state.current === state.queue.length - 1) { if (extendRoute()) { state.current++; renderQuestion(); } else finish(); } else { state.current++; renderQuestion(); } });
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') { state.tabSwitches++; state.hiddenAt = Date.now(); cancelSpeech(); } else if (state.hiddenAt) { state.hiddenMs += Date.now() - state.hiddenAt; state.hiddenAt = null; } });
+function startTimer() { clearInterval(timerHandle); timerHandle = setInterval(() => { $('#timer').textContent = fmt(Math.floor((Date.now() - state.startedAt) / 1000)); }, 1000); }
+
+function calculateReport() {
+  const answered = state.queue.filter(q => state.answers[q.id]);
+  const byLevel = {}, bySkill = { grammar: [], vocabulary: [], reading: [], listening: [] };
+  for (const q of answered) { (byLevel[q.level] ??= []).push(state.answers[q.id].correct); (bySkill[q.skill] ??= []).push(state.answers[q.id].correct); }
+  const levelScores = Object.fromEntries(Object.entries(byLevel).map(([level, a]) => [level, { correct: a.filter(Boolean).length, total: a.length, rate: a.filter(Boolean).length / a.length }]));
+  const skillScores = Object.fromEntries(Object.entries(bySkill).filter(([, a]) => a.length).map(([skill, a]) => [skill, { correct: a.filter(Boolean).length, total: a.length, rate: a.filter(Boolean).length / a.length }]));
+  const tested = Object.keys(levelScores).sort((a, b) => idx(a) - idx(b));
+  let finalLevel = 'A1'; for (const level of tested) if (levelScores[level].rate >= .6) finalLevel = level;
+  const fr = levelScores[finalLevel]?.rate || 0;
+  const lower = LEVELS[clamp(idx(finalLevel) - (fr < .7 ? 1 : 0), 0, 5)], upper = LEVELS[clamp(idx(finalLevel) + (fr >= .8 ? 1 : 0), 0, 5)];
+  const totalSec = Math.floor((Date.now() - state.startedAt) / 1000), fast = answered.filter(q => (state.times[q.id] || 0) < 3).length;
+  const accuracy = answered.length ? answered.filter(q => state.answers[q.id].correct).length / answered.length : 0;
+  const reliability = clamp(100 - state.tabSwitches * 8 - fast * 5 - Math.floor(state.hiddenMs / 60000) * 3, 35, 100);
+  const targetIdx = idx(state.candidate.target), finalIdx = idx(finalLevel);
+  const recommendation = reliability < 65 ? t('recommendRetry') : finalIdx >= targetIdx ? t('recommendPass') : finalIdx === targetIdx - 1 ? t('recommendNear') : t('recommendLow');
+  return { generatedAt: new Date().toISOString(), candidate: state.candidate, assessment: { level: finalLevel, range: lower === upper ? finalLevel : `${lower}–${upper}`, accuracy, levelScores, skillScores, reliability, recommendation }, session: { totalSec, questions: answered.length, tabSwitches: state.tabSwitches, hiddenSec: Math.round(state.hiddenMs / 1000), fastAnswers: fast, route: state.visitedLevels, plays: state.plays }, answers: answered.map(q => ({ id: q.id, level: q.level, skill: q.skill, correct: state.answers[q.id].correct, timeSec: state.times[q.id] || 0, plays: state.plays[q.id] || 0, answer: state.answers[q.id].answerText, correctAnswer: q.options.find(x => x.correct)?.text, explanation: q.explanation || '' })) };
+}
+function finish() { saveTime(); cancelSpeech(); clearInterval(timerHandle); state.report = calculateReport(); renderResult(); show('resultScreen'); }
+function renderResult() {
+  const r = state.report;
+  $('#resultName').textContent = r.candidate.name;
+  $('#resultMeta').textContent = `${r.candidate.position} · ${r.candidate.email} · ${LANGUAGES[r.candidate.language]} · ${t('target')} ${r.candidate.target}`;
+  $('#finalLevel').textContent = r.assessment.level; $('#confidenceRange').textContent = `${t('range')}: ${r.assessment.range}`;
+  const metrics = [[t('accuracy'), `${Math.round(r.assessment.accuracy * 100)}%`], [t('reliability'), `${r.assessment.reliability}%`], [t('time'), fmt(r.session.totalSec)], [t('questions'), r.session.questions]];
+  $('#metricGrid').innerHTML = metrics.map(([l, v]) => `<div class="metric"><span>${esc(l)}</span><strong>${esc(v)}</strong></div>`).join('');
+  $('#skillProfile').innerHTML = Object.entries(r.assessment.skillScores).map(([skill, d]) => `<div class="bar-row"><div class="bar-label"><span>${esc(t(skill === 'vocabulary' ? 'vocab' : skill))}</span><strong>${Math.round(d.rate * 100)}%</strong></div><div class="mini-bar"><div style="width:${Math.round(d.rate * 100)}%"></div></div></div>`).join('');
+  const risks = [[t('tabSwitches'), r.session.tabSwitches], [t('outside'), `${r.session.hiddenSec} sec`], [t('fast'), r.session.fastAnswers], [t('testedRoute'), r.session.route.join(' → ')]];
+  $('#riskProfile').innerHTML = risks.map(([l, v]) => `<div class="risk-item"><span>${esc(l)}</span><strong>${esc(v)}</strong></div>`).join('');
+  $('#recommendation').textContent = r.assessment.recommendation;
+  $('#reviewList').innerHTML = r.answers.map(a => `<article class="review-item ${a.correct ? 'correct' : 'wrong'}"><span class="skill-badge">${esc(a.level)} · ${esc(t(a.skill === 'vocabulary' ? 'vocab' : a.skill))}</span><h4>${esc(a.id)}</h4><p><strong>${esc(t('yourAnswer'))}:</strong> ${esc(a.answer || t('notAnswered'))}</p>${a.correct ? '' : `<p><strong>${esc(t('correctAnswer'))}:</strong> ${esc(a.correctAnswer)}</p>`}<p>${esc(a.explanation)}</p></article>`).join('');
+}
+$('#toggleReview').addEventListener('click', () => { const list = $('#reviewList'); list.classList.toggle('hidden'); $('#toggleReview').textContent = list.classList.contains('hidden') ? t('show') : t('hide'); });
+$('#printBtn').addEventListener('click', () => window.print());
+$('#downloadBtn').addEventListener('click', () => { const blob = new Blob([JSON.stringify(state.report, null, 2)], { type: 'application/json' }), url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = `language-test-${state.candidate.name.replace(/\s+/g, '-').toLowerCase()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); });
+$('#restartBtn').addEventListener('click', () => location.reload());
