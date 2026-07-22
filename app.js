@@ -70,7 +70,7 @@ if ('speechSynthesis' in window) {
   refreshVoices();
   window.speechSynthesis.onvoiceschanged = refreshVoices;
 }
-function cancelSpeech() { if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); speaking = false; } }
+function cancelSpeech() { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); speaking = false; if (window.__ltpAudio) { window.__ltpAudio.pause(); window.__ltpAudio.currentTime = 0; window.__ltpAudio = null; } }
 function czechVoice() {
   refreshVoices();
   return cachedVoices.find(v => /^cs(-|_)?cz$/i.test(v.lang))
@@ -83,35 +83,28 @@ function renderAudio(q) {
   let box = $('#audioBox');
   if (!box) { box = document.createElement('div'); box.id = 'audioBox'; box.className = 'audio-box'; $('#prompt').before(box); }
   if (q.skill !== 'listening') { box.classList.add('hidden'); box.innerHTML = ''; return; }
-
   box.classList.remove('hidden');
   const used = state.plays[q.id] || 0;
   const max = q.maxPlays || 2;
   const left = Math.max(0, max - used);
-  const voice = czechVoice();
-  const unavailable = !('speechSynthesis' in window) || (voicesReady && !voice);
-
-  box.innerHTML = `<div class="audio-icon">▶</div><div class="audio-copy"><strong>${esc(t('listenHint'))}</strong><span>${esc(t('playsLeft'))}: <b>${left}</b>${unavailable ? ` · ${esc(t('noCzechVoice'))}` : ''}</span></div><button id="playAudioBtn" class="audio-button" type="button" ${left === 0 || unavailable ? 'disabled' : ''}>${esc(t('play'))}</button>`;
-
-  $('#playAudioBtn')?.addEventListener('click', () => {
-    if (!('speechSynthesis' in window)) { alert(t('audioUnavailable')); return; }
-    const selectedVoice = czechVoice();
-    if (!selectedVoice) { alert(t('noCzechVoice')); return; }
+  box.innerHTML = `<div class="audio-icon">▶</div><div class="audio-copy"><strong>${esc(t('listenHint'))}</strong><span>${esc(t('playsLeft'))}: <b>${left}</b> · AI Czech MP3</span></div><button id="playAudioBtn" class="audio-button" type="button" ${left === 0 ? 'disabled' : ''}>${esc(t('play'))}</button>`;
+  $('#playAudioBtn')?.addEventListener('click', async () => {
     if ((state.plays[q.id] || 0) >= max || speaking) return;
-
-    state.plays[q.id] = (state.plays[q.id] || 0) + 1;
+    cancelSpeech();
+    const audio = new Audio(`./audio/cs/${q.id}.mp3`);
+    window.__ltpAudio = audio;
     speaking = true;
-    const utterance = new SpeechSynthesisUtterance(q.transcript);
-    utterance.lang = 'cs-CZ';
-    utterance.voice = selectedVoice;
-    utterance.rate = q.level === 'A1' ? .82 : .9;
-    utterance.pitch = 1;
-    utterance.volume = 1;
-    utterance.onend = () => { speaking = false; renderAudio(q); };
-    utterance.onerror = () => { speaking = false; renderAudio(q); };
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
-    renderAudio(q);
+    audio.onended = () => { speaking = false; window.__ltpAudio = null; renderAudio(q); };
+    audio.onerror = () => { speaking = false; window.__ltpAudio = null; alert('AI audio file is unavailable. Run the Generate Czech AI audio workflow.'); renderAudio(q); };
+    try {
+      await audio.play();
+      state.plays[q.id] = (state.plays[q.id] || 0) + 1;
+      renderAudio(q);
+    } catch (error) {
+      speaking = false;
+      window.__ltpAudio = null;
+      alert('Audio playback could not start.');
+    }
   });
 }
 
