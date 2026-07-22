@@ -1,0 +1,35 @@
+name: Upgrade final report
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/upgrade-final-report.py'
+      - '.github/workflows/upgrade-final-report.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply transparent final report
+        run: python scripts/upgrade-final-report.py
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html app.js styles.css
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Upgrade final language assessment report"
+            git push
+          fi
