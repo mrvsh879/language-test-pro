@@ -24,12 +24,29 @@ jobs:
           python-version: '3.12'
       - name: Build Italian v4 banks
         run: python scripts/build_italian_v4.py
+      - name: Strengthen Italian C1 listening
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path('data/it-listening.json')
+          data=json.loads(path.read_text(encoding='utf-8'))
+          additions={
+            'it-c1-l-01':' Per valutarla davvero, il destinatario deve poter distinguere i dati decisivi dalle informazioni puramente accessorie.',
+            'it-c1-l-02':' La conclusione resta sostenibile soltanto entro condizioni esplicitate e non come principio valido in ogni contesto.',
+            'it-c1-l-03':' Sarebbe quindi necessario verificare se lo stesso effetto compare anche in gruppi meno selezionati e in ambienti differenti.',
+            'it-c1-l-04':' Una procedura credibile deve perciò spiegare quando la deroga è ammessa e come verrà controllata successivamente.'
+          }
+          for q in data['questions']:
+            if q['id'] in additions:
+              q['transcript']=q['transcript'].rstrip()+additions[q['id']]
+          path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
       - name: Validate Italian v4 banks
         run: |
           python - <<'PY'
           import json,re,statistics
           from collections import Counter,defaultdict
-          from pathlib import Path
           specs={'it.json':('main',120),'it-listening.json':('listening',40),'it-speaking.json':('speaking',28)}
           levels={'A1','A2','B1','B2','C1','C2'}
           all_ids=[]; texts=[]; warnings=[]
