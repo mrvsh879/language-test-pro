@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
       - name: Build Italian v4 banks
         run: python scripts/build_italian_v4.py
-      - name: Strengthen Italian C1 listening
+      - name: Strengthen Italian advanced listening
         run: |
           python - <<'PY'
           import json
@@ -35,7 +35,11 @@ jobs:
             'it-c1-l-01':' Per valutarla davvero, il destinatario deve poter distinguere i dati decisivi dalle informazioni puramente accessorie.',
             'it-c1-l-02':' La conclusione resta sostenibile soltanto entro condizioni esplicitate e non come principio valido in ogni contesto.',
             'it-c1-l-03':' Sarebbe quindi necessario verificare se lo stesso effetto compare anche in gruppi meno selezionati e in ambienti differenti.',
-            'it-c1-l-04':' Una procedura credibile deve perciò spiegare quando la deroga è ammessa e come verrà controllata successivamente.'
+            'it-c1-l-04':' Una procedura credibile deve perciò spiegare quando la deroga è ammessa e come verrà controllata successivamente.',
+            'it-c2-l-01':' Per questo una valutazione seria deve osservare non solo il comportamento visibile, ma anche quali incentivi restano attivi dopo la modifica normativa.',
+            'it-c2-l-02':' Il problema non è dunque la mancanza materiale di dati, bensì la difficoltà di individuare quelli che hanno avuto un peso reale nella scelta.',
+            'it-c2-l-03':' La neutralità non può quindi essere dedotta dalla forma della regola, ma va verificata attraverso gli effetti prodotti su gruppi diversamente situati.',
+            'it-c2-l-04':' Finché l’ambiguità non viene risolta, ciascuna parte può attribuire al testo un significato diverso e il dissenso riemerge nella fase operativa.'
           }
           for q in data['questions']:
             if q['id'] in additions:
