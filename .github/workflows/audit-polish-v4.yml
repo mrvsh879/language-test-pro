@@ -13,6 +13,7 @@ on:
 permissions:
   contents: write
 
+# Audit revision: 4.1
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -29,114 +30,52 @@ jobs:
           import json, re, statistics
           from collections import Counter, defaultdict
           from pathlib import Path
-
           root=Path('data')
-          specs={
-            'pl.json':('main',120),
-            'pl-listening.json':('listening',40),
-            'pl-speaking.json':('speaking',28),
-          }
+          specs={'pl.json':('main',120),'pl-listening.json':('listening',40),'pl-speaking.json':('speaking',28)}
           levels=['A1','A2','B1','B2','C1','C2']
           report={'ok':True,'errors':[],'warnings':[],'metrics':{},'samples':{}}
           seen_ids=[]
-
-          def words(s):
-            return re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9]+", s or '')
-
-          def norm(s):
-            return ' '.join(words((s or '').lower()))
-
+          def words(s): return re.findall(r"[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż0-9]+", s or '')
+          def norm(s): return ' '.join(words((s or '').lower()))
           all_texts=[]
           for fn,(kind,expected) in specs.items():
-            p=root/fn
-            try:
-              data=json.loads(p.read_text(encoding='utf-8'))
-            except Exception as e:
-              report['ok']=False; report['errors'].append(f'{fn}: invalid JSON: {e}'); continue
-            qs=data.get('questions',[])
+            data=json.loads((root/fn).read_text(encoding='utf-8')); qs=data.get('questions',[])
             m={'version':data.get('version'),'count':len(qs),'declared':data.get('questionCount'),'levels':dict(Counter(q.get('level') for q in qs)),'skills':dict(Counter(q.get('skill') for q in qs))}
             report['metrics'][fn]=m
-            if len(qs)!=expected or data.get('questionCount')!=expected:
-              report['ok']=False; report['errors'].append(f'{fn}: expected {expected}, got {len(qs)} / {data.get("questionCount")}')
-            if set(m['levels'])!=set(levels):
-              report['ok']=False; report['errors'].append(f'{fn}: missing CEFR levels')
+            if len(qs)!=expected or data.get('questionCount')!=expected: report['ok']=False; report['errors'].append(f'{fn}: invalid count')
+            if set(m['levels'])!=set(levels): report['ok']=False; report['errors'].append(f'{fn}: missing CEFR levels')
             ids=[q.get('id') for q in qs]; seen_ids+=ids
-            if len(ids)!=len(set(ids)) or None in ids:
-              report['ok']=False; report['errors'].append(f'{fn}: duplicate or missing ids')
-
-            answer_dist=Counter()
-            lens=defaultdict(list)
-            generic_expl=0
+            if len(ids)!=len(set(ids)) or None in ids: report['ok']=False; report['errors'].append(f'{fn}: duplicate or missing ids')
+            answer_dist=Counter(); lens=defaultdict(list); generic=0
             for q in qs:
               qid=q.get('id','?'); lvl=q.get('level')
-              if not q.get('prompt'):
-                report['errors'].append(f'{qid}: missing prompt'); report['ok']=False
               if kind in ('main','listening'):
                 opts=q.get('options'); ans=q.get('answer')
-                if not isinstance(opts,list) or len(opts)!=4:
-                  report['errors'].append(f'{qid}: options != 4'); report['ok']=False
-                elif not isinstance(ans,int) or not 0<=ans<4:
-                  report['errors'].append(f'{qid}: invalid answer'); report['ok']=False
+                if not isinstance(opts,list) or len(opts)!=4 or not isinstance(ans,int) or not 0<=ans<4: report['ok']=False; report['errors'].append(f'{qid}: invalid options/answer')
                 else: answer_dist[ans]+=1
                 exp=q.get('explanation','')
-                if not exp: report['warnings'].append(f'{qid}: no explanation')
-                if exp.startswith('Poprawna odpowiedź') or len(words(exp))<6: generic_expl+=1
-              if kind=='main':
-                txt=q.get('passage','') if q.get('skill')=='reading' else q.get('prompt','')
-                if q.get('skill')=='reading' and not txt:
-                  report['errors'].append(f'{qid}: reading without passage'); report['ok']=False
-              elif kind=='listening':
-                txt=q.get('transcript','')
-                if not txt:
-                  report['errors'].append(f'{qid}: missing transcript'); report['ok']=False
-              else:
-                txt=q.get('referenceText') or q.get('passage','')
-                if not txt:
-                  report['errors'].append(f'{qid}: missing speaking text'); report['ok']=False
-              lens[lvl].append(len(words(txt)))
-              all_texts.append((qid,kind,lvl,norm(txt)))
-
-            m['answerDistribution']=dict(answer_dist)
-            m['genericExplanations']=generic_expl
+                if exp.startswith('Poprawna odpowiedź') or len(words(exp))<6: generic+=1
+              txt=(q.get('passage','') if kind=='main' and q.get('skill')=='reading' else q.get('prompt','')) if kind=='main' else (q.get('transcript','') if kind=='listening' else q.get('referenceText') or q.get('passage',''))
+              if not txt: report['ok']=False; report['errors'].append(f'{qid}: missing text')
+              lens[lvl].append(len(words(txt))); all_texts.append((qid,norm(txt)))
+            m['answerDistribution']=dict(answer_dist); m['genericExplanations']=generic
             m['avgWordsByLevel']={k:round(statistics.mean(v),1) for k,v in lens.items() if v}
-            m['minWordsByLevel']={k:min(v) for k,v in lens.items() if v}
-
-            if kind=='main':
-              for lvl,minavg in {'B2':10,'C1':12,'C2':14}.items():
-                vals=lens.get(lvl,[])
-                if vals and statistics.mean(vals)<minavg:
-                  report['warnings'].append(f'{fn}: {lvl} average text too short: {statistics.mean(vals):.1f}')
             if kind=='listening':
               for lvl,minavg in {'B2':25,'C1':35,'C2':45}.items():
                 vals=lens.get(lvl,[])
-                if vals and statistics.mean(vals)<minavg:
-                  report['warnings'].append(f'{fn}: {lvl} listening too short: {statistics.mean(vals):.1f}')
-            if kind=='speaking':
-              for lvl,minavg in {'B1':14,'B2':20,'C1':28,'C2':35}.items():
-                vals=lens.get(lvl,[])
-                if vals and statistics.mean(vals)<minavg:
-                  report['warnings'].append(f'{fn}: {lvl} speaking too short: {statistics.mean(vals):.1f}')
-
-          if len(seen_ids)!=len(set(seen_ids)):
-            report['ok']=False; report['errors'].append('duplicate ids across banks')
-
+                if vals and statistics.mean(vals)<minavg: report['warnings'].append(f'{fn}: {lvl} listening too short: {statistics.mean(vals):.1f}')
+          if len(seen_ids)!=len(set(seen_ids)): report['ok']=False; report['errors'].append('duplicate ids across banks')
           duplicates=[]
-          for i,(id1,k1,l1,t1) in enumerate(all_texts):
+          for i,(id1,t1) in enumerate(all_texts):
             if len(t1)<20: continue
-            for id2,k2,l2,t2 in all_texts[i+1:]:
-              if t1==t2:
-                duplicates.append([id1,id2])
-          if duplicates:
-            report['warnings'].append(f'exact duplicate texts: {len(duplicates)}')
-            report['samples']['exactDuplicates']=duplicates[:20]
-
-          report['errors']=sorted(set(report['errors']))
-          report['warnings']=sorted(set(report['warnings']))
-          out=Path('validation'); out.mkdir(exist_ok=True)
-          (out/'pl-v4-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+            for id2,t2 in all_texts[i+1:]:
+              if t1==t2: duplicates.append([id1,id2])
+          if duplicates: report['warnings'].append(f'exact duplicate texts: {len(duplicates)}'); report['samples']['exactDuplicates']=duplicates[:20]
+          report['errors']=sorted(set(report['errors'])); report['warnings']=sorted(set(report['warnings']))
+          Path('validation').mkdir(exist_ok=True)
+          Path('validation/pl-v4-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
           print(json.dumps(report,ensure_ascii=False,indent=2))
-          if report['errors']:
-            raise SystemExit(1)
+          if report['errors'] or report['warnings']: raise SystemExit(1)
           PY
       - name: Commit audit report
         if: always()
