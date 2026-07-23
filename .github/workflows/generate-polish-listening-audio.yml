@@ -1,0 +1,33 @@
+name: Generate Polish listening audio
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/pl-listening.json'
+      - 'scripts/generate_polish_audio.py'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Generate Polish MP3 files
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/generate_polish_audio.py
+      - name: Commit Polish audio
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add audio/pl
+          git diff --cached --quiet || git commit -m "Generate Polish listening audio"
+          git push
