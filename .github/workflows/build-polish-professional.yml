@@ -1,18 +1,19 @@
-name: Build Polish professional test
+name: Build Polish v4 branch
 
 on:
   workflow_dispatch:
   push:
+    branches:
+      - polish-v4
     paths:
-      - 'scripts/install_polish_professional.py'
-      - 'scripts/install_polish_professional_safe.py'
+      - 'scripts/build_polish_v4_direct.py'
       - '.github/workflows/build-polish-professional.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: build-polish-professional-main
+  group: build-polish-v4-branch
   cancel-in-progress: false
 
 jobs:
@@ -21,28 +22,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: polish-v4
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build Polish banks
-        run: python scripts/install_polish_professional_safe.py
-      - name: Validate Polish banks
+      - name: Build Polish v4 banks
+        run: python scripts/build_polish_v4_direct.py
+      - name: Validate Polish v4 banks
         run: |
           python - <<'PY'
           import json
           expected={'pl.json':120,'pl-listening.json':40,'pl-speaking.json':28}
           levels={'A1','A2','B1','B2','C1','C2'}
+          all_ids=[]
           for name,count in expected.items():
               data=json.load(open('data/'+name,encoding='utf-8'))
+              qs=data['questions']
               assert data.get('questionCount')==count,(name,data.get('questionCount'))
-              assert len(data['questions'])==count,(name,len(data['questions']))
-              assert set(q['level'] for q in data['questions'])==levels,(name,'missing levels')
-              assert len({q['id'] for q in data['questions']})==count,(name,'duplicate ids')
-              assert data.get('version')=='4.0.0-professional',(name,data.get('version'))
+              assert len(qs)==count,(name,len(qs))
+              assert set(q['level'] for q in qs)==levels,(name,'missing levels')
+              assert len({q['id'] for q in qs})==count,(name,'duplicate ids')
+              assert data.get('version')=='4.0.0-professional-direct',(name,data.get('version'))
+              for q in qs:
+                  assert q.get('prompt') and q.get('skill') and q.get('level')
+                  if q['skill'] in {'grammar','vocabulary','reading','listening'}:
+                      assert len(q.get('options',[]))==4,(name,q['id'],'options')
+                      assert isinstance(q.get('answer'),int) and 0<=q['answer']<4,(name,q['id'],'answer')
+                  if q['skill']=='reading': assert q.get('passage'),(name,q['id'],'passage')
+                  if q['skill']=='listening': assert q.get('transcript'),(name,q['id'],'transcript')
+                  if q['skill']=='speaking': assert q.get('referenceText'),(name,q['id'],'referenceText')
+                  all_ids.append(q['id'])
               print(name,data.get('version'),count,'OK')
+          assert len(all_ids)==len(set(all_ids)),'duplicate ids across banks'
+          print('All Polish v4 structural checks passed')
           PY
-      - name: Commit Polish banks
+      - name: Commit Polish v4 banks
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
@@ -51,6 +66,6 @@ jobs:
             echo "No bank changes to commit"
             exit 0
           fi
-          git commit -m "Build Polish professional test v4"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git commit -m "Build Polish professional test v4 direct"
+          git pull --rebase origin polish-v4
+          git push origin HEAD:polish-v4
