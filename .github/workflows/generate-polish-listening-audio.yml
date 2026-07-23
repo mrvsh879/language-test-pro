@@ -12,11 +12,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: generate-polish-listening-audio-main
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,10 +34,25 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/generate_polish_audio.py
+      - name: Validate Polish audio
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          bank=json.load(open('data/pl-listening.json',encoding='utf-8'))
+          files=list(pathlib.Path('audio/pl').glob('*.mp3'))
+          assert len(files)==bank['questionCount'],(len(files),bank['questionCount'])
+          assert all(p.stat().st_size>1000 for p in files)
+          print('Polish MP3 files OK:',len(files))
+          PY
       - name: Commit Polish banks and audio
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add data/pl.json data/pl-listening.json data/pl-speaking.json audio/pl
-          git diff --cached --quiet || git commit -m "Build Polish test and generate listening audio"
-          git push
+          if git diff --cached --quiet; then
+            echo "No Polish bank or audio changes to commit"
+            exit 0
+          fi
+          git commit -m "Regenerate Polish professional test audio v4"
+          git pull --rebase origin main
+          git push origin HEAD:main
