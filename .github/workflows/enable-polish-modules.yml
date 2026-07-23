@@ -1,0 +1,28 @@
+name: Enable Polish modules
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/enable_polish_modules.py'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enable Polish oral modules
+        run: python scripts/enable_polish_modules.py
+      - name: Commit app integration
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add app.js
+          git diff --cached --quiet || git commit -m "Enable Polish listening and speaking"
+          git push
