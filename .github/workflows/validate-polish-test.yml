@@ -1,0 +1,147 @@
+name: Validate Polish test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/pl.json'
+      - 'data/pl-listening.json'
+      - 'data/pl-speaking.json'
+      - '.github/workflows/validate-polish-test.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Polish banks
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter, defaultdict
+          from pathlib import Path
+
+          specs = {
+              'data/pl.json': {'count': 120, 'kind': 'main'},
+              'data/pl-listening.json': {'count': 40, 'kind': 'listening'},
+              'data/pl-speaking.json': {'count': 28, 'kind': 'speaking'},
+          }
+          expected_levels = {'A1','A2','B1','B2','C1','C2'}
+          report = {'ok': True, 'files': {}, 'errors': [], 'warnings': []}
+
+          all_ids = []
+          for filename, spec in specs.items():
+              try:
+                  data = json.loads(Path(filename).read_text(encoding='utf-8'))
+              except Exception as exc:
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: invalid JSON: {exc}')
+                  continue
+
+              questions = data.get('questions')
+              info = {
+                  'version': data.get('version'),
+                  'declaredCount': data.get('questionCount'),
+                  'actualCount': len(questions) if isinstance(questions, list) else None,
+                  'levels': {},
+                  'skills': {},
+              }
+              report['files'][filename] = info
+
+              if data.get('language') != 'pl':
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: language must be pl')
+              if not isinstance(questions, list):
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: questions must be a list')
+                  continue
+              if data.get('questionCount') != spec['count'] or len(questions) != spec['count']:
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: expected {spec["count"]}, got declared={data.get("questionCount")}, actual={len(questions)}')
+
+              level_counts = Counter(q.get('level') for q in questions)
+              skill_counts = Counter(q.get('skill') for q in questions)
+              info['levels'] = dict(level_counts)
+              info['skills'] = dict(skill_counts)
+              if set(level_counts) != expected_levels:
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: levels are {sorted(level_counts)}, expected A1-C2')
+
+              ids = [q.get('id') for q in questions]
+              all_ids.extend(ids)
+              if None in ids or len(set(ids)) != len(ids):
+                  report['ok'] = False
+                  report['errors'].append(f'{filename}: missing or duplicate ids')
+
+              for i, q in enumerate(questions):
+                  label = q.get('id') or f'index {i}'
+                  for field in ('id','level','skill','prompt'):
+                      if not isinstance(q.get(field), str) or not q.get(field).strip():
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: missing {field}')
+
+                  kind = spec['kind']
+                  if kind in ('main','listening'):
+                      options = q.get('options')
+                      answer = q.get('answer')
+                      if not isinstance(options, list) or len(options) != 4 or not all(isinstance(x, str) and x.strip() for x in options):
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: options must contain 4 non-empty strings')
+                      if not isinstance(answer, int) or not isinstance(options, list) or not (0 <= answer < len(options)):
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: invalid answer index')
+                      if not isinstance(q.get('explanation'), str) or not q.get('explanation').strip():
+                          report['warnings'].append(f'{filename}:{label}: missing explanation')
+
+                  if kind == 'main':
+                      if q.get('skill') == 'reading' and not isinstance(q.get('passage'), str):
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: reading question has no passage')
+                  elif kind == 'listening':
+                      if q.get('skill') != 'listening':
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: skill must be listening')
+                      if not isinstance(q.get('transcript'), str) or not q.get('transcript').strip():
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: missing transcript')
+                      if not isinstance(q.get('maxPlays'), int) or q.get('maxPlays') < 1:
+                          report['warnings'].append(f'{filename}:{label}: invalid maxPlays')
+                  else:
+                      if q.get('skill') != 'speaking':
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: skill must be speaking')
+                      text = q.get('referenceText') or q.get('passage')
+                      if not isinstance(text, str) or not text.strip():
+                          report['ok'] = False
+                          report['errors'].append(f'{filename}:{label}: missing reading text')
+
+          if len(all_ids) != len(set(all_ids)):
+              report['ok'] = False
+              report['errors'].append('Duplicate ids found across Polish banks')
+
+          Path('validation').mkdir(exist_ok=True)
+          Path('validation/pl-validation.json').write_text(
+              json.dumps(report, ensure_ascii=False, indent=2),
+              encoding='utf-8',
+          )
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if not report['ok']:
+              raise SystemExit(1)
+          PY
+      - name: Commit validation report
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add validation/pl-validation.json
+          git diff --cached --quiet || git commit -m "Update Polish validation report"
+          git pull --rebase origin main
+          git push origin HEAD:main
