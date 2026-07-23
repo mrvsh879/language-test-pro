@@ -1,0 +1,81 @@
+name: Build Italian v4 safely
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [italian-v4]
+    paths:
+      - 'scripts/build_italian_v4.py'
+      - '.github/workflows/build-italian-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: italian-v4
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build Italian v4 banks
+        run: python scripts/build_italian_v4.py
+      - name: Validate Italian v4 banks
+        run: |
+          python - <<'PY'
+          import json,re,statistics
+          from collections import Counter,defaultdict
+          from pathlib import Path
+          specs={'it.json':('main',120),'it-listening.json':('listening',40),'it-speaking.json':('speaking',28)}
+          levels={'A1','A2','B1','B2','C1','C2'}
+          all_ids=[]; texts=[]; warnings=[]
+          def words(s): return re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9]+",s or '')
+          for fn,(kind,count) in specs.items():
+              data=json.load(open('data/'+fn,encoding='utf-8')); qs=data['questions']
+              assert data['language']=='it' and data['version']=='4.1.0-professional-direct'
+              assert data['questionCount']==count and len(qs)==count
+              assert {q['level'] for q in qs}==levels
+              assert len({q['id'] for q in qs})==count
+              dist=Counter(); lens=defaultdict(list); generic=0
+              for q in qs:
+                  assert q.get('id') and q.get('prompt') and q.get('skill')
+                  all_ids.append(q['id'])
+                  if kind in {'main','listening'}:
+                      assert len(q.get('options',[]))==4 and isinstance(q.get('answer'),int) and 0<=q['answer']<4
+                      dist[q['answer']]+=1
+                      if len(words(q.get('explanation','')))<7 or q.get('explanation','').startswith('La risposta corretta'): generic+=1
+                  if kind=='main': text=q.get('passage','') if q['skill']=='reading' else q['prompt']
+                  elif kind=='listening': text=q.get('transcript','')
+                  else: text=q.get('passage','') or q.get('referenceText','')
+                  assert text
+                  lens[q['level']].append(len(words(text))); texts.append((q['id'],' '.join(words(text.lower()))))
+              if kind=='main': assert dist==Counter({0:30,1:30,2:30,3:30}),dist
+              if kind=='listening': assert dist==Counter({0:10,1:10,2:10,3:10}),dist
+              assert generic==0,(fn,generic)
+              if kind=='listening':
+                  limits={'B2':25,'C1':40,'C2':45}
+                  for lvl,m in limits.items(): assert statistics.mean(lens[lvl])>=m,(fn,lvl,statistics.mean(lens[lvl]))
+              if kind=='speaking':
+                  limits={'B2':30,'C1':40,'C2':50}
+                  for lvl,m in limits.items(): assert statistics.mean(lens[lvl])>=m,(fn,lvl,statistics.mean(lens[lvl]))
+              print(fn,'OK',dict(dist),{k:round(statistics.mean(v),1) for k,v in lens.items()})
+          assert len(all_ids)==len(set(all_ids))
+          seen={}
+          for qid,text in texts:
+              if len(text)>=20 and text in seen: warnings.append((seen[text],qid))
+              seen[text]=qid
+          assert not warnings,warnings
+          print('Italian v4 audit: 0 errors, 0 warnings')
+          PY
+      - name: Commit Italian v4 banks
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/it.json data/it-listening.json data/it-speaking.json
+          git diff --cached --quiet || git commit -m "Build Italian professional test v4.1"
+          git pull --rebase origin italian-v4
+          git push origin HEAD:italian-v4
