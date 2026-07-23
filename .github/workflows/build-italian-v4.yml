@@ -46,7 +46,7 @@ jobs:
               q['transcript']=q['transcript'].rstrip()+additions[q['id']]
           path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
-      - name: Strengthen Italian C1 speaking
+      - name: Strengthen Italian advanced speaking
         run: |
           python - <<'PY'
           import json
@@ -57,7 +57,11 @@ jobs:
             'it-c1-s-01':' Questa distinzione aiuta anche a riconoscere eventuali omissioni metodologiche.',
             'it-c1-s-02':' In questo modo la conclusione resta precisa senza diventare eccessivamente categorica.',
             'it-c1-s-03':' Solo così la pubblicazione diventa realmente utile per chi deve valutarla.',
-            'it-c1-s-04':' Tale controllo riduce il rischio che l’eccezione diventi una pratica arbitraria.'
+            'it-c1-s-04':' Tale controllo riduce il rischio che l’eccezione diventi una pratica arbitraria.',
+            'it-c2-s-01':' Questa verifica rende più difficile confondere visibilità e responsabilità effettiva.',
+            'it-c2-s-02':' Senza tale analisi, il cambiamento rischia di essere soltanto superficiale.',
+            'it-c2-s-03':' Gli effetti concreti restano quindi il criterio decisivo della valutazione.',
+            'it-c2-s-04':' L’ambiguità iniziale può così trasformarsi in un costo operativo rilevante.'
           }
           for q in data['questions']:
             if q['id'] in additions:
