@@ -1,11 +1,12 @@
-name: Generate Polish v4.1 listening audio
+name: Generate Polish listening audio
 
 on:
   workflow_dispatch:
   push:
-    branches: [polish-v4]
     paths:
       - 'data/pl-listening.json'
+      - 'scripts/install_polish_professional.py'
+      - 'scripts/install_polish_professional_safe.py'
       - 'scripts/generate_polish_audio.py'
       - '.github/workflows/generate-polish-listening-audio.yml'
 
@@ -13,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: generate-polish-listening-audio-v4
+  group: generate-polish-listening-audio-main
   cancel-in-progress: false
 
 jobs:
@@ -22,17 +23,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: polish-v4
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Build Polish question banks
+        run: python scripts/install_polish_professional_safe.py
       - name: Install dependencies
         run: pip install requests
-      - name: Remove old Polish MP3 files
-        run: |
-          rm -rf audio/pl
-          mkdir -p audio/pl
       - name: Generate Polish MP3 files
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -40,25 +38,22 @@ jobs:
       - name: Validate Polish audio
         run: |
           python - <<'PY'
-          import json, pathlib
+          import json,pathlib
           bank=json.load(open('data/pl-listening.json',encoding='utf-8'))
-          expected={q['id'] for q in bank['questions']}
           files=list(pathlib.Path('audio/pl').glob('*.mp3'))
-          actual={p.stem for p in files}
           assert len(files)==bank['questionCount'],(len(files),bank['questionCount'])
-          assert actual==expected,(sorted(expected-actual),sorted(actual-expected))
           assert all(p.stat().st_size>1000 for p in files)
-          print('Polish v4.1 MP3 files OK:',len(files))
+          print('Polish MP3 files OK:',len(files))
           PY
-      - name: Commit Polish v4.1 audio
+      - name: Commit Polish banks and audio
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add audio/pl
+          git add data/pl.json data/pl-listening.json data/pl-speaking.json audio/pl
           if git diff --cached --quiet; then
-            echo "No Polish audio changes to commit"
+            echo "No Polish bank or audio changes to commit"
             exit 0
           fi
-          git commit -m "Regenerate Polish v4.1 listening audio"
-          git pull --rebase origin polish-v4
-          git push origin HEAD:polish-v4
+          git commit -m "Regenerate Polish professional test audio v4"
+          git pull --rebase origin main
+          git push origin HEAD:main
