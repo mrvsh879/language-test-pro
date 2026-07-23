@@ -1,14 +1,10 @@
 {
   "ok": true,
   "errors": [],
-  "warnings": [
-    "exact duplicate texts: 1",
-    "pl-listening.json: C1 listening too short: 27.2",
-    "pl-listening.json: C2 listening too short: 29.8"
-  ],
+  "warnings": [],
   "metrics": {
     "pl.json": {
-      "version": "4.0.0-professional-direct",
+      "version": "4.1.0-professional-direct",
       "count": 120,
       "declared": 120,
       "levels": {
@@ -25,9 +21,10 @@
         "reading": 36
       },
       "answerDistribution": {
-        "1": 75,
-        "2": 10,
-        "0": 35
+        "0": 30,
+        "1": 30,
+        "2": 30,
+        "3": 30
       },
       "genericExplanations": 2,
       "avgWordsByLevel": {
@@ -37,18 +34,10 @@
         "B2": 15.9,
         "C1": 15.8,
         "C2": 17.9
-      },
-      "minWordsByLevel": {
-        "A1": 2,
-        "A2": 2,
-        "B1": 3,
-        "B2": 2,
-        "C1": 3,
-        "C2": 3
       }
     },
     "pl-listening.json": {
-      "version": "4.0.0-professional-direct",
+      "version": "4.1.0-professional-direct",
       "count": 40,
       "declared": 40,
       "levels": {
@@ -63,30 +52,23 @@
         "listening": 40
       },
       "answerDistribution": {
-        "1": 30,
-        "2": 7,
-        "0": 3
+        "1": 10,
+        "0": 10,
+        "3": 10,
+        "2": 10
       },
-      "genericExplanations": 24,
+      "genericExplanations": 0,
       "avgWordsByLevel": {
         "A1": 6.7,
         "A2": 10.2,
         "B1": 20.2,
         "B2": 25,
-        "C1": 27.2,
-        "C2": 29.8
-      },
-      "minWordsByLevel": {
-        "A1": 5,
-        "A2": 8,
-        "B1": 19,
-        "B2": 20,
-        "C1": 22,
-        "C2": 27
+        "C1": 42.8,
+        "C2": 48.8
       }
     },
     "pl-speaking.json": {
-      "version": "4.0.0-professional-direct",
+      "version": "4.1.0-professional-direct",
       "count": 28,
       "declared": 28,
       "levels": {
@@ -103,29 +85,14 @@
       "answerDistribution": {},
       "genericExplanations": 0,
       "avgWordsByLevel": {
-        "A1": 7,
+        "A1": 7.8,
         "A2": 8.3,
         "B1": 23,
         "B2": 28.5,
         "C1": 31.8,
         "C2": 35.5
-      },
-      "minWordsByLevel": {
-        "A1": 6,
-        "A2": 6,
-        "B1": 20,
-        "B2": 26,
-        "C1": 28,
-        "C2": 33
       }
     }
   },
-  "samples": {
-    "exactDuplicates": [
-      [
-        "pl-a1-l-05",
-        "pl-a1-s-05"
-      ]
-    ]
-  }
+  "samples": {}
 }
