@@ -2,7 +2,7 @@
   "ok": true,
   "files": {
     "data/pl.json": {
-      "version": "3.0.0-professional",
+      "version": "4.1.0-professional-direct",
       "declaredCount": 120,
       "actualCount": 120,
       "levels": {
@@ -20,7 +20,7 @@
       }
     },
     "data/pl-listening.json": {
-      "version": "3.0.0-professional",
+      "version": "4.1.0-professional-direct",
       "declaredCount": 40,
       "actualCount": 40,
       "levels": {
@@ -36,7 +36,7 @@
       }
     },
     "data/pl-speaking.json": {
-      "version": "3.0.0-professional",
+      "version": "4.1.0-professional-direct",
       "declaredCount": 28,
       "actualCount": 28,
       "levels": {
