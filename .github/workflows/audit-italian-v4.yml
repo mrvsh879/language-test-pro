@@ -1,0 +1,95 @@
+name: Audit Italian v4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [italian-v4]
+    paths:
+      - 'data/it.json'
+      - 'data/it-listening.json'
+      - 'data/it-speaking.json'
+      - '.github/workflows/audit-italian-v4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Italian audit
+        run: |
+          python - <<'PY'
+          import json,re,statistics
+          from pathlib import Path
+          from collections import Counter,defaultdict
+
+          specs={'it.json':('main',120),'it-listening.json':('listening',40),'it-speaking.json':('speaking',28)}
+          levels={'A1','A2','B1','B2','C1','C2'}
+          report={'ok':True,'errors':[],'warnings':[],'metrics':{},'samples':{}}
+          texts=[]; all_ids=[]
+          def words(s): return re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ0-9]+",s or '')
+          def norm(s): return ' '.join(words((s or '').lower()))
+
+          for fn,(kind,count) in specs.items():
+            data=json.loads(Path('data',fn).read_text(encoding='utf-8')); qs=data.get('questions',[])
+            metric={'version':data.get('version'),'count':len(qs),'declared':data.get('questionCount'),'levels':dict(Counter(q.get('level') for q in qs)),'skills':dict(Counter(q.get('skill') for q in qs))}
+            report['metrics'][fn]=metric
+            if len(qs)!=count or data.get('questionCount')!=count: report['errors'].append(f'{fn}: invalid count')
+            if set(metric['levels'])!=levels: report['errors'].append(f'{fn}: incomplete CEFR levels')
+            ids=[q.get('id') for q in qs]; all_ids+=ids
+            if len(ids)!=len(set(ids)) or None in ids: report['errors'].append(f'{fn}: duplicate or missing ids')
+            dist=Counter(); lens=defaultdict(list); generic=0
+            for q in qs:
+              qid=q.get('id','?'); lvl=q.get('level')
+              if kind in {'main','listening'}:
+                opts=q.get('options'); ans=q.get('answer')
+                if not isinstance(opts,list) or len(opts)!=4 or not isinstance(ans,int) or not 0<=ans<4: report['errors'].append(f'{qid}: invalid options or answer')
+                else: dist[ans]+=1
+                exp=q.get('explanation','')
+                if exp.startswith('La risposta corretta') or len(words(exp))<7: generic+=1
+              if kind=='main': txt=q.get('passage') if q.get('skill')=='reading' else q.get('prompt')
+              elif kind=='listening': txt=q.get('transcript')
+              else: txt=q.get('passage') or q.get('referenceText')
+              if not txt: report['errors'].append(f'{qid}: missing text')
+              lens[lvl].append(len(words(txt))); texts.append((qid,kind,lvl,norm(txt)))
+            metric['answerDistribution']=dict(dist)
+            metric['genericExplanations']=generic
+            metric['avgWordsByLevel']={k:round(statistics.mean(v),1) for k,v in lens.items() if v}
+            if kind=='listening':
+              for lvl,minavg in {'B2':25,'C1':35,'C2':45}.items():
+                vals=lens.get(lvl,[])
+                if vals and statistics.mean(vals)<minavg: report['warnings'].append(f'{fn}: {lvl} listening too short: {statistics.mean(vals):.1f}')
+            if kind=='speaking':
+              for lvl,minavg in {'B1':18,'B2':24,'C1':30,'C2':38}.items():
+                vals=lens.get(lvl,[])
+                if vals and statistics.mean(vals)<minavg: report['warnings'].append(f'{fn}: {lvl} speaking too short: {statistics.mean(vals):.1f}')
+
+          if len(all_ids)!=len(set(all_ids)): report['errors'].append('duplicate ids across Italian banks')
+          dups=[]
+          for i,(id1,k1,l1,t1) in enumerate(texts):
+            if len(t1)<20: continue
+            for id2,k2,l2,t2 in texts[i+1:]:
+              if t1==t2: dups.append([id1,id2])
+          if dups: report['warnings'].append(f'exact duplicate texts: {len(dups)}'); report['samples']['exactDuplicates']=dups[:20]
+          report['errors']=sorted(set(report['errors'])); report['warnings']=sorted(set(report['warnings'])); report['ok']=not report['errors']
+          Path('validation').mkdir(exist_ok=True)
+          Path('validation/it-v4-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          if report['errors']: raise SystemExit(1)
+          PY
+      - name: Commit Italian audit report
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add validation/it-v4-audit.json
+          git diff --cached --quiet || git commit -m "Update Italian v4 audit report"
+          git pull --rebase origin italian-v4
+          git push origin HEAD:italian-v4
