@@ -1,6 +1,6 @@
 {
   "language": "pl",
-  "version": "4.0.0-professional-direct",
+  "version": "4.1.0-professional-direct",
   "questionCount": 28,
   "questions": [
     {
@@ -36,7 +36,7 @@
       "level": "A1",
       "skill": "speaking",
       "prompt": "Przeczytaj tekst na głos.",
-      "referenceText": "Jutro pracuję od dziewiątej do siedemnastej."
+      "referenceText": "W przyszłym tygodniu zaczynam pracę o ósmej i kończę o szesnastej."
     },
     {
       "id": "pl-a1-s-06",

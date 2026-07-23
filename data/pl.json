@@ -1,6 +1,6 @@
 {
   "language": "pl",
-  "version": "4.0.0-professional-direct",
+  "version": "4.1.0-professional-direct",
   "questionCount": 120,
   "questions": [
     {
@@ -9,12 +9,12 @@
       "skill": "grammar",
       "prompt": "Anna ___ w Warszawie.",
       "options": [
-        "mieszkam",
         "mieszka",
+        "mieszkam",
         "mieszkasz",
         "mieszkają"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Poprawna forma to „mieszka”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -24,11 +24,11 @@
       "prompt": "My ___ kawę rano.",
       "options": [
         "piję",
-        "pijesz",
         "pijemy",
+        "pijesz",
         "piją"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Poprawna forma to „pijemy”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -37,12 +37,12 @@
       "skill": "grammar",
       "prompt": "To jest ___ książka.",
       "options": [
-        "moja",
         "mój",
         "moje",
+        "moja",
         "mnie"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Poprawna forma to „moja”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -51,12 +51,12 @@
       "skill": "grammar",
       "prompt": "Nie ___ samochodu.",
       "options": [
-        "mam",
         "ma",
         "mieć",
-        "mamy"
+        "mamy",
+        "mam"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Poprawna forma to „mam”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -94,11 +94,11 @@
       "prompt": "___ masz na imię?",
       "options": [
         "Co",
-        "Jak",
         "Gdzie",
+        "Jak",
         "Kiedy"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Poprawna forma to „Jak”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -107,12 +107,12 @@
       "skill": "vocabulary",
       "prompt": "Dzień po poniedziałku to ___.",
       "options": [
-        "wtorek",
         "środa",
         "piątek",
-        "niedziela"
+        "niedziela",
+        "wtorek"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "„wtorek” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -149,12 +149,12 @@
       "skill": "vocabulary",
       "prompt": "Przeciwieństwo słowa „duży” to ___.",
       "options": [
-        "mały",
         "wysoki",
         "długi",
+        "mały",
         "szybki"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "„mały” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -163,12 +163,12 @@
       "skill": "vocabulary",
       "prompt": "Do pisania używamy ___.",
       "options": [
-        "długopisu",
         "talerza",
         "klucza",
-        "ręcznika"
+        "ręcznika",
+        "długopisu"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "„długopisu” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -191,12 +191,12 @@
       "skill": "vocabulary",
       "prompt": "Autobus zatrzymuje się na ___.",
       "options": [
-        "przystanku",
         "lotnisku",
+        "przystanku",
         "peronie",
         "recepcji"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "„przystanku” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -206,11 +206,11 @@
       "prompt": "O której sklep otwiera się w sobotę?",
       "options": [
         "O 8:00",
-        "O 9:00",
         "O 15:00",
+        "O 9:00",
         "O 20:00"
       ],
-      "answer": 1,
+      "answer": 2,
       "passage": "Sklep jest otwarty od poniedziałku do piątku od 8:00 do 20:00. W sobotę od 9:00 do 15:00.",
       "explanation": "Informacja prowadząca do odpowiedzi „O 9:00” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -222,10 +222,10 @@
       "options": [
         "Z drugiego",
         "Z trzeciego",
-        "Z czwartego",
-        "Z piątego"
+        "Z piątego",
+        "Z czwartego"
       ],
-      "answer": 2,
+      "answer": 3,
       "passage": "Pociąg do Krakowa odjeżdża o 14:30 z peronu czwartego.",
       "explanation": "Informacja prowadząca do odpowiedzi „Z czwartego” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -235,12 +235,12 @@
       "skill": "reading",
       "prompt": "Gdzie pracuje Ewa?",
       "options": [
-        "W szkole",
         "W hotelu",
+        "W szkole",
         "W sklepie",
         "W banku"
       ],
-      "answer": 1,
+      "answer": 0,
       "passage": "Mam na imię Ewa. Mieszkam w Gdańsku i pracuję w hotelu.",
       "explanation": "Informacja prowadząca do odpowiedzi „W hotelu” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -266,11 +266,11 @@
       "prompt": "Kiedy zaczyna się spotkanie?",
       "options": [
         "O 9:00",
-        "O 10:00",
         "O 12:00",
+        "O 10:00",
         "O 20:00"
       ],
-      "answer": 1,
+      "answer": 2,
       "passage": "Spotkanie jest w sali numer 12 o godzinie dziesiątej.",
       "explanation": "Informacja prowadząca do odpowiedzi „O 10:00” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -281,11 +281,11 @@
       "prompt": "Kiedy kawiarnia będzie otwarta?",
       "options": [
         "Dziś wieczorem",
-        "Jutro od 7:00",
         "Jutro od 12:00",
-        "W niedzielę"
+        "W niedzielę",
+        "Jutro od 7:00"
       ],
-      "answer": 1,
+      "answer": 3,
       "passage": "Kawiarnia jest dziś zamknięta. Zapraszamy jutro od siódmej rano.",
       "explanation": "Informacja prowadząca do odpowiedzi „Jutro od 7:00” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -323,12 +323,12 @@
       "skill": "grammar",
       "prompt": "Muszę ___ wcześniej.",
       "options": [
-        "wyjść",
         "wychodzę",
         "wyszedłem",
+        "wyjść",
         "wyjdę"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Poprawna forma to „wyjść”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -337,12 +337,12 @@
       "skill": "grammar",
       "prompt": "Czy możesz mi ___?",
       "options": [
-        "pomóc",
         "pomagasz",
         "pomógł",
-        "pomagać mi"
+        "pomagać mi",
+        "pomóc"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Poprawna forma to „pomóc”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -379,12 +379,12 @@
       "skill": "grammar",
       "prompt": "Nie wiem, ___ on przyjdzie.",
       "options": [
-        "czy",
         "że",
         "bo",
+        "czy",
         "ale"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Poprawna forma to „czy”. Pasuje do osoby, liczby, czasu lub przypadku wymaganego przez całe zdanie; pozostałe formy naruszają tę zgodność."
     },
     {
@@ -393,12 +393,12 @@
       "skill": "vocabulary",
       "prompt": "Proszę ___ formularz do piątku.",
       "options": [
-        "wypełnić",
         "pożyczyć",
         "zamknąć",
-        "spotkać"
+        "spotkać",
+        "wypełnić"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "„wypełnić” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -421,12 +421,12 @@
       "skill": "vocabulary",
       "prompt": "Pracownik otrzymuje co miesiąc ___.",
       "options": [
-        "wynagrodzenie",
         "rachunek",
+        "wynagrodzenie",
         "bilet",
         "paragon"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "„wynagrodzenie” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -436,11 +436,11 @@
       "prompt": "Spotkanie zostało przeniesione, czyli ___.",
       "options": [
         "odbyło się wcześniej",
-        "zmieniono jego termin",
         "zostało skrócone",
+        "zmieniono jego termin",
         "nie ma uczestników"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "„zmieniono jego termin” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -451,10 +451,10 @@
       "options": [
         "urlop",
         "wakacja",
-        "wakat",
-        "zmiana"
+        "zmiana",
+        "wakat"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "„wakat” najlepiej odpowiada znaczeniu zdania. Pozostałe wyrazy należą do innego kontekstu albo zmieniają sens wypowiedzi."
     },
     {
@@ -507,11 +507,11 @@
       "prompt": "Co powinien zrobić klient?",
       "options": [
         "Czekać dziś w domu",
-        "Odebrać przesyłkę jutro",
         "Anulować zamówienie",
-        "Zadzwonić wieczorem"
+        "Zadzwonić wieczorem",
+        "Odebrać przesyłkę jutro"
       ],
-      "answer": 1,
+      "answer": 3,
       "passage": "Przesyłka nie została doręczona. Można ją odebrać jutro po godzinie dziewiątej na poczcie.",
       "explanation": "Informacja prowadząca do odpowiedzi „Odebrać przesyłkę jutro” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -521,12 +521,12 @@
       "skill": "reading",
       "prompt": "Kiedy należy dostarczyć dokumenty?",
       "options": [
-        "W piątek wieczorem",
         "Najpóźniej w czwartek",
+        "W piątek wieczorem",
         "W sobotę",
         "W poniedziałek"
       ],
-      "answer": 1,
+      "answer": 0,
       "passage": "W piątek biuro pracuje tylko do 13:00. Dokumenty prosimy dostarczyć najpóźniej w czwartek.",
       "explanation": "Informacja prowadząca do odpowiedzi „Najpóźniej w czwartek” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -568,10 +568,10 @@
       "options": [
         "Do 9:30",
         "Do 10:00",
-        "Do 10:30",
-        "Do 11:00"
+        "Do 11:00",
+        "Do 10:30"
       ],
-      "answer": 2,
+      "answer": 3,
       "passage": "Hotel oferuje śniadanie od 7:00 do 10:00, a w weekend do 10:30.",
       "explanation": "Informacja prowadząca do odpowiedzi „Do 10:30” znajduje się bezpośrednio w tekście. Inne warianty mylą godzinę, miejsce, termin lub czynność."
     },
@@ -581,12 +581,12 @@
       "skill": "grammar",
       "prompt": "Gdybym wcześniej znał termin, ___ urlop inaczej.",
       "options": [
-        "planuję",
         "zaplanowałbym",
+        "planuję",
         "zaplanowałem",
         "będę planować"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Tryb warunkowy wymaga formy „zaplanowałbym”, ponieważ mowa o hipotetycznej zmianie przeszłej decyzji."
     },
     {
@@ -596,11 +596,11 @@
       "prompt": "To jest klient, z ___ rozmawialiśmy wczoraj.",
       "options": [
         "który",
-        "którego",
         "którym",
+        "którego",
         "któremu"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Przyimek „z” łączy się z narzędnikiem, dlatego poprawna forma to „z którym”."
     },
     {
@@ -610,11 +610,11 @@
       "prompt": "Kiedy dotarliśmy na miejsce, prezentacja już ___.",
       "options": [
         "zaczyna się",
-        "zaczęła się",
         "zacznie się",
+        "zaczęła się",
         "zaczynałaby się"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Czynność zakończyła się przed innym wydarzeniem w przeszłości, więc potrzebny jest czas przeszły: „zaczęła się”."
     },
     {
@@ -624,11 +624,11 @@
       "prompt": "Kierownik poprosił, żebyśmy ___ raport do piątku.",
       "options": [
         "kończymy",
-        "skończyli",
         "skończymy",
-        "kończyć"
+        "kończyć",
+        "skończyli"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Po „poprosił, żebyśmy” używamy formy czasu przeszłego w funkcji życzeniowo-rozkazującej: „skończyli”."
     },
     {
@@ -665,12 +665,12 @@
       "skill": "grammar",
       "prompt": "Dokument, ___ dziś wysłałeś, wymaga jeszcze podpisu.",
       "options": [
-        "który",
         "którego",
         "któremu",
+        "który",
         "którym"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Zaimek jest dopełnieniem bliższym nieżywotnym w bierniku, który ma formę „który”."
     },
     {
@@ -680,11 +680,11 @@
       "prompt": "„Dotrzymać terminu” oznacza ___.",
       "options": [
         "zmienić datę bez uprzedzenia",
-        "wykonać zadanie na czas",
         "odłożyć pracę",
-        "ustalić nowy budżet"
+        "ustalić nowy budżet",
+        "wykonać zadanie na czas"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Wyrażenie oznacza zakończenie pracy w ustalonym czasie, a nie zmianę lub przesunięcie terminu."
     },
     {
@@ -722,11 +722,11 @@
       "prompt": "Projekt jest „opóźniony”, czyli ___.",
       "options": [
         "realizowany szybciej",
-        "nie przebiega zgodnie z harmonogramem",
         "został rozszerzony",
+        "nie przebiega zgodnie z harmonogramem",
         "nie ma kosztów"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Opóźnienie oznacza, że realizacja pozostaje w tyle wobec planowanego harmonogramu."
     },
     {
@@ -736,11 +736,11 @@
       "prompt": "„Przejąć obowiązki” znaczy ___.",
       "options": [
         "zrezygnować z pracy",
-        "zacząć wykonywać zadania innej osoby",
         "zmienić umowę",
-        "zgłosić urlop"
+        "zgłosić urlop",
+        "zacząć wykonywać zadania innej osoby"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Zwrot oznacza rozpoczęcie wykonywania zadań należących wcześniej do kogoś innego."
     },
     {
@@ -749,12 +749,12 @@
       "skill": "vocabulary",
       "prompt": "Informacja „poufna” powinna być ___.",
       "options": [
-        "publicznie udostępniona",
         "chroniona przed osobami nieuprawnionymi",
+        "publicznie udostępniona",
         "wydrukowana w wielu kopiach",
         "wysłana bez szyfrowania"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "„Poufna” oznacza przeznaczoną wyłącznie dla uprawnionych odbiorców."
     },
     {
@@ -778,11 +778,11 @@
       "prompt": "Dlaczego firma nie wdroży systemu od razu?",
       "options": [
         "Brakuje pracowników",
-        "Najpierw chce sprawdzić go w jednym dziale",
         "System jest nielegalny",
+        "Najpierw chce sprawdzić go w jednym dziale",
         "Klienci odmówili testów"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Tekst mówi o pilotażu, którego celem jest wykrycie problemów przed wdrożeniem w całej firmie.",
       "passage": "Nowy system obsługi klienta zostanie najpierw uruchomiony w dziale sprzedaży. Po sześciu tygodniach firma oceni liczbę błędów i opinie pracowników. Dopiero wtedy zapadnie decyzja o wdrożeniu go w pozostałych działach."
     },
@@ -793,11 +793,11 @@
       "prompt": "Co powinien zrobić pracownik, który nie może uczestniczyć w szkoleniu?",
       "options": [
         "Nic, szkolenie nie jest potrzebne",
-        "Zapisać się na drugi termin",
         "Przyjść bez rejestracji",
-        "Wysłać zastępcę bez zgody"
+        "Wysłać zastępcę bez zgody",
+        "Zapisać się na drugi termin"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "W wiadomości podano alternatywny termin dla osób, które nie mogą uczestniczyć w pierwszym spotkaniu.",
       "passage": "Szkolenie z bezpieczeństwa odbędzie się 12 maja. Osoby, które tego dnia pracują poza biurem, powinny zapisać się na dodatkowy termin 19 maja. Obecność na jednym ze spotkań jest obowiązkowa."
     },
@@ -807,12 +807,12 @@
       "skill": "reading",
       "prompt": "Jaki jest główny problem autora wiadomości?",
       "options": [
-        "Nie zna ceny usługi",
         "Otrzymał produkt późno i w złym stanie",
+        "Nie zna ceny usługi",
         "Chce zmienić adres",
         "Nie potrafi złożyć zamówienia"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Autor wskazuje dwa powiązane problemy: opóźnioną dostawę i uszkodzenie przesyłki.",
       "passage": "Zamówienie miało dotrzeć w poniedziałek, ale kurier dostarczył je dopiero w czwartek. Po otwarciu paczki zauważyłem pękniętą obudowę urządzenia. Proszę o informację, czy możliwa jest wymiana bez dodatkowych kosztów."
     },
@@ -838,11 +838,11 @@
       "prompt": "Dlaczego termin projektu może się zmienić?",
       "options": [
         "Zespół zakończył pracę wcześniej",
-        "Dostawca nie potwierdził daty dostawy",
         "Budżet został zwiększony",
+        "Dostawca nie potwierdził daty dostawy",
         "Klient zrezygnował"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Niepewność dotyczy dostawy sprzętu, od której zależy rozpoczęcie kolejnego etapu.",
       "passage": "Pierwszy etap projektu zakończyliśmy zgodnie z planem. Nadal jednak czekamy na potwierdzenie terminu dostawy sprzętu. Jeżeli dostawca nie wyśle go do końca tygodnia, rozpoczęcie testów trzeba będzie przesunąć."
     },
@@ -853,11 +853,11 @@
       "prompt": "Jaką decyzję podjęto po ankiecie?",
       "options": [
         "Zlikwidowano pracę zdalną",
-        "Wprowadzono dwa dni pracy zdalnej tygodniowo",
         "Zamknięto biuro",
-        "Skrócono tydzień pracy"
+        "Skrócono tydzień pracy",
+        "Wprowadzono dwa dni pracy zdalnej tygodniowo"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Decyzja jest kompromisem między oczekiwaniami pracowników a potrzebą spotkań zespołowych.",
       "passage": "Większość pracowników chciała pracować z domu trzy dni w tygodniu, natomiast kierownicy wskazywali na trudności ze współpracą. Firma zdecydowała więc, że od czerwca praca zdalna będzie możliwa przez dwa dni w tygodniu."
     },
@@ -867,12 +867,12 @@
       "skill": "grammar",
       "prompt": "Gdyby dane zostały opublikowane wcześniej, zespół ___ uniknąć części błędów.",
       "options": [
-        "mógł",
         "mógłby",
+        "mógł",
         "może",
         "miał"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Zdanie opisuje niezrealizowany warunek z przeszłości; poprawna jest forma przypuszczająca „mógłby”."
     },
     {
@@ -896,11 +896,11 @@
       "prompt": "Raport został przygotowany tak, aby wszystkie założenia ___ możliwe do zweryfikowania.",
       "options": [
         "są",
-        "były",
         "będą",
+        "były",
         "być"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Po „tak, aby” w odniesieniu do celu stosujemy formę „były”."
     },
     {
@@ -909,12 +909,12 @@
       "skill": "grammar",
       "prompt": "Choć propozycja wydawała się rozsądna, nie zdecydowano się jej ___.",
       "options": [
-        "wdrożyć",
         "wdrażano",
         "wdrożono",
-        "wdrażając"
+        "wdrażając",
+        "wdrożyć"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Po konstrukcji „zdecydować się” używamy bezokolicznika: „wdrożyć”."
     },
     {
@@ -923,12 +923,12 @@
       "skill": "grammar",
       "prompt": "Im bardziej szczegółowe są przepisy, tym trudniej ___ je do nietypowych sytuacji.",
       "options": [
-        "stosują",
         "zastosować",
+        "stosują",
         "zastosowali",
         "stosując"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Po bezosobowym „trudniej” potrzebny jest bezokolicznik „zastosować”."
     },
     {
@@ -937,12 +937,12 @@
       "skill": "grammar",
       "prompt": "Zespół przedstawił kilka wariantów, z których żaden nie ___ wszystkich warunków.",
       "options": [
-        "spełniał",
         "spełniłby był",
+        "spełniał",
         "spełniając",
         "spełniony"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Zdanie wymaga osobowej formy czasu przeszłego: „żaden nie spełniał”."
     },
     {
@@ -952,11 +952,11 @@
       "prompt": "O ile nie pojawią się nowe dane, decyzja ___ bez zmian.",
       "options": [
         "pozostawała",
-        "pozostanie",
         "pozostałaby",
+        "pozostanie",
         "zostając"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "„O ile” wprowadza realny warunek przyszły, dlatego w zdaniu głównym używamy czasu przyszłego."
     },
     {
@@ -966,11 +966,11 @@
       "prompt": "„Uzasadnić decyzję” oznacza ___.",
       "options": [
         "powtórzyć ją głośniej",
-        "przedstawić argumenty, na których się opiera",
         "odłożyć ją bez terminu",
-        "ukryć jej skutki"
+        "ukryć jej skutki",
+        "przedstawić argumenty, na których się opiera"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Uzasadnienie polega na wskazaniu przesłanek i argumentów prowadzących do decyzji."
     },
     {
@@ -993,12 +993,12 @@
       "skill": "vocabulary",
       "prompt": "Jeżeli wynik jest „miarodajny”, to ___.",
       "options": [
-        "pozwala na wiarygodną ocenę",
         "jest zawsze korzystny",
+        "pozwala na wiarygodną ocenę",
         "nie wymaga interpretacji",
         "dotyczy jednej osoby"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Miarodajny wynik dostarcza wiarygodnej podstawy do oceny badanego zjawiska."
     },
     {
@@ -1008,11 +1008,11 @@
       "prompt": "„Zastrzeżenie” wobec projektu to ___.",
       "options": [
         "bezwarunkowa zgoda",
-        "wątpliwość lub ograniczenie wymagające wyjaśnienia",
         "gotowa instrukcja",
+        "wątpliwość lub ograniczenie wymagające wyjaśnienia",
         "dodatkowy budżet"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Zastrzeżenie wskazuje problem, warunek lub wątpliwość, która wymaga odniesienia."
     },
     {
@@ -1022,11 +1022,11 @@
       "prompt": "„Niejednoznaczny komunikat” ___.",
       "options": [
         "ma tylko jedną możliwą interpretację",
-        "może być rozumiany na kilka sposobów",
         "zawiera wyłącznie liczby",
-        "jest zawsze nieprawdziwy"
+        "jest zawsze nieprawdziwy",
+        "może być rozumiany na kilka sposobów"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Niejednoznaczność oznacza możliwość więcej niż jednej interpretacji."
     },
     {
@@ -1035,12 +1035,12 @@
       "skill": "vocabulary",
       "prompt": "„Ograniczyć ryzyko” to ___.",
       "options": [
-        "usunąć wszelką niepewność",
         "zmniejszyć prawdopodobieństwo lub skutki problemu",
+        "usunąć wszelką niepewność",
         "zwiększyć liczbę decyzji",
         "przenieść odpowiedzialność bez analizy"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Ograniczenie ryzyka nie musi go całkowicie eliminować; zmniejsza jego prawdopodobieństwo lub konsekwencje."
     },
     {
@@ -1079,11 +1079,11 @@
       "prompt": "Dlaczego wzrost sprzedaży może być mylący?",
       "options": [
         "Dane obejmują zbyt wiele lat",
-        "Wynika głównie z jednorazowego zamówienia",
         "Firma obniżyła zatrudnienie",
-        "Nie uwzględniono kosztów energii"
+        "Nie uwzględniono kosztów energii",
+        "Wynika głównie z jednorazowego zamówienia"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Jednorazowe zamówienie poprawia wynik okresu, ale nie musi świadczyć o trwałym wzroście popytu.",
       "passage": "Sprzedaż w ostatnim kwartale wzrosła o 18 procent. Ponad połowę tej poprawy wygenerowało jednak jednorazowe zamówienie od nowego klienta. Bez niego wzrost byłby niewielki, dlatego zarząd nie chce jeszcze zwiększać stałych kosztów."
     },
@@ -1093,12 +1093,12 @@
       "skill": "reading",
       "prompt": "Jaki jest główny argument przeciwko jednej procedurze?",
       "options": [
-        "Jest zbyt krótka",
         "Nie uwzględnia istotnych różnic między przypadkami",
+        "Jest zbyt krótka",
         "Nie zawiera danych finansowych",
         "Wymaga zbyt mało dokumentów"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Autor wskazuje, że jednolita procedura poprawia spójność, lecz może prowadzić do niedopasowanych decyzji w sytuacjach nietypowych.",
       "passage": "Wspólna procedura ułatwia kontrolę i ogranicza rozbieżności między działami. Problem pojawia się wtedy, gdy sprawy podobne na pierwszy rzut oka różnią się pod względem ryzyka, historii klienta lub skutków decyzji. Zbyt sztywne stosowanie reguł może wówczas prowadzić do niesprawiedliwych rezultatów."
     },
@@ -1124,11 +1124,11 @@
       "prompt": "Dlaczego pilotaż nie daje jeszcze pełnej odpowiedzi?",
       "options": [
         "Nie zebrano żadnych danych",
-        "Objął grupę, która może różnić się od pozostałych użytkowników",
         "Trwał zbyt długo",
+        "Objął grupę, która może różnić się od pozostałych użytkowników",
         "Nie zastosowano żadnego systemu"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Wynik może być prawdziwy dla badanej grupy, ale nie musi automatycznie przenosić się na inne środowiska.",
       "passage": "Pilotaż nowej aplikacji zakończył się spadkiem liczby błędów. Test przeprowadzono jednak wyłącznie w dziale, którego pracownicy wcześniej korzystali z podobnych narzędzi. Przed wdrożeniem w całej organizacji warto sprawdzić, czy taki sam efekt pojawi się w zespołach o mniejszym doświadczeniu technicznym."
     },
@@ -1140,10 +1140,10 @@
       "options": [
         "Pełną rezygnację z pracy zdalnej",
         "Dowolną liczbę dni pracy zdalnej",
-        "Elastyczność połączoną z ustalonymi dniami współpracy zespołowej",
-        "Stałą pracę wyłącznie z biura"
+        "Stałą pracę wyłącznie z biura",
+        "Elastyczność połączoną z ustalonymi dniami współpracy zespołowej"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "Propozycja łączy indywidualną elastyczność z obowiązkową obecnością w dniach wymagających współpracy.",
       "passage": "Pracownicy wysoko oceniają możliwość skupienia się w domu, ale wskazują też na słabszy przepływ informacji. Zamiast ustalać identyczny grafik dla wszystkich, firma może pozostawić zespołom dwa elastyczne dni pracy zdalnej i jednocześnie wyznaczyć wspólne dni przeznaczone na spotkania i wymianę wiedzy."
     },
@@ -1153,12 +1153,12 @@
       "skill": "grammar",
       "prompt": "Nie tyle zakwestionowano sam cel reformy, ___ sposób, w jaki próbowano go osiągnąć.",
       "options": [
-        "jak",
         "ile",
+        "jak",
         "lecz",
         "więc"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Konstrukcja korelacyjna ma postać „nie tyle…, ile…”."
     },
     {
@@ -1181,12 +1181,12 @@
       "skill": "grammar",
       "prompt": "Jakkolwiek przekonująco ___ argument, nie rozstrzyga on wszystkich wątpliwości.",
       "options": [
-        "brzmi",
         "brzmiałby",
         "brzmieć",
+        "brzmi",
         "zabrzmiał"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "„Jakkolwiek” wprowadza ustępstwo odnoszące się do aktualnej cechy argumentu, dlatego właściwy jest czas teraźniejszy."
     },
     {
@@ -1196,11 +1196,11 @@
       "prompt": "Gdyby nie pominięto danych z ostatniego kwartału, wniosek mógłby ___ inaczej.",
       "options": [
         "sformułować",
-        "zostać sformułowany",
         "sformułowany",
-        "formułując"
+        "formułując",
+        "zostać sformułowany"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Potrzebna jest strona bierna po czasowniku modalnym: „mógłby zostać sformułowany”."
     },
     {
@@ -1237,12 +1237,12 @@
       "skill": "grammar",
       "prompt": "Decyzję podjęto, zanim wszystkie alternatywy zdążono dokładnie ___.",
       "options": [
-        "przeanalizować",
         "przeanalizowano",
         "analizując",
+        "przeanalizować",
         "przeanalizowane"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Po „zdążono” używamy bezokolicznika: „przeanalizować”."
     },
     {
@@ -1252,11 +1252,11 @@
       "prompt": "„Przesłanka” argumentu to ___.",
       "options": [
         "wniosek końcowy",
-        "twierdzenie, na którym opiera się rozumowanie",
         "styl wypowiedzi",
-        "przykład bez związku"
+        "przykład bez związku",
+        "twierdzenie, na którym opiera się rozumowanie"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Przesłanka stanowi podstawę, z której wyprowadza się dalszy wniosek."
     },
     {
@@ -1294,11 +1294,11 @@
       "prompt": "Jeżeli argument „pomija kontekst”, to ___.",
       "options": [
         "uwzględnia wszystkie okoliczności",
-        "ignoruje informacje istotne dla interpretacji",
         "jest napisany krótko",
+        "ignoruje informacje istotne dla interpretacji",
         "zawiera za dużo przykładów"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Pominięcie kontekstu oznacza nieuwzględnienie warunków zmieniających sens lub wagę danych."
     },
     {
@@ -1308,11 +1308,11 @@
       "prompt": "„Rozbieżność” między wynikami to ___.",
       "options": [
         "pełna zgodność",
-        "istotna różnica",
         "brak pomiaru",
-        "błąd językowy"
+        "błąd językowy",
+        "istotna różnica"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Rozbieżność oznacza różnicę lub niespójność między danymi, ocenami albo rezultatami."
     },
     {
@@ -1321,12 +1321,12 @@
       "skill": "vocabulary",
       "prompt": "„Wniosek warunkowy” obowiązuje ___.",
       "options": [
-        "niezależnie od okoliczności",
         "tylko przy spełnieniu określonych założeń",
+        "niezależnie od okoliczności",
         "wyłącznie w przeszłości",
         "bez żadnych danych"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Wniosek warunkowy zależy od prawdziwości wskazanych założeń lub warunków."
     },
     {
@@ -1350,11 +1350,11 @@
       "prompt": "Jaki błąd rozumowania krytykuje autor?",
       "options": [
         "Oparcie decyzji na zbyt wielu źródłach",
-        "Uznanie korelacji za dowód związku przyczynowego",
         "Porównanie dwóch okresów",
+        "Uznanie korelacji za dowód związku przyczynowego",
         "Podanie danych procentowych"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Autor rozróżnia współwystępowanie zjawisk od dowodu, że jedno z nich powoduje drugie.",
       "passage": "Po wdrożeniu programu spadła liczba reklamacji, dlatego część zarządu uznała program za bezpośrednią przyczynę poprawy. W tym samym okresie zmieniono jednak skład zespołu, uproszczono ofertę i ograniczono liczbę zamówień. Samo następstwo czasowe nie pozwala ustalić, który czynnik był decydujący."
     },
@@ -1365,11 +1365,11 @@
       "prompt": "Dlaczego publikacja danych może nie zwiększyć przejrzystości?",
       "options": [
         "Dane są zawsze nieprawdziwe",
-        "Sposób selekcji i prezentacji może ukrywać tok decyzji",
         "Odbiorcy nie powinni znać kryteriów",
-        "Każda publikacja narusza prawo"
+        "Każda publikacja narusza prawo",
+        "Sposób selekcji i prezentacji może ukrywać tok decyzji"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Autor podkreśla, że przejrzystość zależy nie tylko od dostępu do danych, lecz także od możliwości zrozumienia ich wyboru i zastosowania.",
       "passage": "Organizacja udostępniła setki stron tabel, ale nie wyjaśniła, dlaczego jedne wskaźniki uznano za ważniejsze od innych. Odbiorca może więc zobaczyć materiał źródłowy, a mimo to nie potrafi odtworzyć procesu decyzyjnego. Nadmiar informacji bywa równie nieprzejrzysty jak jej brak."
     },
@@ -1379,12 +1379,12 @@
       "skill": "reading",
       "prompt": "Jaką funkcję pełnią zastrzeżenia w tekście?",
       "options": [
-        "Całkowicie obalają tezę",
         "Ograniczają zakres tezy, ale jej nie unieważniają",
+        "Całkowicie obalają tezę",
         "Zmieniają temat",
         "Potwierdzają każdy przypadek"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Zastrzeżenia pokazują granice stosowalności tezy i zapobiegają jej nadmiernemu uogólnieniu.",
       "passage": "Wyniki badania wskazują, że elastyczny czas pracy poprawił satysfakcję uczestników. Próba obejmowała jednak głównie osoby wykonujące zadania samodzielne, a obserwacja trwała tylko trzy miesiące. Dane wspierają więc ostrożny wniosek, lecz nie uzasadniają twierdzenia, że rozwiązanie sprawdzi się w każdej branży."
     },
@@ -1394,12 +1394,12 @@
       "skill": "reading",
       "prompt": "Na czym polega napięcie opisane przez autora?",
       "options": [
-        "Między szybkością decyzji a możliwością uwzględnienia wyjątków",
         "Między ceną a reklamą",
+        "Między szybkością decyzji a możliwością uwzględnienia wyjątków",
         "Między liczbą pracowników a powierzchnią biura",
         "Między językiem a grafiką"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Standaryzacja przyspiesza decyzje, ale może osłabić zdolność reagowania na przypadki nietypowe.",
       "passage": "Jednolite kryteria pomagają podejmować decyzje szybciej i ograniczają wpływ przypadkowych preferencji. Im bardziej szczegółowy staje się jednak schemat, tym trudniej uwzględnić okoliczności, których wcześniej nie przewidziano. System musi więc godzić przewidywalność z możliwością uzasadnionego odstępstwa."
     },
@@ -1410,11 +1410,11 @@
       "prompt": "Dlaczego autor odrzuca prosty wybór między dwiema opcjami?",
       "options": [
         "Obie opcje są identyczne",
-        "Problem można rozwiązać rozwiązaniem pośrednim i warunkowym",
         "Nie ma żadnych danych",
+        "Problem można rozwiązać rozwiązaniem pośrednim i warunkowym",
         "Decyzja została już podjęta"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Tekst pokazuje, że spór nie musi prowadzić do wyboru skrajności; możliwy jest model łączący zalety obu podejść.",
       "passage": "Debata przedstawiana jest często jako wybór między pełną automatyzacją a ręcznym rozpatrywaniem każdej sprawy. To fałszywa alternatywa. System może automatycznie obsługiwać przypadki typowe, a jednocześnie przekazywać człowiekowi sprawy o wysokim ryzyku lub niskiej pewności."
     },
@@ -1425,11 +1425,11 @@
       "prompt": "Co podważa reprezentatywność próby?",
       "options": [
         "Jej liczebność jest podana w raporcie",
-        "Uczestnicy dobrowolnie zgłosili się do programu i mogli być bardziej zmotywowani",
         "Badanie trwało rok",
-        "Zastosowano ankietę"
+        "Zastosowano ankietę",
+        "Uczestnicy dobrowolnie zgłosili się do programu i mogli być bardziej zmotywowani"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Dobrowolny udział może powodować błąd selekcji: uczestnicy różnią się od osób, które się nie zgłosiły.",
       "passage": "Program oceniono na podstawie wyników osób, które same zgłosiły chęć udziału. Tacy uczestnicy mogli być bardziej zmotywowani i otwarci na zmianę niż przeciętny pracownik. Dobre rezultaty nie muszą więc powtórzyć się po obowiązkowym wdrożeniu w całej organizacji."
     },
@@ -1454,11 +1454,11 @@
       "prompt": "Choćby argument wydawał się intuicyjny, nie wynika z tego, ___ był metodologicznie poprawny.",
       "options": [
         "jak",
-        "jakoby",
         "że",
+        "jakoby",
         "czyż"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Po „nie wynika z tego” wprowadzamy zdanie dopełnieniowe spójnikiem „że”."
     },
     {
@@ -1468,11 +1468,11 @@
       "prompt": "O ile teza ma zachować wartość wyjaśniającą, nie może być sformułowana tak szeroko, by ___ każdy możliwy wynik.",
       "options": [
         "obejmowała",
-        "obejmować",
         "objęła",
+        "obejmować",
         "obejmuje"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Po konstrukcji „tak…, by” i czasowniku modalnym sens wymaga bezokolicznika „obejmować”."
     },
     {
@@ -1481,12 +1481,12 @@
       "skill": "grammar",
       "prompt": "Zarzut nie dotyczy tego, co w raporcie napisano, lecz tego, co świadomie ___.",
       "options": [
-        "pominięto",
         "pomijając",
         "pominięte",
-        "pomijałoby"
+        "pomijałoby",
+        "pominięto"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Konstrukcja kontrastuje dwie czynności dokonane; potrzebna jest bezosobowa forma przeszła „pominięto”."
     },
     {
@@ -1495,12 +1495,12 @@
       "skill": "grammar",
       "prompt": "Niezależnie od tego, jak przekonujące ___ się dane, ich interpretacja zależy od przyjętego modelu.",
       "options": [
-        "wydadzą",
         "wydają",
+        "wydadzą",
         "wydawałyby",
         "wydać"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Zdanie formułuje ogólną zależność, dlatego właściwy jest czas teraźniejszy „wydają się”."
     },
     {
@@ -1509,12 +1509,12 @@
       "skill": "grammar",
       "prompt": "Nie tyle brak dowodów osłabia tezę, ile fakt, że dostępne dane można równie dobrze ___ inaczej.",
       "options": [
-        "zinterpretować",
         "zinterpretowano",
+        "zinterpretować",
         "interpretując",
         "zinterpretowane"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Po „można” stosujemy bezokolicznik „zinterpretować”."
     },
     {
@@ -1524,11 +1524,11 @@
       "prompt": "Gdyby kryteria były jawne od początku, spór zapewne nie ___ tak długo.",
       "options": [
         "trwa",
-        "trwałby",
         "trwał",
+        "trwałby",
         "będzie trwał"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Hipotetyczny skutek niezrealizowanego warunku wymaga formy przypuszczającej „trwałby”."
     },
     {
@@ -1537,12 +1537,12 @@
       "skill": "vocabulary",
       "prompt": "„Falsyfikowalna hipoteza” to hipoteza, którą ___.",
       "options": [
-        "można potencjalnie obalić za pomocą danych",
         "należy uznać za prawdziwą",
         "sformułowano niejasno",
-        "popiera większość"
+        "popiera większość",
+        "można potencjalnie obalić za pomocą danych"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Falsyfikowalność oznacza możliwość wskazania obserwacji, która podważyłaby hipotezę."
     },
     {
@@ -1551,12 +1551,12 @@
       "skill": "vocabulary",
       "prompt": "„Retoryczne przesunięcie ciężaru dowodu” polega na ___.",
       "options": [
-        "przedstawieniu nowych danych",
         "żądaniu, by przeciwnik obalił tezę, zamiast samemu ją uzasadnić",
+        "przedstawieniu nowych danych",
         "doprecyzowaniu pojęć",
         "uznaniu ograniczeń badania"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Ciężar dowodu spoczywa na osobie formułującej twierdzenie, a nie na odbiorcy zobowiązanym je obalać."
     },
     {
@@ -1580,11 +1580,11 @@
       "prompt": "„Nadmierna ekstrapolacja” oznacza ___.",
       "options": [
         "ostrożne ograniczenie wniosku",
-        "rozszerzenie wniosku poza zakres uzasadniony danymi",
         "powtórzenie badania",
+        "rozszerzenie wniosku poza zakres uzasadniony danymi",
         "zmianę terminologii"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Ekstrapolacja staje się nadmierna, gdy wniosek obejmuje populacje lub warunki nieobjęte dowodami."
     },
     {
@@ -1594,11 +1594,11 @@
       "prompt": "„Pozorna neutralność” decyzji może oznaczać, że ___.",
       "options": [
         "nie ma żadnych skutków",
-        "ukryte kryteria faworyzują określone grupy mimo formalnie jednakowych reguł",
         "decyzja jest losowa",
-        "wszyscy zgadzają się z wynikiem"
+        "wszyscy zgadzają się z wynikiem",
+        "ukryte kryteria faworyzują określone grupy mimo formalnie jednakowych reguł"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Formalnie jednakowa reguła może nie być neutralna, jeśli jej skutki systematycznie różnią się między grupami."
     },
     {
@@ -1607,12 +1607,12 @@
       "skill": "vocabulary",
       "prompt": "„Argument samouszczelniający się” ___.",
       "options": [
-        "dopuszcza możliwość obalenia",
         "interpretuje każdy kontrprzykład jako dodatkowe potwierdzenie",
+        "dopuszcza możliwość obalenia",
         "opiera się na jednym źródle",
         "jest zawsze krótki"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Taki argument unika falsyfikacji, ponieważ każdą krytykę włącza jako rzekome potwierdzenie własnej tezy."
     },
     {
@@ -1636,11 +1636,11 @@
       "prompt": "Dlaczego autor uważa tezę za trudną do obalenia?",
       "options": [
         "Jest poparta wieloma eksperymentami",
-        "Każdy możliwy wynik można zinterpretować jako jej potwierdzenie",
         "Zawiera dokładne prognozy",
+        "Każdy możliwy wynik można zinterpretować jako jej potwierdzenie",
         "Opiera się na jawnych kryteriach"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Teza została sformułowana tak szeroko, że nie wskazuje wyniku, który mógłby jej zaprzeczyć.",
       "passage": "Autorzy twierdzą, że program działa zarówno wtedy, gdy wskaźniki rosną, bo uczestnicy są bardziej aktywni, jak i wtedy, gdy spadają, bo zmiana rzekomo ujawnia ukryte problemy. Jeżeli każdy rezultat uznaje się za potwierdzenie, teza traci zdolność odróżniania sukcesu od porażki."
     },
@@ -1651,11 +1651,11 @@
       "prompt": "Na czym polega krytyka neutralności procedury?",
       "options": [
         "Procedura jest zbyt krótka",
-        "Jednakowe formalnie kryterium może mieć nierówne skutki z powodu różnic początkowych",
         "Nie zawiera wyjątków językowych",
-        "Wyniki są publikowane zbyt szybko"
+        "Wyniki są publikowane zbyt szybko",
+        "Jednakowe formalnie kryterium może mieć nierówne skutki z powodu różnic początkowych"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Autor odróżnia formalne równe traktowanie od rzeczywistego wpływu reguły na grupy znajdujące się w odmiennych warunkach.",
       "passage": "Reguła przyznaje wszystkim taki sam czas na dostarczenie dokumentów, dlatego przedstawia się ją jako neutralną. Nie uwzględnia jednak, że część osób otrzymuje informacje później lub ma ograniczony dostęp do wymaganych usług. Jednakowe kryterium może więc utrwalać nierówność wynikającą z odmiennych warunków początkowych."
     },
@@ -1665,12 +1665,12 @@
       "skill": "reading",
       "prompt": "Jaki problem wynika z nadmiaru wskaźników?",
       "options": [
-        "Nie można zebrać żadnych danych",
         "Można po fakcie wybrać te, które wspierają oczekiwaną narrację",
+        "Nie można zebrać żadnych danych",
         "Wszystkie wskaźniki dają ten sam wynik",
         "Raport staje się krótszy"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Duża liczba możliwych miar zwiększa swobodę selekcji po analizie, co może tworzyć pozornie przekonujący, lecz niestabilny obraz.",
       "passage": "Projekt oceniano za pomocą kilkudziesięciu wskaźników. W raporcie końcowym omówiono głównie te, które wykazały poprawę, choć przed rozpoczęciem badania nie wskazano, które z nich będą kluczowe. Taka swoboda wyboru pozwala zbudować korzystną narrację nawet wtedy, gdy ogólny obraz jest niejednoznaczny."
     },
@@ -1695,12 +1695,12 @@
       "skill": "reading",
       "prompt": "Co jest ukrytym założeniem krytykowanego wniosku?",
       "options": [
-        "Że brak skarg oznacza brak problemu",
         "Że wszystkie skargi są prawdziwe",
         "Że procedura jest publiczna",
+        "Że brak skarg oznacza brak problemu",
         "Że liczba pracowników wzrosła"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Wniosek utożsamia brak zgłoszeń z brakiem problemu, pomijając bariery, które mogą powstrzymywać ludzi przed zgłoszeniem.",
       "passage": "Po zmianie procedury nie odnotowano formalnych skarg, więc zarząd uznał, że rozwiązanie jest akceptowane. Wniosek ten zakłada jednak, że każda niezadowolona osoba zna procedurę odwoławczą, ufa jej i jest gotowa ponieść koszt zgłoszenia. Brak skarg może oznaczać akceptację, ale może też wynikać z barier."
     },
@@ -1711,11 +1711,11 @@
       "prompt": "Jak autor rozróżnia trafność i rzetelność?",
       "options": [
         "Uznaje je za synonimy",
-        "Rzetelny pomiar może być powtarzalny, ale mierzyć nie to, co powinien",
         "Trafność dotyczy wyłącznie kosztów",
-        "Rzetelność oznacza zgodność z opinią większości"
+        "Rzetelność oznacza zgodność z opinią większości",
+        "Rzetelny pomiar może być powtarzalny, ale mierzyć nie to, co powinien"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Tekst odróżnia powtarzalność wyniku od tego, czy narzędzie rzeczywiście mierzy zamierzoną cechę.",
       "passage": "Test daje niemal identyczne wyniki przy każdym powtórzeniu, co świadczy o wysokiej rzetelności. Jeżeli jednak mierzy głównie znajomość specjalistycznego słownictwa zamiast zdolności rozwiązywania problemów, pozostaje mało trafny. Stabilny wynik nie gwarantuje więc, że oceniana jest właściwa cecha."
     }

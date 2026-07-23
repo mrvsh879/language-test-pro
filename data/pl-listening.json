@@ -1,6 +1,6 @@
 {
   "language": "pl",
-  "version": "4.0.0-professional-direct",
+  "version": "4.1.0-professional-direct",
   "questionCount": 40,
   "questions": [
     {
@@ -17,7 +17,7 @@
       ],
       "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: O 8:20."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „O 8:20”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-02",
@@ -26,14 +26,14 @@
       "transcript": "Mam na imię Marta i mieszkam we Wrocławiu.",
       "prompt": "Gdzie mieszka Marta?",
       "options": [
-        "W Krakowie",
         "We Wrocławiu",
+        "W Krakowie",
         "W Gdańsku",
         "W Łodzi"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: We Wrocławiu."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „We Wrocławiu”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-03",
@@ -43,13 +43,13 @@
       "prompt": "Co zamawia klient?",
       "options": [
         "Herbatę i sok",
-        "Kawę i wodę",
         "Tylko wodę",
-        "Kawę i mleko"
+        "Kawę i mleko",
+        "Kawę i wodę"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Kawę i wodę."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Kawę i wodę”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-04",
@@ -65,7 +65,7 @@
       ],
       "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: O 19."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „O 19”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-05",
@@ -75,13 +75,13 @@
       "prompt": "O której zaczyna pracę?",
       "options": [
         "O 5",
-        "O 8",
         "O 9",
+        "O 8",
         "O 10"
       ],
-      "answer": 2,
+      "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: O 9."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „O 9”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-06",
@@ -90,14 +90,14 @@
       "transcript": "W sobotę jedziemy nad morze.",
       "prompt": "Kiedy jadą nad morze?",
       "options": [
-        "W piątek",
         "W sobotę",
+        "W piątek",
         "W niedzielę",
         "W poniedziałek"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: W sobotę."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „W sobotę”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-07",
@@ -107,13 +107,13 @@
       "prompt": "Ile biletów chce klient?",
       "options": [
         "Jeden",
-        "Dwa",
         "Trzy",
-        "Cztery"
+        "Cztery",
+        "Dwa"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Dwa."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Dwa”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-08",
@@ -129,7 +129,7 @@
       ],
       "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Jest zimno i pada deszcz."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Jest zimno i pada deszcz”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-09",
@@ -145,7 +145,7 @@
       ],
       "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: W sali 12."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „W sali 12”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-10",
@@ -161,7 +161,7 @@
       ],
       "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Książkę i koszulę."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Książkę i koszulę”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-11",
@@ -172,12 +172,12 @@
       "options": [
         "Na lotnisko",
         "Do centrum",
-        "Na dworzec główny",
-        "Do szpitala"
+        "Do szpitala",
+        "Na dworzec główny"
       ],
-      "answer": 2,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Na dworzec główny."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Na dworzec główny”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a1-l-12",
@@ -187,13 +187,13 @@
       "prompt": "Na ile nocy jest rezerwacja?",
       "options": [
         "Na jedną",
-        "Na dwie",
         "Na trzy",
+        "Na dwie",
         "Na cztery"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Na dwie."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Na dwie”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-01",
@@ -203,13 +203,13 @@
       "prompt": "O której zaczyna się spotkanie?",
       "options": [
         "14:00",
-        "14:30",
         "15:30",
+        "14:30",
         "16:00"
       ],
-      "answer": 2,
+      "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: 15:30."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „15:30”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-02",
@@ -218,14 +218,14 @@
       "transcript": "Nie doręczyliśmy paczki. Można ją odebrać jutro po dziewiątej na poczcie.",
       "prompt": "Co powinien zrobić klient?",
       "options": [
-        "Czekać dziś",
         "Odebrać paczkę jutro",
+        "Czekać dziś",
         "Anulować zamówienie",
         "Zadzwonić o dziewiątej"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Odebrać paczkę jutro."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Odebrać paczkę jutro”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-03",
@@ -235,13 +235,13 @@
       "prompt": "Co się zmienia?",
       "options": [
         "Bilet jest tańszy",
-        "Autobus nie zatrzymuje się na rynku",
         "Droga jest otwarta",
-        "Przystanek jest na dworcu"
+        "Przystanek jest na dworcu",
+        "Autobus nie zatrzymuje się na rynku"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Autobus nie zatrzymuje się na rynku."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Autobus nie zatrzymuje się na rynku”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-04",
@@ -251,13 +251,13 @@
       "prompt": "Co wolno zrobić?",
       "options": [
         "Zjeść śniadanie",
-        "Pić wodę",
         "Pić mleko",
+        "Pić wodę",
         "Zjeść owoce"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Pić wodę."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Pić wodę”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-05",
@@ -273,7 +273,7 @@
       ],
       "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Krzeseł."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Krzeseł”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-06",
@@ -282,14 +282,14 @@
       "transcript": "Śniadanie jest od siódmej do dziesiątej, a w weekend do dziesiątej trzydzieści.",
       "prompt": "Do której jest śniadanie w weekend?",
       "options": [
+        "Do 10:30",
         "Do 9:30",
         "Do 10:00",
-        "Do 10:30",
         "Do 11:00"
       ],
-      "answer": 2,
+      "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Do 10:30."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Do 10:30”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-07",
@@ -299,13 +299,13 @@
       "prompt": "Jak odbędą się pierwsze zajęcia?",
       "options": [
         "W szkole",
-        "Online",
         "W bibliotece",
-        "Nie odbędą się"
+        "Nie odbędą się",
+        "Online"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Online."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Online”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-08",
@@ -314,14 +314,14 @@
       "transcript": "We wtorek nie mogę. Pasuje mi środa rano albo czwartek po południu.",
       "prompt": "Który dzień nie pasuje?",
       "options": [
-        "Wtorek",
         "Środa",
         "Czwartek",
+        "Wtorek",
         "Oba"
       ],
-      "answer": 0,
+      "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Wtorek."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Wtorek”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-09",
@@ -337,7 +337,7 @@
       ],
       "answer": 1,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: O 80 zł."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „O 80 zł”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-10",
@@ -346,14 +346,14 @@
       "transcript": "W piątek biuro zamyka się o trzynastej. Proszę dostarczyć dokumenty do czwartku.",
       "prompt": "Kiedy dostarczyć dokumenty?",
       "options": [
-        "W piątek wieczorem",
         "Do czwartku",
+        "W piątek wieczorem",
         "W sobotę",
         "W poniedziałek"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Do czwartku."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Do czwartku”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-11",
@@ -363,13 +363,13 @@
       "prompt": "Dlaczego jadą samochodem?",
       "options": [
         "Pociąg jest za drogi",
-        "Linia jest zamknięta",
         "Samochód jest szybszy",
-        "Nie mają biletów"
+        "Nie mają biletów",
+        "Linia jest zamknięta"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Linia jest zamknięta."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Linia jest zamknięta”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-a2-l-12",
@@ -379,13 +379,13 @@
       "prompt": "Co trzeba zrobić?",
       "options": [
         "Wyrzucić umowę",
-        "Odesłać podpisaną kopię",
         "Zadzwonić dziś",
+        "Odesłać podpisaną kopię",
         "Napisać nową umowę"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
-      "explanation": "Poprawna odpowiedź: Odesłać podpisaną kopię."
+      "explanation": "W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „Odesłać podpisaną kopię”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi."
     },
     {
       "id": "pl-b1-l-01",
@@ -410,12 +410,12 @@
       "transcript": "Reklamacja została uznana. Klient może wybrać bezpłatną wymianę produktu albo pełny zwrot pieniędzy, ale koszt dodatkowych akcesoriów nie podlega zwrotowi.",
       "prompt": "Jakie możliwości ma klient?",
       "options": [
-        "Tylko naprawę",
         "Wymianę lub zwrot ceny produktu",
+        "Tylko naprawę",
         "Zwrot wszystkich kosztów wraz z akcesoriami",
         "Wyłącznie rabat"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
       "explanation": "Nagranie proponuje dwie opcje dotyczące produktu, lecz wyłącza koszt akcesoriów."
     },
@@ -427,11 +427,11 @@
       "prompt": "Dlaczego dokument jest potrzebny rano?",
       "options": [
         "Aby wysłać go do księgowości",
-        "Aby sprawdzić go przed spotkaniem",
         "Aby zmienić termin spotkania",
-        "Aby skrócić prezentację"
+        "Aby skrócić prezentację",
+        "Aby sprawdzić go przed spotkaniem"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
       "explanation": "Termin poranny umożliwia kontrolę dokumentu przed popołudniowym spotkaniem."
     },
@@ -443,11 +443,11 @@
       "prompt": "Kto ma obowiązek uczestniczyć?",
       "options": [
         "Wszyscy pracownicy",
-        "Osoby zatwierdzające płatności",
         "Wyłącznie nowi pracownicy",
+        "Osoby zatwierdzające płatności",
         "Tylko kierownicy działów"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
       "explanation": "Obowiązek dotyczy funkcji zatwierdzania płatności, nie stanowiska ani stażu."
     },
@@ -474,12 +474,12 @@
       "transcript": "Jednolita procedura zmniejszyła liczbę błędów, jednak pracownicy zaczęli stosować ją również w sytuacjach, dla których nie była projektowana. Problemem nie jest sama reguła, lecz brak mechanizmu uzasadnionego wyjątku.",
       "prompt": "Co według mówcy wymaga poprawy?",
       "options": [
-        "Całkowite usunięcie procedury",
         "Możliwość odstępstwa w nietypowych przypadkach",
+        "Całkowite usunięcie procedury",
         "Zwiększenie liczby obowiązkowych kroków",
         "Rezygnacja z kontroli"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
       "explanation": "Krytyka dotyczy braku elastycznego wyjątku, a nie samego istnienia procedury."
     },
@@ -491,11 +491,11 @@
       "prompt": "Jaki wniosek najlepiej oddaje wypowiedź?",
       "options": [
         "Praca zdalna działa jednakowo dla wszystkich",
-        "Korzyści zależą od rodzaju zadania i doświadczenia pracownika",
         "Nowi pracownicy pracują szybciej w domu",
-        "Współpraca nie zmieniła się"
+        "Współpraca nie zmieniła się",
+        "Korzyści zależą od rodzaju zadania i doświadczenia pracownika"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
       "explanation": "Nagranie pokazuje zróżnicowane skutki zależne od zadania i doświadczenia."
     },
@@ -507,11 +507,11 @@
       "prompt": "Czego brakuje w uzasadnieniu?",
       "options": [
         "Opisu celu",
-        "Porównania z alternatywami",
         "Listy pracowników",
+        "Porównania z alternatywami",
         "Daty publikacji"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
       "explanation": "Mówca akceptuje cel, lecz domaga się porównania skuteczności i kosztów innych możliwości."
     },
@@ -519,7 +519,7 @@
       "id": "pl-c1-l-01",
       "level": "C1",
       "skill": "listening",
-      "transcript": "Publikowanie kolejnych tabel może tworzyć wrażenie otwartości, lecz nie wyjaśnia, dlaczego jedne kryteria otrzymały większą wagę niż inne. Przejrzystość wymaga możliwości odtworzenia toku decyzji, a nie tylko dostępu do materiału.",
+      "transcript": "Publikowanie kolejnych tabel może tworzyć wrażenie otwartości, lecz nie wyjaśnia, dlaczego jedne kryteria otrzymały większą wagę niż inne. Przejrzystość wymaga możliwości odtworzenia toku decyzji, a nie tylko dostępu do materiału. Odbiorca powinien również wiedzieć, które dane pominięto oraz czy odmienne założenia prowadziłyby do innego rozstrzygnięcia.",
       "prompt": "Jaka jest główna teza?",
       "options": [
         "Większa liczba danych zawsze zwiększa zaufanie",
@@ -535,15 +535,15 @@
       "id": "pl-c1-l-02",
       "level": "C1",
       "skill": "listening",
-      "transcript": "Zastrzeżenia dotyczą krótkiego czasu obserwacji i niereprezentatywnej próby. Nie unieważniają wyniku, ale ograniczają zakres, w jakim można go przenosić na inne zespoły.",
+      "transcript": "Zastrzeżenia dotyczą krótkiego czasu obserwacji i niereprezentatywnej próby. Nie unieważniają wyniku, ale ograniczają zakres, w jakim można go przenosić na inne zespoły. Dlatego wynik można uznać za wiarygodny w badanej grupie, lecz nie za uniwersalną regułę dla całej organizacji.",
       "prompt": "Jaką funkcję pełnią zastrzeżenia?",
       "options": [
-        "Obalają wynik",
         "Ograniczają możliwość uogólnienia",
+        "Obalają wynik",
         "Potwierdzają wszystkie zastosowania",
         "Dotyczą wyłącznie stylu raportu"
       ],
-      "answer": 1,
+      "answer": 0,
       "maxPlays": 2,
       "explanation": "Zastrzeżenia zawężają zakres wniosku, nie negując obserwowanego efektu w badanej próbie."
     },
@@ -551,15 +551,15 @@
       "id": "pl-c1-l-03",
       "level": "C1",
       "skill": "listening",
-      "transcript": "Spadek liczby skarg nastąpił po zmianie procedury, ale w tym samym czasie ograniczono liczbę klientów i zmieniono kanał kontaktu. Kolejność wydarzeń nie wystarcza, by przypisać efekt jednemu czynnikowi.",
+      "transcript": "Spadek liczby skarg nastąpił po zmianie procedury, ale w tym samym czasie ograniczono liczbę klientów i zmieniono kanał kontaktu. Kolejność wydarzeń nie wystarcza, by przypisać efekt jednemu czynnikowi. Do rzetelnej oceny potrzebne byłoby porównanie z okresem, w którym pozostałe warunki nie uległy podobnym zmianom.",
       "prompt": "Przed jakim błędem ostrzega mówca?",
       "options": [
         "Przed użyciem zbyt wielu danych",
-        "Przed utożsamieniem następstwa czasowego z przyczynowością",
         "Przed porównaniem okresów",
-        "Przed publikacją wyników"
+        "Przed publikacją wyników",
+        "Przed utożsamieniem następstwa czasowego z przyczynowością"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
       "explanation": "Mówca wskazuje na czynniki współwystępujące i odrzuca prosty wniosek przyczynowy."
     },
@@ -567,7 +567,7 @@
       "id": "pl-c1-l-04",
       "level": "C1",
       "skill": "listening",
-      "transcript": "Automatyczne decyzje sprawdzają się w sprawach typowych, lecz system powinien przekazywać człowiekowi przypadki o niskiej pewności lub wysokim ryzyku. Nie jest to rezygnacja z automatyzacji, tylko wyznaczenie jej granic.",
+      "transcript": "Automatyczne decyzje sprawdzają się w sprawach typowych, lecz system powinien przekazywać człowiekowi przypadki o niskiej pewności lub wysokim ryzyku. Nie jest to rezygnacja z automatyzacji, tylko wyznaczenie jej granic. Rozwiązanie powinno zatem łączyć wspólne kryteria z kontrolowaną możliwością odstępstwa, które trzeba jasno uzasadnić.",
       "prompt": "Jakie rozwiązanie proponuje mówca?",
       "options": [
         "Pełną automatyzację",
@@ -583,7 +583,7 @@
       "id": "pl-c2-l-01",
       "level": "C2",
       "skill": "listening",
-      "transcript": "Hipotezę sformułowano tak szeroko, że wzrost wskaźnika ma świadczyć o sukcesie programu, a jego spadek o ujawnieniu ukrytych problemów. Skoro żaden możliwy wynik nie może jej podważyć, hipoteza traci wartość wyjaśniającą.",
+      "transcript": "Hipotezę sformułowano tak szeroko, że wzrost wskaźnika ma świadczyć o sukcesie programu, a jego spadek o ujawnieniu ukrytych problemów. Skoro żaden możliwy wynik nie może jej podważyć, hipoteza traci wartość wyjaśniającą. Co więcej, zgodność końcowego wyniku z oczekiwaniami nie dowodzi poprawności rozumowania, jeżeli nie ujawniono konkurencyjnych wyjaśnień i sposobu ich odrzucenia.",
       "prompt": "Co jest głównym zarzutem?",
       "options": [
         "Hipoteza jest zbyt szczegółowa",
@@ -599,7 +599,7 @@
       "id": "pl-c2-l-02",
       "level": "C2",
       "skill": "listening",
-      "transcript": "Formalnie wszystkim wyznaczono ten sam termin, lecz nie wszyscy otrzymali informację w tym samym momencie ani mieli jednakowy dostęp do wymaganych usług. Równa reguła może więc działać nierówno, jeśli pomija różnice warunków początkowych.",
+      "transcript": "Formalnie wszystkim wyznaczono ten sam termin, lecz nie wszyscy otrzymali informację w tym samym momencie ani mieli jednakowy dostęp do wymaganych usług. Równa reguła może więc działać nierówno, jeśli pomija różnice warunków początkowych. Pozorna neutralność może wynikać z wcześniejszego wyboru kategorii, progów i wyjątków, które przesądzają rezultat przed formalnym zastosowaniem reguły.",
       "prompt": "Jak mówca podważa neutralność reguły?",
       "options": [
         "Wskazuje na różne skutki wynikające z nierównych warunków",
@@ -615,15 +615,15 @@
       "id": "pl-c2-l-03",
       "level": "C2",
       "skill": "listening",
-      "transcript": "Raport analizował kilkadziesiąt wskaźników, lecz przed badaniem nie wskazano, które z nich będą decydujące. Po fakcie wybrano głównie wyniki korzystne, co zwiększa ryzyko dopasowania narracji do danych.",
+      "transcript": "Raport analizował kilkadziesiąt wskaźników, lecz przed badaniem nie wskazano, które z nich będą decydujące. Po fakcie wybrano głównie wyniki korzystne, co zwiększa ryzyko dopasowania narracji do danych. Ocena powinna obejmować nie tylko deklarowany cel i bezpośredni skutek, lecz także bodźce, koszty uboczne oraz grupy, na które przeniesiono ryzyko.",
       "prompt": "Na czym polega problem metodologiczny?",
       "options": [
         "Na zbyt małej liczbie danych",
-        "Na selekcji korzystnych wskaźników po analizie",
         "Na braku jakichkolwiek pomiarów",
-        "Na użyciu jednego języka"
+        "Na użyciu jednego języka",
+        "Na selekcji korzystnych wskaźników po analizie"
       ],
-      "answer": 1,
+      "answer": 3,
       "maxPlays": 2,
       "explanation": "Brak wcześniejszego wskazania kluczowych miar pozwala wybierać po fakcie wyniki wspierające oczekiwaną tezę."
     },
@@ -631,15 +631,15 @@
       "id": "pl-c2-l-04",
       "level": "C2",
       "skill": "listening",
-      "transcript": "Odwołanie do opinii ekspertów może zwiększać zaufanie, ale nie zastępuje ujawnienia przesłanek, danych i sposobu rozstrzygania sporów. Bez tego odbiorca zna autorytet źródła, lecz nie może ocenić argumentu.",
+      "transcript": "Odwołanie do opinii ekspertów może zwiększać zaufanie, ale nie zastępuje ujawnienia przesłanek, danych i sposobu rozstrzygania sporów. Bez tego odbiorca zna autorytet źródła, lecz nie może ocenić argumentu. Dopiero rozdzielenie danych, interpretacji i założeń pozwala ustalić, czy wniosek jest konieczny, prawdopodobny, czy tylko retorycznie atrakcyjny.",
       "prompt": "Dlaczego autorytet ekspertów nie wystarcza?",
       "options": [
         "Eksperci nie mają wiedzy",
-        "Nie pozwala samodzielnie prześledzić uzasadnienia",
         "Każda opinia eksperta jest błędna",
+        "Nie pozwala samodzielnie prześledzić uzasadnienia",
         "Dane są zawsze poufne"
       ],
-      "answer": 1,
+      "answer": 2,
       "maxPlays": 2,
       "explanation": "Autorytet może wspierać argument, lecz nie zastępuje jawnego toku rozumowania."
     }
