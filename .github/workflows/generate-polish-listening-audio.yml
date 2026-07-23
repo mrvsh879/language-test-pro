@@ -6,6 +6,7 @@ on:
     paths:
       - 'data/pl-listening.json'
       - 'scripts/generate_polish_audio.py'
+      - '.github/workflows/generate-polish-listening-audio.yml'
 
 permissions:
   contents: write
