@@ -1,0 +1,77 @@
+name: Generate Italian v4.1 listening audio
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [italian-v4]
+    paths:
+      - 'data/it-listening.json'
+      - 'scripts/generate_italian_audio.py'
+      - '.github/workflows/generate-italian-v4-audio.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-italian-v4-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: italian-v4
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Italian listening bank
+        run: |
+          python - <<'PY'
+          import json
+          bank=json.load(open('data/it-listening.json',encoding='utf-8'))
+          assert bank.get('language')=='it'
+          assert bank.get('version')=='4.1.0-professional-direct'
+          assert bank.get('questionCount')==40
+          assert len(bank.get('questions',[]))==40
+          assert len({q['id'] for q in bank['questions']})==40
+          assert all(q.get('transcript') for q in bank['questions'])
+          print('Italian listening bank OK:',bank.get('version'))
+          PY
+      - name: Install dependencies
+        run: pip install requests
+      - name: Remove old Italian MP3 files
+        run: |
+          rm -rf audio/it
+          mkdir -p audio/it
+      - name: Generate Italian MP3 files
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/generate_italian_audio.py
+      - name: Validate Italian audio
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          bank=json.load(open('data/it-listening.json',encoding='utf-8'))
+          expected={q['id'] for q in bank['questions']}
+          files=list(pathlib.Path('audio/it').glob('*.mp3'))
+          actual={p.stem for p in files}
+          assert len(files)==bank['questionCount'],(len(files),bank['questionCount'])
+          assert actual==expected,(sorted(expected-actual),sorted(actual-expected))
+          assert all(p.stat().st_size>1000 for p in files)
+          print('Italian MP3 files OK:',len(files))
+          PY
+      - name: Commit Italian v4.1 audio
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add audio/it
+          if git diff --cached --quiet; then
+            echo "No Italian audio changes to commit"
+            exit 0
+          fi
+          git commit -m "Regenerate Italian v4.1 listening audio"
+          git pull --rebase origin italian-v4
+          git push origin HEAD:italian-v4
