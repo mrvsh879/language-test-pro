@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/install_polish_professional.py'
+      - '.github/workflows/build-polish-professional.yml'
 
 permissions:
   contents: write
@@ -37,6 +38,7 @@ jobs:
               assert len(data['questions'])==count,(name,len(data['questions']))
               assert set(q['level'] for q in data['questions'])==levels,(name,'missing levels')
               assert len({q['id'] for q in data['questions']})==count,(name,'duplicate ids')
+              assert data.get('version')=='4.0.0-professional',(name,data.get('version'))
               print(name,data.get('version'),count,'OK')
           PY
       - name: Commit Polish banks
