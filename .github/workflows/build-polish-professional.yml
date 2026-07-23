@@ -29,6 +29,53 @@ jobs:
           python-version: '3.12'
       - name: Build Polish v4 banks
         run: python scripts/build_polish_v4_direct.py
+      - name: Refine Polish v4 banks
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root=Path('data')
+          def load(name): return json.loads((root/name).read_text(encoding='utf-8'))
+          def save(name,obj): (root/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          def move_answer(q,target):
+              opts=q.get('options'); ans=q.get('answer')
+              if not isinstance(opts,list) or len(opts)!=4 or not isinstance(ans,int): return
+              correct=opts[ans]; wrong=[x for i,x in enumerate(opts) if i!=ans]; out=[]
+              for i in range(4): out.append(correct if i==target else wrong.pop(0))
+              q['options']=out; q['answer']=target
+
+          main=load('pl.json'); listening=load('pl-listening.json'); speaking=load('pl-speaking.json')
+
+          for q in speaking['questions']:
+              if q['id']=='pl-a1-s-05':
+                  q['referenceText']='W przyszłym tygodniu zaczynam pracę o ósmej i kończę o szesnastej.'
+
+          c1=[
+            'Odbiorca powinien również wiedzieć, które dane pominięto oraz czy odmienne założenia prowadziłyby do innego rozstrzygnięcia.',
+            'Dlatego wynik można uznać za wiarygodny w badanej grupie, lecz nie za uniwersalną regułę dla całej organizacji.',
+            'Do rzetelnej oceny potrzebne byłoby porównanie z okresem, w którym pozostałe warunki nie uległy podobnym zmianom.',
+            'Rozwiązanie powinno zatem łączyć wspólne kryteria z kontrolowaną możliwością odstępstwa, które trzeba jasno uzasadnić.'
+          ]
+          c2=[
+            'Co więcej, zgodność końcowego wyniku z oczekiwaniami nie dowodzi poprawności rozumowania, jeżeli nie ujawniono konkurencyjnych wyjaśnień i sposobu ich odrzucenia.',
+            'Pozorna neutralność może wynikać z wcześniejszego wyboru kategorii, progów i wyjątków, które przesądzają rezultat przed formalnym zastosowaniem reguły.',
+            'Ocena powinna obejmować nie tylko deklarowany cel i bezpośredni skutek, lecz także bodźce, koszty uboczne oraz grupy, na które przeniesiono ryzyko.',
+            'Dopiero rozdzielenie danych, interpretacji i założeń pozwala ustalić, czy wniosek jest konieczny, prawdopodobny, czy tylko retorycznie atrakcyjny.'
+          ]
+          i1=i2=0
+          for q in listening['questions']:
+              if q['level']=='C1': q['transcript']+=' '+c1[i1%4]; i1+=1
+              if q['level']=='C2': q['transcript']+=' '+c2[i2%4]; i2+=1
+              if q.get('explanation','').startswith('Poprawna odpowiedź'):
+                  correct=q['options'][q['answer']]
+                  q['explanation']=f'W nagraniu bezpośrednio podano informację prowadzącą do odpowiedzi „{correct}”. Pozostałe warianty zmieniają kluczowy szczegół albo przeczą treści wypowiedzi.'
+
+          for i,q in enumerate(main['questions']): move_answer(q,i%4)
+          for i,q in enumerate(listening['questions']): move_answer(q,(i*3+1)%4)
+          for bank in (main,listening,speaking): bank['version']='4.1.0-professional-direct'
+          save('pl.json',main); save('pl-listening.json',listening); save('pl-speaking.json',speaking)
+          PY
       - name: Validate Polish v4 banks
         run: |
           python - <<'PY'
@@ -37,24 +84,21 @@ jobs:
           levels={'A1','A2','B1','B2','C1','C2'}
           all_ids=[]
           for name,count in expected.items():
-              data=json.load(open('data/'+name,encoding='utf-8'))
-              qs=data['questions']
-              assert data.get('questionCount')==count,(name,data.get('questionCount'))
-              assert len(qs)==count,(name,len(qs))
-              assert set(q['level'] for q in qs)==levels,(name,'missing levels')
-              assert len({q['id'] for q in qs})==count,(name,'duplicate ids')
-              assert data.get('version')=='4.0.0-professional-direct',(name,data.get('version'))
+              data=json.load(open('data/'+name,encoding='utf-8')); qs=data['questions']
+              assert data.get('questionCount')==count and len(qs)==count
+              assert set(q['level'] for q in qs)==levels
+              assert len({q['id'] for q in qs})==count
+              assert data.get('version')=='4.1.0-professional-direct'
               for q in qs:
                   assert q.get('prompt') and q.get('skill') and q.get('level')
                   if q['skill'] in {'grammar','vocabulary','reading','listening'}:
-                      assert len(q.get('options',[]))==4,(name,q['id'],'options')
-                      assert isinstance(q.get('answer'),int) and 0<=q['answer']<4,(name,q['id'],'answer')
-                  if q['skill']=='reading': assert q.get('passage'),(name,q['id'],'passage')
-                  if q['skill']=='listening': assert q.get('transcript'),(name,q['id'],'transcript')
-                  if q['skill']=='speaking': assert q.get('referenceText'),(name,q['id'],'referenceText')
+                      assert len(q.get('options',[]))==4 and isinstance(q.get('answer'),int) and 0<=q['answer']<4
+                  if q['skill']=='reading': assert q.get('passage')
+                  if q['skill']=='listening': assert q.get('transcript')
+                  if q['skill']=='speaking': assert q.get('referenceText')
                   all_ids.append(q['id'])
               print(name,data.get('version'),count,'OK')
-          assert len(all_ids)==len(set(all_ids)),'duplicate ids across banks'
+          assert len(all_ids)==len(set(all_ids))
           print('All Polish v4 structural checks passed')
           PY
       - name: Commit Polish v4 banks
@@ -66,6 +110,6 @@ jobs:
             echo "No bank changes to commit"
             exit 0
           fi
-          git commit -m "Build Polish professional test v4 direct"
+          git commit -m "Refine Polish professional test v4.1"
           git pull --rebase origin polish-v4
           git push origin HEAD:polish-v4
