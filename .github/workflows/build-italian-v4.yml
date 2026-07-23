@@ -46,6 +46,24 @@ jobs:
               q['transcript']=q['transcript'].rstrip()+additions[q['id']]
           path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
+      - name: Strengthen Italian C1 speaking
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path=Path('data/it-speaking.json')
+          data=json.loads(path.read_text(encoding='utf-8'))
+          additions={
+            'it-c1-s-01':' Questa distinzione aiuta anche a riconoscere eventuali omissioni metodologiche.',
+            'it-c1-s-02':' In questo modo la conclusione resta precisa senza diventare eccessivamente categorica.',
+            'it-c1-s-03':' Solo così la pubblicazione diventa realmente utile per chi deve valutarla.',
+            'it-c1-s-04':' Tale controllo riduce il rischio che l’eccezione diventi una pratica arbitraria.'
+          }
+          for q in data['questions']:
+            if q['id'] in additions:
+              q['passage']=q['passage'].rstrip()+' '+additions[q['id']]
+          path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
       - name: Validate Italian v4 banks
         run: |
           python - <<'PY'
