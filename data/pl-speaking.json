@@ -1,1 +1,219 @@
-{"language":"pl","version":"3.0.0-professional","questionCount":28,"questions":[{"id":"pl-a1-s-01","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Dzień dobry, mam rezerwację na nazwisko Nowak."},{"id":"pl-a1-s-02","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Sklep jest dziś otwarty do godziny osiemnastej."},{"id":"pl-a1-s-03","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Poproszę kawę bez cukru i szklankę wody."},{"id":"pl-a1-s-04","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Autobus numer dziesięć jedzie na dworzec główny."},{"id":"pl-a1-s-05","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Jutro pracuję od dziewiątej do siedemnastej."},{"id":"pl-a1-s-06","level":"A1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Mieszkam w Krakowie z żoną i dwojgiem dzieci."},{"id":"pl-a2-s-01","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Proszę przynieść podpisane dokumenty najpóźniej w czwartek."},{"id":"pl-a2-s-02","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Pierwsze dwa spotkania odbędą się online, a kolejne w biurze."},{"id":"pl-a2-s-03","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Pociąg został odwołany, dlatego pojedziemy autobusem."},{"id":"pl-a2-s-04","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Przed badaniem nie wolno jeść, ale można pić czystą wodę."},{"id":"pl-a2-s-05","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Naprawa potrwa dwa dni i będzie kosztować pięćset złotych."},{"id":"pl-a2-s-06","level":"A2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Chciałbym zmienić termin wizyty na środę po południu."},{"id":"pl-b1-s-01","level":"B1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Od przyszłego miesiąca pracownicy będą mogli elastycznie rozpoczynać dzień pracy."},{"id":"pl-b1-s-02","level":"B1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Proszę wysłać poprawioną wersję raportu przed jutrzejszym spotkaniem."},{"id":"pl-b1-s-03","level":"B1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Firma rozpatrzyła reklamację i zaproponowała bezpłatną wymianę produktu."},{"id":"pl-b1-s-04","level":"B1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Nowy system ułatwia pracę, ale wymaga dokładnego przestrzegania zasad bezpieczeństwa."},{"id":"pl-b2-s-01","level":"B2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Wyniki sprzedaży wzrosły, jednak większość poprawy wynika z jednego dużego zamówienia."},{"id":"pl-b2-s-02","level":"B2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Wspólna procedura ogranicza błędy, lecz w nietypowych przypadkach może być zbyt sztywna."},{"id":"pl-b2-s-03","level":"B2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Praca zdalna poprawiła koncentrację, ale osłabiła nieformalną wymianę wiedzy."},{"id":"pl-b2-s-04","level":"B2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Nie kwestionujemy celu reformy, lecz mamy wątpliwości co do wybranego narzędzia."},{"id":"pl-c1-s-01","level":"C1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Publikowanie większej liczby danych nie gwarantuje przejrzystości, jeśli kryteria decyzji pozostają niejasne."},{"id":"pl-c1-s-02","level":"C1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Zastrzeżenia nie obalają argumentu, lecz ograniczają jego zakres i wymagają ostrożniejszego sformułowania."},{"id":"pl-c1-s-03","level":"C1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Jednolite reguły sprzyjają spójności, ale mogą pomijać istotne różnice między poszczególnymi przypadkami."},{"id":"pl-c1-s-04","level":"C1","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Badanie pokazuje rzeczywisty efekt, jednak jego wyników nie można automatycznie uogólniać na wszystkie środowiska."},{"id":"pl-c2-s-01","level":"C2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Reforma usuwa widoczne skutki problemu, lecz nie zmienia bodźców, które ten problem stale odtwarzają."},{"id":"pl-c2-s-02","level":"C2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Pozorna przejrzystość może wynikać z nadmiaru informacji, który utrudnia odtworzenie rzeczywistego procesu decyzyjnego."},{"id":"pl-c2-s-03","level":"C2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Wniosek może być zgodny z danymi, a mimo to słabo uzasadniony, jeśli nie wykluczono równie prawdopodobnych wyjaśnień."},{"id":"pl-c2-s-04","level":"C2","skill":"speaking","prompt":"Przeczytaj tekst na głos.","referenceText":"Nie tyle brak danych budzi wątpliwości, ile sposób ich selekcji oraz interpretacji w świetle przyjętych założeń."}]}
+{
+  "language": "pl",
+  "version": "4.0.0-professional-direct",
+  "questionCount": 28,
+  "questions": [
+    {
+      "id": "pl-a1-s-01",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Dzień dobry, mam rezerwację na nazwisko Nowak."
+    },
+    {
+      "id": "pl-a1-s-02",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Sklep jest dziś otwarty do godziny osiemnastej."
+    },
+    {
+      "id": "pl-a1-s-03",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Poproszę kawę bez cukru i szklankę wody."
+    },
+    {
+      "id": "pl-a1-s-04",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Autobus numer dziesięć jedzie na dworzec główny."
+    },
+    {
+      "id": "pl-a1-s-05",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Jutro pracuję od dziewiątej do siedemnastej."
+    },
+    {
+      "id": "pl-a1-s-06",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Mieszkam w Krakowie z żoną i dwojgiem dzieci."
+    },
+    {
+      "id": "pl-a2-s-01",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Proszę przynieść podpisane dokumenty najpóźniej w czwartek."
+    },
+    {
+      "id": "pl-a2-s-02",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Pierwsze dwa spotkania odbędą się online, a kolejne w biurze."
+    },
+    {
+      "id": "pl-a2-s-03",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Pociąg został odwołany, dlatego pojedziemy autobusem."
+    },
+    {
+      "id": "pl-a2-s-04",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Przed badaniem nie wolno jeść, ale można pić czystą wodę."
+    },
+    {
+      "id": "pl-a2-s-05",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Naprawa potrwa dwa dni i będzie kosztować pięćset złotych."
+    },
+    {
+      "id": "pl-a2-s-06",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos.",
+      "referenceText": "Chciałbym zmienić termin wizyty na środę po południu."
+    },
+    {
+      "id": "pl-b1-s-01",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Od przyszłego miesiąca pracownicy będą mogli rozpoczynać pracę między siódmą a dziewiątą. Każdy zespół musi jednak ustalić wspólne godziny, w których wszyscy są dostępni na spotkania i konsultacje.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "pl-b1-s-02",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Proszę przesłać poprawioną wersję raportu do czwartku rano. Chciałbym sprawdzić liczby, komentarze i źródła przed spotkaniem z klientem zaplanowanym na godzinę piętnastą.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "pl-b1-s-03",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Firma uznała reklamację i zaproponowała klientowi bezpłatną wymianę produktu albo pełny zwrot ceny. Koszt dodatkowych akcesoriów nie zostanie jednak zwrócony.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "pl-b1-s-04",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Nowy system ułatwia codzienną pracę, ale wymaga dokładnego przestrzegania zasad bezpieczeństwa. Pracownicy nie powinni udostępniać haseł ani pozostawiać otwartej sesji bez nadzoru.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "pl-b2-s-01",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Wyniki sprzedaży wzrosły o osiemnaście procent, jednak większość poprawy wynika z jednego dużego zamówienia. Zarząd uznał więc, że jest za wcześnie na zwiększanie stałych kosztów, dopóki wzrost nie potwierdzi się w kolejnych kwartałach.",
+      "maxDurationSec": 75
+    },
+    {
+      "id": "pl-b2-s-02",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Wspólna procedura ogranicza liczbę błędów i ułatwia kontrolę, lecz w nietypowych przypadkach może prowadzić do niedopasowanych decyzji. Dlatego system powinien umożliwiać uzasadnione odstępstwo oraz późniejszą ocenę jego skutków.",
+      "maxDurationSec": 75
+    },
+    {
+      "id": "pl-b2-s-03",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Praca zdalna poprawiła koncentrację podczas zadań indywidualnych, ale osłabiła nieformalną wymianę wiedzy. Szczególnie nowi pracownicy rzadziej prosili o pomoc i wolniej poznawali praktyczne zasady obowiązujące w zespole.",
+      "maxDurationSec": 75
+    },
+    {
+      "id": "pl-b2-s-04",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Nie kwestionujemy celu reformy, lecz mamy wątpliwości, czy wybrane narzędzie jest proporcjonalne do problemu. Przed podjęciem decyzji należy porównać jego skuteczność, koszty oraz możliwe rozwiązania alternatywne.",
+      "maxDurationSec": 75
+    },
+    {
+      "id": "pl-c1-s-01",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Publikowanie większej liczby danych nie gwarantuje przejrzystości, jeżeli odbiorca nadal nie wie, dlaczego jedne kryteria uznano za ważniejsze od innych. Rzeczywista otwartość wymaga przedstawienia toku decyzji, sposobu ważenia argumentów oraz zasad stosowania wyjątków.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "pl-c1-s-02",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Zastrzeżenia dotyczące krótkiego czasu obserwacji i niereprezentatywnej próby nie obalają wyniku, lecz ograniczają jego zakres. Dane mogą uzasadniać ostrożny wniosek o badanej grupie, ale nie pozwalają automatycznie przenosić go na wszystkie branże i środowiska.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "pl-c1-s-03",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Jednolite reguły sprzyjają spójności i ograniczają wpływ przypadkowych preferencji, ale mogą pomijać różnice istotne dla oceny konkretnej sprawy. Dobry system powinien więc łączyć przewidywalne kryteria z możliwością uzasadnionego odstępstwa podlegającego późniejszej kontroli.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "pl-c1-s-04",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Badanie pokazuje rzeczywisty efekt wśród uczestników pilotażu, jednak jego wyników nie można bezpośrednio uogólniać. Uczestnicy zgłosili się dobrowolnie, mieli większe doświadczenie techniczne, a obserwacja trwała zaledwie trzy miesiące.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "pl-c2-s-01",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Reforma usuwa najbardziej widoczne skutki problemu, lecz nie zmienia bodźców, które ten problem stale odtwarzają. Krótkoterminowa poprawa może więc prowadzić do przedwczesnego poczucia sukcesu, podczas gdy mechanizm odpowiedzialny za wcześniejsze nieprawidłowości pozostaje nienaruszony.",
+      "maxDurationSec": 115
+    },
+    {
+      "id": "pl-c2-s-02",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Pozorna przejrzystość może wynikać nie tylko z braku informacji, ale również z ich nadmiaru. Jeżeli instytucja publikuje setki tabel bez wskazania kryteriów selekcji i sposobu ich ważenia, odbiorca otrzymuje materiał źródłowy, lecz nadal nie może odtworzyć rzeczywistego procesu decyzyjnego.",
+      "maxDurationSec": 115
+    },
+    {
+      "id": "pl-c2-s-03",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Wniosek może być zgodny z dostępnymi danymi, a mimo to pozostawać słabo uzasadniony, jeżeli nie wykluczono równie prawdopodobnych wyjaśnień. Zgodność z obserwacją nie wystarcza, gdy kilka konkurencyjnych hipotez przewiduje dokładnie ten sam rezultat.",
+      "maxDurationSec": 115
+    },
+    {
+      "id": "pl-c2-s-04",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Przeczytaj tekst na głos w naturalnym tempie.",
+      "referenceText": "Nie tyle brak danych budzi wątpliwości, ile sposób ich selekcji oraz interpretacji w świetle wcześniej przyjętych założeń. Jeżeli kluczowe wskaźniki wybiera się dopiero po poznaniu wyników, łatwo zbudować przekonującą narrację, która nie utrzyma się w kolejnym badaniu.",
+      "maxDurationSec": 115
+    }
+  ]
+}
