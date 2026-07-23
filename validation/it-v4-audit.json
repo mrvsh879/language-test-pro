@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "exact duplicate texts: 1",
+    "it-listening.json: B2 listening too short: 16.0",
+    "it-listening.json: C1 listening too short: 15.5",
+    "it-listening.json: C2 listening too short: 14.5",
+    "it-speaking.json: B2 speaking too short: 21.2",
+    "it-speaking.json: C1 speaking too short: 21.2",
+    "it-speaking.json: C2 speaking too short: 23.0"
+  ],
+  "metrics": {
+    "it.json": {
+      "version": "3.0.0-professional",
+      "count": 120,
+      "declared": 120,
+      "levels": {
+        "A1": 20,
+        "A2": 20,
+        "B1": 20,
+        "B2": 20,
+        "C1": 20,
+        "C2": 20
+      },
+      "skills": {
+        "grammar": 48,
+        "vocabulary": 36,
+        "reading": 36
+      },
+      "answerDistribution": {
+        "0": 87,
+        "1": 27,
+        "2": 5,
+        "3": 1
+      },
+      "genericExplanations": 59,
+      "avgWordsByLevel": {
+        "A1": 6.7,
+        "A2": 8.6,
+        "B1": 10.8,
+        "B2": 11.8,
+        "C1": 13.2,
+        "C2": 14.5
+      }
+    },
+    "it-listening.json": {
+      "version": "3.0.0-professional",
+      "count": 40,
+      "declared": 40,
+      "levels": {
+        "A1": 12,
+        "A2": 12,
+        "B1": 4,
+        "B2": 4,
+        "C1": 4,
+        "C2": 4
+      },
+      "skills": {
+        "listening": 40
+      },
+      "answerDistribution": {
+        "1": 30,
+        "2": 7,
+        "0": 3
+      },
+      "genericExplanations": 40,
+      "avgWordsByLevel": {
+        "A1": 8.2,
+        "A2": 11.6,
+        "B1": 14.2,
+        "B2": 16,
+        "C1": 15.5,
+        "C2": 14.5
+      }
+    },
+    "it-speaking.json": {
+      "version": "3.0.0-professional",
+      "count": 28,
+      "declared": 28,
+      "levels": {
+        "A1": 6,
+        "A2": 6,
+        "B1": 4,
+        "B2": 4,
+        "C1": 4,
+        "C2": 4
+      },
+      "skills": {
+        "speaking": 28
+      },
+      "answerDistribution": {},
+      "genericExplanations": 0,
+      "avgWordsByLevel": {
+        "A1": 8.8,
+        "A2": 12.8,
+        "B1": 20.5,
+        "B2": 21.2,
+        "C1": 21.2,
+        "C2": 23
+      }
+    }
+  },
+  "samples": {
+    "exactDuplicates": [
+      [
+        "it-a1-l-03",
+        "it-a1-s-03"
+      ]
+    ]
+  }
+}
