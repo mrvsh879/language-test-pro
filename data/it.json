@@ -1,1 +1,1723 @@
-{"language":"it","version":"3.0.0-professional","questionCount":120,"questions":[{"id":"it-a1-g-01","level":"A1","skill":"grammar","prompt":"Io ___ italiano ogni giorno.","options":["studio","studia","studiamo","studiate"],"answer":0,"explanation":"Con “io” si usa “studio”."},{"id":"it-a1-g-02","level":"A1","skill":"grammar","prompt":"Maria ___ a Milano.","options":["abita","abito","abiti","abitano"],"answer":0,"explanation":"Con Maria si usa la terza persona singolare."},{"id":"it-a1-g-03","level":"A1","skill":"grammar","prompt":"Noi ___ due fratelli.","options":["abbiamo","avete","hanno","ha"],"answer":0,"explanation":"Con “noi” il verbo avere è “abbiamo”."},{"id":"it-a1-g-04","level":"A1","skill":"grammar","prompt":"Luca e Paolo ___ studenti.","options":["sono","è","siamo","siete"],"answer":0,"explanation":"Il soggetto è plurale: “sono”."},{"id":"it-a1-g-05","level":"A1","skill":"grammar","prompt":"Questo è ___ libro.","options":["un","una","uno","le"],"answer":0,"explanation":"“Libro” è maschile singolare."},{"id":"it-a1-g-06","level":"A1","skill":"grammar","prompt":"Vorrei ___ acqua, per favore.","options":["dell’","del","della","dei"],"answer":0,"explanation":"Davanti a “acqua” si usa “dell’”."},{"id":"it-a1-g-07","level":"A1","skill":"grammar","prompt":"Vado ___ lavoro alle otto.","options":["al","alla","nel","sul"],"answer":0,"explanation":"L’espressione corretta è “andare al lavoro”."},{"id":"it-a1-g-08","level":"A1","skill":"grammar","prompt":"Il bar è ___ banca e la farmacia.","options":["tra la","sotto la","dentro la","senza la"],"answer":0,"explanation":"“Tra” indica una posizione in mezzo a due luoghi."},{"id":"it-a1-v-09","level":"A1","skill":"vocabulary","prompt":"Quale parola indica il giorno dopo lunedì?","options":["martedì","mercoledì","venerdì","domenica"],"answer":0,"explanation":"Il giorno dopo lunedì è martedì."},{"id":"it-a1-v-10","level":"A1","skill":"vocabulary","prompt":"Dove si compra il pane?","options":["in panetteria","in farmacia","in stazione","in banca"],"answer":0,"explanation":"Il pane si compra in panetteria."},{"id":"it-a1-v-11","level":"A1","skill":"vocabulary","prompt":"Il contrario di “grande” è ___.","options":["piccolo","lungo","alto","nuovo"],"answer":0,"explanation":"Il contrario di grande è piccolo."},{"id":"it-a1-v-12","level":"A1","skill":"vocabulary","prompt":"Per telefonare uso il ___.","options":["telefono","cucchiaio","quaderno","cuscino"],"answer":0,"explanation":"Per telefonare si usa il telefono."},{"id":"it-a1-v-13","level":"A1","skill":"vocabulary","prompt":"Una persona che lavora in ospedale può essere un ___.","options":["medico","cuoco","autista","cassiere"],"answer":0,"explanation":"Il medico lavora in ospedale."},{"id":"it-a1-v-14","level":"A1","skill":"vocabulary","prompt":"A colazione bevo spesso il ___.","options":["caffè","riso","sale","pane"],"answer":0,"explanation":"Il caffè è una bevanda tipica della colazione."},{"id":"it-a1-r-15","level":"A1","skill":"reading","prompt":"A che ora apre il sabato?","options":["Alle 9","Alle 10","Alle 14","È chiusa"],"answer":1,"explanation":"Il sabato apre alle 10.","passage":"Biblioteca: lunedì–venerdì 9:00–18:00, sabato 10:00–14:00, domenica chiusa."},{"id":"it-a1-r-16","level":"A1","skill":"reading","prompt":"Dove si trova Anna?","options":["A Roma","A Torino","A Napoli","A Firenze"],"answer":1,"explanation":"Anna scrive che è a Torino.","passage":"Ciao Marco, sono a Torino per lavoro. Torno a Roma venerdì sera. Anna"},{"id":"it-a1-r-17","level":"A1","skill":"reading","prompt":"Quanto costa il menù?","options":["8 euro","10 euro","12 euro","15 euro"],"answer":2,"explanation":"Il cartello indica 12 euro.","passage":"Menù del giorno: pasta, insalata e acqua — 12 euro."},{"id":"it-a1-r-18","level":"A1","skill":"reading","prompt":"Quando parte il treno?","options":["Alle 7:15","Alle 7:50","Alle 8:15","Alle 8:50"],"answer":2,"explanation":"Il treno parte alle 8:15.","passage":"Treno per Bologna: partenza ore 8:15, binario 4."},{"id":"it-a1-r-19","level":"A1","skill":"reading","prompt":"Che cosa deve portare il cliente?","options":["Il passaporto","La ricevuta","Una fotografia","Il contratto"],"answer":1,"explanation":"Per il cambio serve la ricevuta.","passage":"Per cambiare un articolo, portare il prodotto e la ricevuta entro 30 giorni."},{"id":"it-a1-r-20","level":"A1","skill":"reading","prompt":"Quale giorno è chiuso il negozio?","options":["Lunedì","Martedì","Sabato","Domenica"],"answer":3,"explanation":"Il negozio è chiuso la domenica.","passage":"Orario: lunedì–sabato 9:30–19:00. Domenica chiuso."},{"id":"it-a2-g-01","level":"A2","skill":"grammar","prompt":"Vivo qui ___ 2022.","options":["dal","per","tra","a"],"answer":0,"explanation":"Con un punto iniziale nel tempo si usa “dal”."},{"id":"it-a2-g-02","level":"A2","skill":"grammar","prompt":"Ieri ___ al cinema con Giulia.","options":["sono andato","vado","andrò","andavo sempre"],"answer":0,"explanation":"“Ieri” richiede il passato prossimo per un evento concluso."},{"id":"it-a2-g-03","level":"A2","skill":"grammar","prompt":"Quando ero piccolo, ___ spesso dai nonni.","options":["andavo","sono andato","andrò","andrei"],"answer":0,"explanation":"L’imperfetto descrive un’abitudine nel passato."},{"id":"it-a2-g-04","level":"A2","skill":"grammar","prompt":"Domani ti ___ dopo il lavoro.","options":["chiamerò","chiamavo","ho chiamato","chiamassi"],"answer":0,"explanation":"“Domani” richiede il futuro."},{"id":"it-a2-g-05","level":"A2","skill":"grammar","prompt":"Non ho comprato il vestito perché era ___ caro.","options":["troppo","molto di","tanti","abbastanza di"],"answer":0,"explanation":"“Troppo caro” significa più caro del necessario."},{"id":"it-a2-g-06","level":"A2","skill":"grammar","prompt":"Puoi aiutarmi ___ questo modulo?","options":["a compilare","compilando di","per compilo","di compilato"],"answer":0,"explanation":"Dopo “aiutare” si usa “a” più infinito."},{"id":"it-a2-g-07","level":"A2","skill":"grammar","prompt":"Queste chiavi sono ___.","options":["mie","mio","mia","miei"],"answer":0,"explanation":"“Chiavi” è femminile plurale: “mie”."},{"id":"it-a2-g-08","level":"A2","skill":"grammar","prompt":"Se hai tempo, ___ insieme.","options":["pranziamo","pranzeremmo","pranzassimo","pranzato"],"answer":0,"explanation":"Nel periodo ipotetico reale si usa il presente."},{"id":"it-a2-v-09","level":"A2","skill":"vocabulary","prompt":"Per favore, ___ il modulo entro venerdì.","options":["compili","chiuda","presti","arrivi"],"answer":0,"explanation":"Un modulo si compila."},{"id":"it-a2-v-10","level":"A2","skill":"vocabulary","prompt":"La riunione è stata spostata: è stata ___.","options":["rinviata","assunta","riparata","spedita"],"answer":0,"explanation":"“Rinviata” significa spostata a un momento successivo."},{"id":"it-a2-v-11","level":"A2","skill":"vocabulary","prompt":"Se un prodotto non funziona, è ___.","options":["difettoso","affollato","gratuito","silenzioso"],"answer":0,"explanation":"Un prodotto che non funziona è difettoso."},{"id":"it-a2-v-12","level":"A2","skill":"vocabulary","prompt":"Prima di firmare, bisogna leggere il ___.","options":["contratto","marciapiede","cassetto","biglietto"],"answer":0,"explanation":"Si firma un contratto."},{"id":"it-a2-v-13","level":"A2","skill":"vocabulary","prompt":"Chi risponde alle domande dei clienti lavora nell’___.","options":["assistenza","agricoltura","edilizia","trasporto"],"answer":0,"explanation":"L’assistenza clienti risponde alle domande."},{"id":"it-a2-v-14","level":"A2","skill":"vocabulary","prompt":"Il pacco è arrivato in ritardo a causa di un ___.","options":["ritardo nella consegna","aumento di stipendio","cambio di password","corso serale"],"answer":0,"explanation":"La causa riguarda la consegna."},{"id":"it-a2-r-15","level":"A2","skill":"reading","prompt":"Quando sarà il nuovo appuntamento?","options":["Martedì alle 11","Martedì alle 15","Mercoledì alle 11","Mercoledì alle 15"],"answer":2,"explanation":"Il nuovo appuntamento è mercoledì alle 11.","passage":"L’appuntamento è stato spostato da martedì alle 15 a mercoledì alle 11."},{"id":"it-a2-r-16","level":"A2","skill":"reading","prompt":"Che cosa deve fare il cliente?","options":["Aspettare a casa oggi","Ritirare il pacco domani","Annullare l’ordine","Pagare di nuovo"],"answer":1,"explanation":"Il pacco va ritirato domani.","passage":"Non abbiamo potuto consegnare il pacco. Può ritirarlo domani dopo le 9 presso l’ufficio postale centrale."},{"id":"it-a2-r-17","level":"A2","skill":"reading","prompt":"Qual è la nuova regola?","options":["Si lavora meno ore","Si può iniziare tra le 7 e le 9","L’ufficio chiude alle 7","Tutti lavorano da casa"],"answer":1,"explanation":"È possibile scegliere l’inizio tra le 7 e le 9.","passage":"Da lunedì l’orario è flessibile: si può iniziare tra le 7 e le 9, rispettando le ore previste."},{"id":"it-a2-r-18","level":"A2","skill":"reading","prompt":"Perché il corso è stato annullato?","options":["Mancano iscritti","Il docente è malato","La sala è occupata","Il prezzo è aumentato"],"answer":1,"explanation":"Il messaggio indica la malattia del docente.","passage":"Il corso di oggi non si terrà perché il docente è malato. La nuova data sarà comunicata domani."},{"id":"it-a2-r-19","level":"A2","skill":"reading","prompt":"Entro quando bisogna rispondere?","options":["Oggi","Mercoledì","Venerdì","La prossima settimana"],"answer":2,"explanation":"La conferma è richiesta entro venerdì.","passage":"Confermi la partecipazione alla riunione entro venerdì rispondendo a questa email."},{"id":"it-a2-r-20","level":"A2","skill":"reading","prompt":"Che cosa è incluso nel prezzo?","options":["Solo la camera","Camera e colazione","Pranzo e cena","Parcheggio e cena"],"answer":1,"explanation":"Il prezzo comprende pernottamento e colazione.","passage":"Offerta weekend: due notti in camera doppia con colazione inclusa, 180 euro."},{"id":"it-b1-g-01","level":"B1","skill":"grammar","prompt":"Se avessi più tempo, ___ un corso.","options":["seguirei","seguo","seguirò","ho seguito"],"answer":0,"explanation":"Il periodo ipotetico della possibilità usa condizionale e congiuntivo imperfetto."},{"id":"it-b1-g-02","level":"B1","skill":"grammar","prompt":"Penso che il progetto ___ utile.","options":["sia","è","sarà sicuramente","era stato"],"answer":0,"explanation":"Dopo “penso che” si usa normalmente il congiuntivo."},{"id":"it-b1-g-03","level":"B1","skill":"grammar","prompt":"Appena ___ il rapporto, te lo invierò.","options":["avrò finito","finivo","finirei","abbia finito ieri"],"answer":0,"explanation":"Per un’azione futura anteriore si usa il futuro anteriore."},{"id":"it-b1-g-04","level":"B1","skill":"grammar","prompt":"Nonostante ___ stanco, ha continuato a lavorare.","options":["fosse","era","sarà","essere"],"answer":0,"explanation":"Dopo “nonostante” si usa il congiuntivo."},{"id":"it-b1-g-05","level":"B1","skill":"grammar","prompt":"Mi ha chiesto se ___ disponibile il giorno dopo.","options":["sarei stato","sarò","sono","fossi ieri"],"answer":0,"explanation":"Nel discorso indiretto al passato si usa il condizionale composto."},{"id":"it-b1-g-06","level":"B1","skill":"grammar","prompt":"È la prima volta che ___ questo programma.","options":["uso","usavo","userò","avrei usato"],"answer":0,"explanation":"Con “è la prima volta che” è naturale il presente."},{"id":"it-b1-g-07","level":"B1","skill":"grammar","prompt":"Il documento deve ___ entro domani.","options":["essere firmato","firmare","firmato essere","si firma"],"answer":0,"explanation":"La forma passiva corretta è “deve essere firmato”."},{"id":"it-b1-g-08","level":"B1","skill":"grammar","prompt":"Pur ___ poco tempo, siamo riusciti a finire.","options":["avendo","avuto","abbiamo","avremmo"],"answer":0,"explanation":"“Pur avendo” introduce una concessione."},{"id":"it-b1-v-09","level":"B1","skill":"vocabulary","prompt":"La riunione è stata ___ a causa della malattia del responsabile.","options":["rinviata","costruita","raggiunta","assunta"],"answer":0,"explanation":"Una riunione spostata è rinviata."},{"id":"it-b1-v-10","level":"B1","skill":"vocabulary","prompt":"Dobbiamo ___ una soluzione prima di venerdì.","options":["trovare","raggiungere una stanza","spedire un problema","assumere un prezzo"],"answer":0,"explanation":"La collocazione corretta è “trovare una soluzione”."},{"id":"it-b1-v-11","level":"B1","skill":"vocabulary","prompt":"Il cliente ha presentato un ___.","options":["reclamo","incrocio","turno di notte","prestito linguistico"],"answer":0,"explanation":"Un reclamo esprime insoddisfazione."},{"id":"it-b1-v-12","level":"B1","skill":"vocabulary","prompt":"Il nuovo sistema ha reso il processo più ___.","options":["efficiente","rumoroso","casuale","fragile"],"answer":0,"explanation":"“Efficiente” descrive un processo che usa bene tempo e risorse."},{"id":"it-b1-v-13","level":"B1","skill":"vocabulary","prompt":"La decisione è stata presa dopo un’attenta ___.","options":["valutazione","spedizione","prenotazione","traduzione"],"answer":0,"explanation":"Prima di decidere si fa una valutazione."},{"id":"it-b1-v-14","level":"B1","skill":"vocabulary","prompt":"Il responsabile ha ___ il problema durante la riunione.","options":["sollevato","abitato","versato","indossato"],"answer":0,"explanation":"“Sollevare un problema” significa portarlo all’attenzione."},{"id":"it-b1-r-15","level":"B1","skill":"reading","prompt":"Che cosa potranno scegliere i dipendenti?","options":["Lo stipendio","L’orario di inizio","Il responsabile","Il numero di ore"],"answer":1,"explanation":"Potranno scegliere quando iniziare.","passage":"Dal mese prossimo i dipendenti potranno iniziare tra le 7 e le 10, ma dovranno svolgere tutte le ore previste dal contratto."},{"id":"it-b1-r-16","level":"B1","skill":"reading","prompt":"Qual è lo scopo principale del messaggio?","options":["Criticare i dipendenti","Preparare una prova del sistema","Annullare il progetto","Ridurre il personale"],"answer":1,"explanation":"Il messaggio organizza una prova prima del lancio.","passage":"Prima di introdurre il nuovo software, faremo una prova con un piccolo gruppo. I partecipanti dovranno segnalare problemi e suggerimenti."},{"id":"it-b1-r-17","level":"B1","skill":"reading","prompt":"Perché il rimborso richiederà più tempo?","options":["Manca il prodotto","Serve una verifica aggiuntiva","La banca è chiusa","Il cliente non ha pagato"],"answer":1,"explanation":"Il caso deve essere verificato manualmente.","passage":"Il rimborso è stato approvato, ma poiché il pagamento è avvenuto con due metodi diversi, sarà necessaria una verifica manuale."},{"id":"it-b1-r-18","level":"B1","skill":"reading","prompt":"Qual è il vantaggio indicato?","options":["Meno comunicazione","Maggiore flessibilità","Più ore obbligatorie","Eliminazione delle riunioni"],"answer":1,"explanation":"Il testo presenta la flessibilità come vantaggio.","passage":"Il lavoro ibrido offre maggiore flessibilità, ma richiede regole chiare per condividere informazioni tra chi è in ufficio e chi lavora da casa."},{"id":"it-b1-r-19","level":"B1","skill":"reading","prompt":"Che cosa propone l’autore?","options":["Eliminare la formazione","Affiancare teoria e pratica","Ridurre gli obiettivi","Usare solo video"],"answer":1,"explanation":"Propone di combinare spiegazioni e applicazione.","passage":"Una formazione efficace non dovrebbe limitarsi a presentare regole. I partecipanti devono poterle applicare a casi realistici e ricevere feedback."},{"id":"it-b1-r-20","level":"B1","skill":"reading","prompt":"Qual è la causa principale del ritardo?","options":["Un errore del cliente","La mancanza di un componente","Uno sciopero","Un cambio di indirizzo"],"answer":1,"explanation":"Manca un componente necessario.","passage":"La consegna è stata posticipata perché un componente essenziale non è ancora arrivato dal fornitore."},{"id":"it-b2-g-01","level":"B2","skill":"grammar","prompt":"Quando siamo arrivati, la presentazione ___.","options":["era già iniziata","inizia","inizierà","sarebbe iniziata domani"],"answer":0,"explanation":"Il trapassato prossimo indica un’azione anteriore a un’altra nel passato."},{"id":"it-b2-g-02","level":"B2","skill":"grammar","prompt":"Qualora ___ ulteriori problemi, contattateci subito.","options":["sorgessero","sorgono","sorgeranno","sono sorti ieri"],"answer":0,"explanation":"Dopo “qualora” si usa il congiuntivo."},{"id":"it-b2-g-03","level":"B2","skill":"grammar","prompt":"Il progetto sarebbe stato approvato se i costi ___ inferiori.","options":["fossero stati","sono stati","saranno","siano"],"answer":0,"explanation":"Nel periodo ipotetico irreale del passato si usa il congiuntivo trapassato."},{"id":"it-b2-g-04","level":"B2","skill":"grammar","prompt":"Non è chiaro fino a che punto la misura ___ efficace.","options":["sia","è certamente","sarà stata","essendo"],"answer":0,"explanation":"L’incertezza richiede il congiuntivo."},{"id":"it-b2-g-05","level":"B2","skill":"grammar","prompt":"Il direttore ha insistito affinché tutti ___ informati.","options":["fossero","erano","saranno","sono stati"],"answer":0,"explanation":"“Affinché” regge il congiuntivo."},{"id":"it-b2-g-06","level":"B2","skill":"grammar","prompt":"A prescindere da come ___ la trattativa, servirà un piano alternativo.","options":["vada","va","andrà sicuramente","andava"],"answer":0,"explanation":"La costruzione concessiva richiede il congiuntivo."},{"id":"it-b2-g-07","level":"B2","skill":"grammar","prompt":"Il rapporto, ___ ieri dal consiglio, sarà pubblicato domani.","options":["approvato","approvando","approvare","sia approvato"],"answer":0,"explanation":"Il participio passato riduce una relativa passiva."},{"id":"it-b2-g-08","level":"B2","skill":"grammar","prompt":"Più il sistema diventa complesso, ___ difficile controllarlo.","options":["più è","è più di","tanto è","più sarebbe stato"],"answer":0,"explanation":"La correlazione corretta è “più…, più…”."},{"id":"it-b2-v-09","level":"B2","skill":"vocabulary","prompt":"La sua spiegazione era chiara e ___.","options":["coerente","casuale","temporanea","sensibile"],"answer":0,"explanation":"“Coerente” indica logica e assenza di contraddizioni."},{"id":"it-b2-v-10","level":"B2","skill":"vocabulary","prompt":"I risultati vanno interpretati con ___.","options":["cautela","fretta assoluta","indifferenza","rumore"],"answer":0,"explanation":"“Con cautela” è la collocazione corretta."},{"id":"it-b2-v-11","level":"B2","skill":"vocabulary","prompt":"La nuova procedura mira a ___ gli errori.","options":["ridurre","abitare","versare","prenotare"],"answer":0,"explanation":"Una procedura può ridurre gli errori."},{"id":"it-b2-v-12","level":"B2","skill":"vocabulary","prompt":"Il problema non è isolato, ma ___.","options":["ricorrente","commestibile","silenzioso","gratuito"],"answer":0,"explanation":"“Ricorrente” significa che si ripete."},{"id":"it-b2-v-13","level":"B2","skill":"vocabulary","prompt":"La proposta ha ricevuto un’accoglienza ___.","options":["contrastante","rettangolare","notturna","liquida"],"answer":0,"explanation":"“Accoglienza contrastante” indica reazioni diverse."},{"id":"it-b2-v-14","level":"B2","skill":"vocabulary","prompt":"Serve una soluzione che sia economicamente ___.","options":["sostenibile","affollata","provvisoria di","sensibile a caso"],"answer":0,"explanation":"Una soluzione economicamente sostenibile può durare nel tempo."},{"id":"it-b2-r-15","level":"B2","skill":"reading","prompt":"Che cosa raccomanda il rapporto?","options":["Eliminare il lavoro remoto","Un modello ibrido","Ridurre la comunicazione","Il ritorno completo"],"answer":1,"explanation":"Raccomanda incontri in presenza senza abolire il remoto.","passage":"Il rapporto afferma che il lavoro da remoto ha aumentato la produttività ma ridotto lo scambio informale di conoscenze. Raccomanda incontri regolari in presenza, non un ritorno completo in ufficio."},{"id":"it-b2-r-16","level":"B2","skill":"reading","prompt":"Qual è la posizione dell’autore?","options":["I dati sono inutili","I dati aiutano ma non sostituiscono il giudizio","Ogni decisione deve essere automatica","L’esperienza personale basta sempre"],"answer":1,"explanation":"Il testo sostiene un uso equilibrato dei dati.","passage":"I dati possono rendere le decisioni più trasparenti, ma non eliminano la necessità di interpretare il contesto e valutare conseguenze difficili da misurare."},{"id":"it-b2-r-17","level":"B2","skill":"reading","prompt":"Perché l’aumento non prova ancora una tendenza?","options":["I dati sono falsi","Dipende in parte da un ordine eccezionale","Il mercato è chiuso","Mancano dipendenti"],"answer":1,"explanation":"Una parte importante è dovuta a un evento unico.","passage":"Le vendite sono cresciute, ma quasi metà dell’aumento deriva da un ordine eccezionale. È quindi prematuro parlare di una ripresa stabile."},{"id":"it-b2-r-18","level":"B2","skill":"reading","prompt":"Quale rischio viene evidenziato?","options":["Troppe regole possono ridurre la capacità di adattarsi","La flessibilità elimina ogni controllo","Gli standard sono sempre inutili","Le eccezioni aumentano i profitti"],"answer":0,"explanation":"Il rischio è una rigidità eccessiva.","passage":"Procedure standard migliorano la coerenza, ma se applicate senza considerare casi particolari possono produrre decisioni inappropriate."},{"id":"it-b2-r-19","level":"B2","skill":"reading","prompt":"Che cosa distingue le due strategie?","options":["Solo il prezzo","Il modo di gestire l’incertezza","Il numero di uffici","La lingua dei documenti"],"answer":1,"explanation":"Il testo contrappone due modi di affrontare l’incertezza.","passage":"La prima strategia riduce i rischi rinviando la decisione; la seconda accetta una parte di incertezza per ottenere informazioni prima."},{"id":"it-b2-r-20","level":"B2","skill":"reading","prompt":"Qual è la conclusione più corretta?","options":["La tecnologia causa sempre disuguaglianze","Gli effetti dipendono anche da come viene introdotta","L’innovazione non cambia il lavoro","La formazione è irrilevante"],"answer":1,"explanation":"Il testo lega gli effetti alle modalità di implementazione.","passage":"La stessa tecnologia può aumentare l’autonomia in un’organizzazione e il controllo in un’altra. Molto dipende dalle regole e dagli obiettivi con cui viene introdotta."},{"id":"it-c1-g-01","level":"C1","skill":"grammar","prompt":"Raramente ___ una proposta così convincente.","options":["ho sentito","sentirei","sentirò","avevo sentito domani"],"answer":0,"explanation":"L’avverbio non cambia il normale uso del passato prossimo."},{"id":"it-c1-g-02","level":"C1","skill":"grammar","prompt":"Benché la misura ___ risultati iniziali, restano dubbi sulla sua durata.","options":["abbia prodotto","ha prodotto certamente","produrrà","produceva sempre"],"answer":0,"explanation":"“Benché” regge il congiuntivo."},{"id":"it-c1-g-03","level":"C1","skill":"grammar","prompt":"Non si può escludere che i dati ___ incompleti.","options":["siano","sono sicuramente","saranno stati sempre","essere"],"answer":0,"explanation":"L’espressione di possibilità richiede il congiuntivo."},{"id":"it-c1-g-04","level":"C1","skill":"grammar","prompt":"Era necessario che la decisione ___ prima della pubblicazione.","options":["fosse motivata","era motivata","sarà motivata","motivava"],"answer":0,"explanation":"Nel passato, “era necessario che” richiede il congiuntivo imperfetto."},{"id":"it-c1-g-05","level":"C1","skill":"grammar","prompt":"Per quanto ___ fondate, le obiezioni non cambiano la conclusione.","options":["possano essere","sono","saranno","essendo state domani"],"answer":0,"explanation":"“Per quanto” concessivo regge il congiuntivo."},{"id":"it-c1-g-06","level":"C1","skill":"grammar","prompt":"Il problema è meno semplice di quanto ___ inizialmente.","options":["sembrasse","sembrava certo","sembra di","sembrerà stato"],"answer":0,"explanation":"Dopo il comparativo con “di quanto” è naturale il congiuntivo."},{"id":"it-c1-g-07","level":"C1","skill":"grammar","prompt":"La riforma, lungi dal ___ il problema, lo ha reso più visibile.","options":["risolvere","risolto","risolvesse","risoluzione"],"answer":0,"explanation":"“Lungi dal” è seguito dall’infinito."},{"id":"it-c1-g-08","level":"C1","skill":"grammar","prompt":"Che la scelta sia discutibile non ___ che sia priva di logica.","options":["significa","significhi di","significato","significherà stato"],"answer":0,"explanation":"La frase soggettiva richiede qui l’indicativo nella principale."},{"id":"it-c1-v-09","level":"C1","skill":"vocabulary","prompt":"I risultati ___ la necessità di ulteriori ricerche.","options":["sottolineano","trascurano","sospendono","disperdono"],"answer":0,"explanation":"“Sottolineare la necessità” significa evidenziarla."},{"id":"it-c1-v-10","level":"C1","skill":"vocabulary","prompt":"L’argomentazione è solida, ma la conclusione appare troppo ___.","options":["categorica","commestibile","affollata","rettangolare"],"answer":0,"explanation":"“Categorica” indica una conclusione espressa senza sfumature."},{"id":"it-c1-v-11","level":"C1","skill":"vocabulary","prompt":"La distinzione proposta è utile, anche se non sempre ___.","options":["netta","liquida","sonora","gratuita"],"answer":0,"explanation":"Una distinzione può essere netta o sfumata."},{"id":"it-c1-v-12","level":"C1","skill":"vocabulary","prompt":"Il rapporto mette in luce una conseguenza spesso ___.","options":["trascurata","indossata","prenotata","abitata"],"answer":0,"explanation":"Una conseguenza ignorata è trascurata."},{"id":"it-c1-v-13","level":"C1","skill":"vocabulary","prompt":"La misura ha avuto effetti ___.","options":["ambivalenti","triangolari","domestici soltanto","commestibili"],"answer":0,"explanation":"“Ambivalenti” indica effetti sia positivi sia negativi."},{"id":"it-c1-v-14","level":"C1","skill":"vocabulary","prompt":"L’autore invita a non ___ correlazione e causalità.","options":["confondere","spedire","assumere un tavolo","prenotare"],"answer":0,"explanation":"Correlazione e causalità non vanno confuse."},{"id":"it-c1-r-15","level":"C1","skill":"reading","prompt":"Qual è la preoccupazione principale?","options":["L’automazione è sempre dannosa","Un valore importante può essere ignorato","L’efficienza non si può misurare","La politica aziendale è inutile"],"answer":1,"explanation":"Teme che valori meno visibili vengano ignorati.","passage":"L’autrice non rifiuta l’automazione; contesta invece l’idea che la sola efficienza debba guidare la politica aziendale. I risultati misurabili possono nascondere forme di valore meno visibili."},{"id":"it-c1-r-16","level":"C1","skill":"reading","prompt":"Che cosa sostiene implicitamente il testo?","options":["Più documenti garantiscono trasparenza","La trasparenza richiede informazioni comprensibili e pertinenti","I criteri devono restare segreti","La quantità è sempre più importante della qualità"],"answer":1,"explanation":"La trasparenza dipende dalla comprensibilità, non solo dalla quantità.","passage":"Pubblicare molti documenti non rende automaticamente un processo trasparente. Se criteri e passaggi decisivi restano difficili da individuare, l’abbondanza di dati può perfino confondere."},{"id":"it-c1-r-17","level":"C1","skill":"reading","prompt":"Come vengono trattate le obiezioni?","options":["Sono ignorate","Limitano la portata della tesi senza annullarla","Dimostrano che la tesi è falsa","Sostituiscono completamente la conclusione"],"answer":1,"explanation":"Le obiezioni precisano, ma non eliminano, la tesi.","passage":"Le obiezioni sono fondate e richiedono una formulazione più prudente. Tuttavia non negano il nucleo dell’argomento, ma ne delimitano l’ambito."},{"id":"it-c1-r-18","level":"C1","skill":"reading","prompt":"Quale tensione descrive l’autore?","options":["Velocità contro precisione","Uniformità contro attenzione ai casi particolari","Profitto contro salario","Scrittura contro ascolto"],"answer":1,"explanation":"Il testo contrappone standard comuni e casi specifici.","passage":"Gli standard rendono le decisioni confrontabili, ma possono trattare come uguali situazioni molto diverse. Un sistema efficace deve quindi combinare regole e possibilità motivate di eccezione."},{"id":"it-c1-r-19","level":"C1","skill":"reading","prompt":"Perché il risultato va interpretato con prudenza?","options":["Il campione è limitato e non rappresentativo","Non esistono dati","La ricerca è troppo lunga","Tutti i partecipanti hanno risposto uguale"],"answer":0,"explanation":"Il limite principale riguarda il campione.","passage":"Lo studio mostra un miglioramento rilevante, ma coinvolge un gruppo piccolo e selezionato. Non è certo che lo stesso effetto si presenti in contesti diversi."},{"id":"it-c1-r-20","level":"C1","skill":"reading","prompt":"Qual è il punto centrale?","options":["Ogni compromesso è negativo","Il compromesso è utile solo se non nasconde il conflitto reale","Il consenso completo è sempre possibile","Le parole non influenzano le decisioni"],"answer":1,"explanation":"Il testo distingue compromessi operativi da formule che nascondono il dissenso.","passage":"Il compromesso permette di agire quando l’accordo completo non è possibile. Diventa però problematico se serve soltanto a mascherare obiettivi incompatibili."},{"id":"it-c2-g-01","level":"C2","skill":"grammar","prompt":"Senza il suo intervento, i negoziati ___.","options":["sarebbero falliti","falliranno","falliscono","erano falliti prima"],"answer":0,"explanation":"Il condizionale composto esprime una conseguenza irreale nel passato."},{"id":"it-c2-g-02","level":"C2","skill":"grammar","prompt":"Non che la riforma ___ inutile, ma affronta solo una parte del problema.","options":["sia","è certamente","sarà","era stata sempre"],"answer":0,"explanation":"“Non che” regge il congiuntivo."},{"id":"it-c2-g-03","level":"C2","skill":"grammar","prompt":"Per quanto se ne ___, la decisione sembra già presa.","options":["discuta","discute","discuterà","ha discusso certamente"],"answer":0,"explanation":"La costruzione concessiva richiede il congiuntivo."},{"id":"it-c2-g-04","level":"C2","skill":"grammar","prompt":"Ammesso e non concesso che i dati ___ corretti, la conclusione resta eccessiva.","options":["siano","sono","saranno","erano certamente"],"answer":0,"explanation":"La formula ipotetica richiede il congiuntivo."},{"id":"it-c2-g-05","level":"C2","skill":"grammar","prompt":"Se anche la misura ___ effetti positivi, non ne seguirebbe la necessità.","options":["avesse","ha","avrà","aveva certamente"],"answer":0,"explanation":"La concessione ipotetica usa il congiuntivo imperfetto."},{"id":"it-c2-g-06","level":"C2","skill":"grammar","prompt":"La tesi è formulata in modo tale da non poter essere facilmente ___.","options":["confutata","confutando","confutare","si confuta"],"answer":0,"explanation":"Dopo “essere” serve il participio passato."},{"id":"it-c2-g-07","level":"C2","skill":"grammar","prompt":"È proprio ciò che il rapporto tace a ___ la sua conclusione fragile.","options":["rendere","reso","rendesse","avere reso ieri"],"answer":0,"explanation":"La costruzione scissa usa “a” più infinito."},{"id":"it-c2-g-08","level":"C2","skill":"grammar","prompt":"Non fosse stato per quell’errore, la discrepanza sarebbe rimasta ___.","options":["inosservata","osservando","osservare","si osserva"],"answer":0,"explanation":"Serve un participio/aggettivo riferito a “discrepanza”."},{"id":"it-c2-v-09","level":"C2","skill":"vocabulary","prompt":"Le sue scuse erano così ___ da sembrare un tentativo di evitare ogni responsabilità.","options":["equivoche","meticolose","franche","tangibili"],"answer":0,"explanation":"“Equivoche” indica ambiguità intenzionale."},{"id":"it-c2-v-10","level":"C2","skill":"vocabulary","prompt":"Il testo adotta un tono solo apparentemente ___.","options":["elogiativo","commestibile","geografico","numerico"],"answer":0,"explanation":"Un tono elogiativo sembra lodare."},{"id":"it-c2-v-11","level":"C2","skill":"vocabulary","prompt":"L’autore smonta la tesi con una critica ___.","options":["sottile","rettangolare","stagionale","liquida"],"answer":0,"explanation":"Una critica sottile è indiretta ma precisa."},{"id":"it-c2-v-12","level":"C2","skill":"vocabulary","prompt":"La distinzione rischia di essere più ___ che reale.","options":["nominale","alimentare","notturna","metallica"],"answer":0,"explanation":"“Nominale” indica una differenza solo di nome."},{"id":"it-c2-v-13","level":"C2","skill":"vocabulary","prompt":"La formulazione lascia volutamente la questione ___.","options":["irrisolta","abitata","spedita","indossata"],"answer":0,"explanation":"Una questione non risolta resta irrisolta."},{"id":"it-c2-v-14","level":"C2","skill":"vocabulary","prompt":"Il ragionamento è valido solo a patto di non ___ ciò che vuole dimostrare.","options":["presupporre","prenotare","versare","tradurre"],"answer":0,"explanation":"Un ragionamento circolare presuppone la conclusione."},{"id":"it-c2-r-15","level":"C2","skill":"reading","prompt":"Come va interpretato il tono?","options":["Del tutto sincero","Neutrale","Ironico e critico","Confuso"],"answer":2,"explanation":"I complimenti rivelano indirettamente contraddizioni.","passage":"L’apparente elogio del saggio è volutamente ambiguo: ogni complimento è formulato in modo da rivelare discretamente le contraddizioni della politica descritta."},{"id":"it-c2-r-16","level":"C2","skill":"reading","prompt":"Qual è la critica principale?","options":["La trasparenza è sempre dannosa","Una quantità eccessiva di dati può simulare apertura senza chiarire le decisioni","I documenti devono essere eliminati","Solo gli esperti possono leggere i dati"],"answer":1,"explanation":"La critica riguarda una trasparenza solo apparente.","passage":"La richiesta di completa trasparenza sembra indiscutibile. Tuttavia, una massa di informazioni secondarie può nascondere i criteri davvero decisivi e trasformare l’apertura in una semplice rappresentazione."},{"id":"it-c2-r-17","level":"C2","skill":"reading","prompt":"Che cosa mette in discussione il testo?","options":["La necessità di regole","L’equivalenza automatica tra trattamento uguale e giustizia","L’esistenza di condizioni diverse","Ogni forma di uguaglianza"],"answer":1,"explanation":"Regole uguali possono avere effetti diversi.","passage":"Una regola formalmente identica può incidere su condizioni di partenza molto diverse, rafforzando disuguaglianze già esistenti. Trattamento uguale e giustizia non coincidono necessariamente."},{"id":"it-c2-r-18","level":"C2","skill":"reading","prompt":"Quale inferenza è più fondata?","options":["La riforma non produce alcun effetto","Corregge difetti visibili ma potrebbe non modificare gli incentivi di fondo","Risolve definitivamente il problema","Gli incentivi non contano"],"answer":1,"explanation":"Il testo distingue effetti immediati e problema strutturale.","passage":"Non si può dire che la riforma sia priva di effetti: elimina alcuni difetti evidenti. Resta però incerto se modifichi il sistema di incentivi che genera il problema."},{"id":"it-c2-r-19","level":"C2","skill":"reading","prompt":"Perché la distinzione è instabile?","options":["Le categorie si sovrappongono nei casi concreti","Le definizioni sono troppo brevi solo per errore tipografico","Non esistono esempi","Il testo cambia lingua"],"answer":0,"explanation":"I casi reali non rispettano sempre confini netti.","passage":"La distinzione è utile sul piano analitico, ma nei casi concreti le due categorie si sovrappongono. Trattarla come assoluta rischia quindi di produrre conclusioni artificiali."},{"id":"it-c2-r-20","level":"C2","skill":"reading","prompt":"Quale strategia retorica usa l’autore?","options":["Afferma direttamente il contrario","Concede parte della tesi prima di limitarne la portata","Evita ogni argomento","Elenca soltanto dati"],"answer":1,"explanation":"L’autore riconosce un punto e poi ne restringe le conseguenze.","passage":"Che l’efficienza sia aumentata non è in discussione. Ciò che non segue automaticamente è che ogni costo sociale della misura debba per questo essere accettato."}]}
+{
+  "language": "it",
+  "version": "4.1.0-professional-direct",
+  "questionCount": 120,
+  "questions": [
+    {
+      "id": "it-a1-g-01",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Io ___ italiano ogni giorno.",
+      "options": [
+        "studio",
+        "studia",
+        "studiamo",
+        "studiate"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “studio” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-g-02",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Maria ___ a Milano.",
+      "options": [
+        "abito",
+        "abita",
+        "abiti",
+        "abitano"
+      ],
+      "answer": 1,
+      "explanation": "Con Maria si usa la terza persona singolare."
+    },
+    {
+      "id": "it-a1-g-03",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Noi ___ due fratelli.",
+      "options": [
+        "avete",
+        "hanno",
+        "abbiamo",
+        "ha"
+      ],
+      "answer": 2,
+      "explanation": "Con “noi” il verbo avere è “abbiamo”."
+    },
+    {
+      "id": "it-a1-g-04",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Luca e Paolo ___ studenti.",
+      "options": [
+        "è",
+        "siamo",
+        "siete",
+        "sono"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “sono” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-g-05",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Questo è ___ libro.",
+      "options": [
+        "un",
+        "una",
+        "uno",
+        "le"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “un” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-g-06",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Vorrei ___ acqua, per favore.",
+      "options": [
+        "del",
+        "dell’",
+        "della",
+        "dei"
+      ],
+      "answer": 1,
+      "explanation": "La risposta “dell’” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-g-07",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Vado ___ lavoro alle otto.",
+      "options": [
+        "alla",
+        "nel",
+        "al",
+        "sul"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “al” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-g-08",
+      "level": "A1",
+      "skill": "grammar",
+      "prompt": "Il bar è ___ banca e la farmacia.",
+      "options": [
+        "sotto la",
+        "dentro la",
+        "senza la",
+        "tra la"
+      ],
+      "answer": 3,
+      "explanation": "“Tra” indica una posizione in mezzo a due luoghi."
+    },
+    {
+      "id": "it-a1-v-09",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "Quale parola indica il giorno dopo lunedì?",
+      "options": [
+        "martedì",
+        "mercoledì",
+        "venerdì",
+        "domenica"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “martedì” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-v-10",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "Dove si compra il pane?",
+      "options": [
+        "in farmacia",
+        "in panetteria",
+        "in stazione",
+        "in banca"
+      ],
+      "answer": 1,
+      "explanation": "La risposta “in panetteria” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-v-11",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "Il contrario di “grande” è ___.",
+      "options": [
+        "lungo",
+        "alto",
+        "piccolo",
+        "nuovo"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “piccolo” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-v-12",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "Per telefonare uso il ___.",
+      "options": [
+        "cucchiaio",
+        "quaderno",
+        "cuscino",
+        "telefono"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “telefono” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-v-13",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "Una persona che lavora in ospedale può essere un ___.",
+      "options": [
+        "medico",
+        "cuoco",
+        "autista",
+        "cassiere"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “medico” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a1-v-14",
+      "level": "A1",
+      "skill": "vocabulary",
+      "prompt": "A colazione bevo spesso il ___.",
+      "options": [
+        "riso",
+        "caffè",
+        "sale",
+        "pane"
+      ],
+      "answer": 1,
+      "explanation": "Il caffè è una bevanda tipica della colazione."
+    },
+    {
+      "id": "it-a1-r-15",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "A che ora apre il sabato?",
+      "options": [
+        "Alle 9",
+        "Alle 14",
+        "Alle 10",
+        "È chiusa"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “Alle 10” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Biblioteca: lunedì–venerdì 9:00–18:00, sabato 10:00–14:00, domenica chiusa."
+    },
+    {
+      "id": "it-a1-r-16",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "Dove si trova Anna?",
+      "options": [
+        "A Roma",
+        "A Napoli",
+        "A Firenze",
+        "A Torino"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “A Torino” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Ciao Marco, sono a Torino per lavoro. Torno a Roma venerdì sera. Anna"
+    },
+    {
+      "id": "it-a1-r-17",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "Quanto costa il menù?",
+      "options": [
+        "12 euro",
+        "8 euro",
+        "10 euro",
+        "15 euro"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “12 euro” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Menù del giorno: pasta, insalata e acqua — 12 euro."
+    },
+    {
+      "id": "it-a1-r-18",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "Quando parte il treno?",
+      "options": [
+        "Alle 7:15",
+        "Alle 8:15",
+        "Alle 7:50",
+        "Alle 8:50"
+      ],
+      "answer": 1,
+      "explanation": "La risposta “Alle 8:15” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Treno per Bologna: partenza ore 8:15, binario 4."
+    },
+    {
+      "id": "it-a1-r-19",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "Che cosa deve portare il cliente?",
+      "options": [
+        "Il passaporto",
+        "Una fotografia",
+        "La ricevuta",
+        "Il contratto"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “La ricevuta” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Per cambiare un articolo, portare il prodotto e la ricevuta entro 30 giorni."
+    },
+    {
+      "id": "it-a1-r-20",
+      "level": "A1",
+      "skill": "reading",
+      "prompt": "Quale giorno è chiuso il negozio?",
+      "options": [
+        "Lunedì",
+        "Martedì",
+        "Sabato",
+        "Domenica"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “Domenica” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Orario: lunedì–sabato 9:30–19:00. Domenica chiuso."
+    },
+    {
+      "id": "it-a2-g-01",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Vivo qui ___ 2022.",
+      "options": [
+        "dal",
+        "per",
+        "tra",
+        "a"
+      ],
+      "answer": 0,
+      "explanation": "Con un punto iniziale nel tempo si usa “dal”."
+    },
+    {
+      "id": "it-a2-g-02",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Ieri ___ al cinema con Giulia.",
+      "options": [
+        "vado",
+        "sono andato",
+        "andrò",
+        "andavo sempre"
+      ],
+      "answer": 1,
+      "explanation": "“Ieri” richiede il passato prossimo per un evento concluso."
+    },
+    {
+      "id": "it-a2-g-03",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Quando ero piccolo, ___ spesso dai nonni.",
+      "options": [
+        "sono andato",
+        "andrò",
+        "andavo",
+        "andrei"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “andavo” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-g-04",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Domani ti ___ dopo il lavoro.",
+      "options": [
+        "chiamavo",
+        "ho chiamato",
+        "chiamassi",
+        "chiamerò"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “chiamerò” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-g-05",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Non ho comprato il vestito perché era ___ caro.",
+      "options": [
+        "troppo",
+        "molto di",
+        "tanti",
+        "abbastanza di"
+      ],
+      "answer": 0,
+      "explanation": "“Troppo caro” significa più caro del necessario."
+    },
+    {
+      "id": "it-a2-g-06",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Puoi aiutarmi ___ questo modulo?",
+      "options": [
+        "compilando di",
+        "a compilare",
+        "per compilo",
+        "di compilato"
+      ],
+      "answer": 1,
+      "explanation": "Dopo “aiutare” si usa “a” più infinito."
+    },
+    {
+      "id": "it-a2-g-07",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Queste chiavi sono ___.",
+      "options": [
+        "mio",
+        "mia",
+        "mie",
+        "miei"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “mie” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-g-08",
+      "level": "A2",
+      "skill": "grammar",
+      "prompt": "Se hai tempo, ___ insieme.",
+      "options": [
+        "pranzeremmo",
+        "pranzassimo",
+        "pranzato",
+        "pranziamo"
+      ],
+      "answer": 3,
+      "explanation": "Nel periodo ipotetico reale si usa il presente."
+    },
+    {
+      "id": "it-a2-v-09",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "Per favore, ___ il modulo entro venerdì.",
+      "options": [
+        "compili",
+        "chiuda",
+        "presti",
+        "arrivi"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “compili” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-v-10",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "La riunione è stata spostata: è stata ___.",
+      "options": [
+        "assunta",
+        "rinviata",
+        "riparata",
+        "spedita"
+      ],
+      "answer": 1,
+      "explanation": "“Rinviata” significa spostata a un momento successivo."
+    },
+    {
+      "id": "it-a2-v-11",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "Se un prodotto non funziona, è ___.",
+      "options": [
+        "affollato",
+        "gratuito",
+        "difettoso",
+        "silenzioso"
+      ],
+      "answer": 2,
+      "explanation": "Un prodotto che non funziona è difettoso."
+    },
+    {
+      "id": "it-a2-v-12",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "Prima di firmare, bisogna leggere il ___.",
+      "options": [
+        "marciapiede",
+        "cassetto",
+        "biglietto",
+        "contratto"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “contratto” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-v-13",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "Chi risponde alle domande dei clienti lavora nell’___.",
+      "options": [
+        "assistenza",
+        "agricoltura",
+        "edilizia",
+        "trasporto"
+      ],
+      "answer": 0,
+      "explanation": "La risposta “assistenza” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-v-14",
+      "level": "A2",
+      "skill": "vocabulary",
+      "prompt": "Il pacco è arrivato in ritardo a causa di un ___.",
+      "options": [
+        "aumento di stipendio",
+        "ritardo nella consegna",
+        "cambio di password",
+        "corso serale"
+      ],
+      "answer": 1,
+      "explanation": "La risposta “ritardo nella consegna” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico."
+    },
+    {
+      "id": "it-a2-r-15",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Quando sarà il nuovo appuntamento?",
+      "options": [
+        "Martedì alle 11",
+        "Martedì alle 15",
+        "Mercoledì alle 11",
+        "Mercoledì alle 15"
+      ],
+      "answer": 2,
+      "explanation": "Il nuovo appuntamento è mercoledì alle 11.",
+      "passage": "L’appuntamento è stato spostato da martedì alle 15 a mercoledì alle 11."
+    },
+    {
+      "id": "it-a2-r-16",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Che cosa deve fare il cliente?",
+      "options": [
+        "Aspettare a casa oggi",
+        "Annullare l’ordine",
+        "Pagare di nuovo",
+        "Ritirare il pacco domani"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “Ritirare il pacco domani” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Non abbiamo potuto consegnare il pacco. Può ritirarlo domani dopo le 9 presso l’ufficio postale centrale."
+    },
+    {
+      "id": "it-a2-r-17",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Qual è la nuova regola?",
+      "options": [
+        "Si può iniziare tra le 7 e le 9",
+        "Si lavora meno ore",
+        "L’ufficio chiude alle 7",
+        "Tutti lavorano da casa"
+      ],
+      "answer": 0,
+      "explanation": "È possibile scegliere l’inizio tra le 7 e le 9.",
+      "passage": "Da lunedì l’orario è flessibile: si può iniziare tra le 7 e le 9, rispettando le ore previste."
+    },
+    {
+      "id": "it-a2-r-18",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Perché il corso è stato annullato?",
+      "options": [
+        "Mancano iscritti",
+        "Il docente è malato",
+        "La sala è occupata",
+        "Il prezzo è aumentato"
+      ],
+      "answer": 1,
+      "explanation": "Il messaggio indica la malattia del docente.",
+      "passage": "Il corso di oggi non si terrà perché il docente è malato. La nuova data sarà comunicata domani."
+    },
+    {
+      "id": "it-a2-r-19",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Entro quando bisogna rispondere?",
+      "options": [
+        "Oggi",
+        "Mercoledì",
+        "Venerdì",
+        "La prossima settimana"
+      ],
+      "answer": 2,
+      "explanation": "La risposta “Venerdì” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Confermi la partecipazione alla riunione entro venerdì rispondendo a questa email."
+    },
+    {
+      "id": "it-a2-r-20",
+      "level": "A2",
+      "skill": "reading",
+      "prompt": "Che cosa è incluso nel prezzo?",
+      "options": [
+        "Solo la camera",
+        "Pranzo e cena",
+        "Parcheggio e cena",
+        "Camera e colazione"
+      ],
+      "answer": 3,
+      "explanation": "La risposta “Camera e colazione” rispetta la forma grammaticale o il significato richiesto dal contesto; le altre opzioni cambiano persona, tempo, genere, numero o campo semantico.",
+      "passage": "Offerta weekend: due notti in camera doppia con colazione inclusa, 180 euro."
+    },
+    {
+      "id": "it-b1-g-01",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Se avessi più tempo, ___ un corso serale.",
+      "options": [
+        "seguirei",
+        "seguivo",
+        "seguirò",
+        "ho seguito"
+      ],
+      "answer": 0,
+      "explanation": "Il periodo ipotetico della possibilità richiede congiuntivo imperfetto nella subordinata e condizionale presente nella principale."
+    },
+    {
+      "id": "it-b1-g-02",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Penso che questa soluzione ___ più semplice da applicare.",
+      "options": [
+        "è",
+        "sia",
+        "sarà stata",
+        "fosse ieri"
+      ],
+      "answer": 1,
+      "explanation": "Dopo un verbo di opinione non presentato come certezza si usa normalmente il congiuntivo presente."
+    },
+    {
+      "id": "it-b1-g-03",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Appena ___ il rapporto, te lo invierò.",
+      "options": [
+        "finivo",
+        "finirei",
+        "avrò finito",
+        "abbia finito ieri"
+      ],
+      "answer": 2,
+      "explanation": "L’azione di finire sarà completata prima di un’altra azione futura: serve il futuro anteriore."
+    },
+    {
+      "id": "it-b1-g-04",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Nonostante ___ stanco, ha continuato a lavorare.",
+      "options": [
+        "era",
+        "sarà",
+        "essere",
+        "fosse"
+      ],
+      "answer": 3,
+      "explanation": "La congiunzione concessiva “nonostante” introduce qui una proposizione al congiuntivo."
+    },
+    {
+      "id": "it-b1-g-05",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Mi ha chiesto se ___ disponibile il giorno seguente.",
+      "options": [
+        "sarei stato",
+        "sarò",
+        "sono",
+        "ero stato domani"
+      ],
+      "answer": 0,
+      "explanation": "Nel discorso indiretto al passato, un evento successivo si esprime con il condizionale composto."
+    },
+    {
+      "id": "it-b1-g-06",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Il documento deve ___ entro domani mattina.",
+      "options": [
+        "firmare",
+        "essere firmato",
+        "firmato essere",
+        "si firma"
+      ],
+      "answer": 1,
+      "explanation": "Dopo “deve” la forma passiva corretta è “essere firmato”."
+    },
+    {
+      "id": "it-b1-g-07",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "Pur ___ poco tempo, siamo riusciti a concludere il lavoro.",
+      "options": [
+        "avuto",
+        "abbiamo",
+        "avendo",
+        "avremmo"
+      ],
+      "answer": 2,
+      "explanation": "“Pur avendo” è una costruzione concessiva con gerundio presente."
+    },
+    {
+      "id": "it-b1-g-08",
+      "level": "B1",
+      "skill": "grammar",
+      "prompt": "È la prima volta che ___ questo programma senza assistenza.",
+      "options": [
+        "usavo",
+        "userò certamente",
+        "avrei usato",
+        "uso"
+      ],
+      "answer": 3,
+      "explanation": "Con “è la prima volta che” e riferimento al presente è naturale il presente indicativo."
+    },
+    {
+      "id": "it-b1-v-09",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "“Rispettare una scadenza” significa ___.",
+      "options": [
+        "completare il lavoro entro il termine",
+        "rinviare automaticamente il progetto",
+        "ignorare la data concordata",
+        "aumentare il budget"
+      ],
+      "answer": 0,
+      "explanation": "L’espressione indica il completamento di un’attività entro la data stabilita."
+    },
+    {
+      "id": "it-b1-v-10",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "Una soluzione “provvisoria” è una soluzione ___.",
+      "options": [
+        "definitiva",
+        "temporanea",
+        "obbligatoria per legge",
+        "priva di costi"
+      ],
+      "answer": 1,
+      "explanation": "“Provvisoria” significa adottata per un periodo limitato, in attesa di una soluzione stabile."
+    },
+    {
+      "id": "it-b1-v-11",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "“Prendere in considerazione un’osservazione” significa ___.",
+      "options": [
+        "rifiutarla senza leggerla",
+        "pubblicarla sui social",
+        "valutarla prima di decidere",
+        "trasformarla in un ordine"
+      ],
+      "answer": 2,
+      "explanation": "La locuzione indica che l’osservazione viene valutata come elemento utile alla decisione."
+    },
+    {
+      "id": "it-b1-v-12",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "Se un progetto è “in ritardo”, significa che ___.",
+      "options": [
+        "è stato concluso prima",
+        "non ha alcun costo",
+        "ha cambiato responsabile",
+        "non rispetta il calendario previsto"
+      ],
+      "answer": 3,
+      "explanation": "Essere in ritardo significa trovarsi oltre i tempi previsti dal piano."
+    },
+    {
+      "id": "it-b1-v-13",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "“Assumersi la responsabilità” vuol dire ___.",
+      "options": [
+        "accettare di rispondere delle conseguenze",
+        "delegare ogni decisione",
+        "evitare qualsiasi controllo",
+        "modificare un contratto"
+      ],
+      "answer": 0,
+      "explanation": "La locuzione indica l’accettazione delle conseguenze legate a una scelta o a un’azione."
+    },
+    {
+      "id": "it-b1-v-14",
+      "level": "B1",
+      "skill": "vocabulary",
+      "prompt": "Un’informazione “riservata” deve essere ___.",
+      "options": [
+        "diffusa pubblicamente",
+        "protetta da accessi non autorizzati",
+        "stampata in molte copie",
+        "inviata senza controllo"
+      ],
+      "answer": 1,
+      "explanation": "“Riservata” indica un’informazione destinata solo a persone autorizzate."
+    },
+    {
+      "id": "it-b1-r-15",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Perché l’azienda non introdurrà subito il nuovo sistema in tutti i reparti?",
+      "options": [
+        "Non dispone di alcun computer",
+        "Il sistema è vietato",
+        "Vuole prima verificarne il funzionamento in un’area limitata",
+        "I clienti hanno annullato il progetto"
+      ],
+      "answer": 2,
+      "explanation": "Il testo descrive una fase pilota finalizzata a individuare problemi prima dell’estensione generale.",
+      "passage": "Il nuovo sistema di assistenza sarà inizialmente usato soltanto dal reparto vendite. Dopo sei settimane verranno analizzati gli errori, i tempi di risposta e i commenti degli operatori. Solo allora la direzione deciderà se estenderlo agli altri reparti."
+    },
+    {
+      "id": "it-b1-r-16",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Che cosa deve fare chi non può partecipare alla prima sessione?",
+      "options": [
+        "Ignorare il corso",
+        "Presentarsi senza registrazione",
+        "Mandare un collega senza avvisare",
+        "Iscriversi alla data alternativa"
+      ],
+      "answer": 3,
+      "explanation": "Il messaggio prevede una seconda data per chi è impossibilitato a partecipare alla prima.",
+      "passage": "La formazione sulla sicurezza si terrà il 12 maggio. Chi quel giorno lavora fuori sede deve iscriversi alla sessione aggiuntiva del 19 maggio. La partecipazione a una delle due date è obbligatoria."
+    },
+    {
+      "id": "it-b1-r-17",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Qual è il problema principale segnalato dal cliente?",
+      "options": [
+        "La consegna è arrivata tardi e il prodotto era danneggiato",
+        "Il prezzo era troppo basso",
+        "L’indirizzo era corretto",
+        "Il manuale era troppo lungo"
+      ],
+      "answer": 0,
+      "explanation": "Il cliente collega due problemi: il ritardo e il danno riscontrato all’apertura del pacco.",
+      "passage": "L’ordine doveva arrivare lunedì, ma il corriere lo ha consegnato soltanto giovedì. Aprendo il pacco ho notato che la scocca dell’apparecchio era crepata. Vorrei sapere se la sostituzione può avvenire senza costi aggiuntivi."
+    },
+    {
+      "id": "it-b1-r-18",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Che cosa si può concludere dall’avviso?",
+      "options": [
+        "La biblioteca chiude definitivamente",
+        "Alcuni servizi restano disponibili in un’altra sede",
+        "Non è più possibile restituire libri",
+        "I lavori finiscono domani"
+      ],
+      "answer": 1,
+      "explanation": "L’attività è limitata, ma prestito e restituzione continuano in uno spazio temporaneo.",
+      "passage": "A causa dei lavori, la sala di lettura al primo piano resterà chiusa per due settimane. I libri potranno comunque essere presi in prestito e restituiti nel punto temporaneo dell’edificio accanto."
+    },
+    {
+      "id": "it-b1-r-19",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Perché la data di inizio dei test potrebbe cambiare?",
+      "options": [
+        "Il primo periodo è finito in anticipo",
+        "Il budget è aumentato",
+        "La consegna dell’attrezzatura non è ancora confermata",
+        "Il cliente ha già approvato tutto"
+      ],
+      "answer": 2,
+      "explanation": "L’avvio dei test dipende da una consegna la cui data non è ancora certa.",
+      "passage": "La prima fase è terminata secondo il programma. Tuttavia aspettiamo ancora la conferma della consegna dell’attrezzatura. Se il fornitore non spedirà entro venerdì, l’inizio dei test dovrà essere rinviato."
+    },
+    {
+      "id": "it-b1-r-20",
+      "level": "B1",
+      "skill": "reading",
+      "prompt": "Quale decisione è stata presa dopo il sondaggio?",
+      "options": [
+        "Eliminare completamente il lavoro da remoto",
+        "Chiudere l’ufficio",
+        "Ridurre la settimana a tre giorni",
+        "Consentire due giorni di lavoro da remoto alla settimana"
+      ],
+      "answer": 3,
+      "explanation": "La decisione costituisce un compromesso fra le preferenze dei dipendenti e le esigenze di collaborazione.",
+      "passage": "Molti dipendenti chiedevano tre giorni di lavoro da casa, mentre i responsabili segnalavano difficoltà nella collaborazione. L’azienda ha quindi stabilito che, da giugno, sarà possibile lavorare da remoto per due giorni alla settimana."
+    },
+    {
+      "id": "it-b2-g-01",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Se i dati fossero stati pubblicati prima, il gruppo ___ evitare parte degli errori.",
+      "options": [
+        "avrebbe potuto",
+        "potrà",
+        "poteva sempre",
+        "avesse potuto"
+      ],
+      "answer": 0,
+      "explanation": "Si tratta di una conseguenza non realizzata nel passato: serve il condizionale composto."
+    },
+    {
+      "id": "it-b2-g-02",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Non è chiaro ___ la misura produrrà gli effetti annunciati.",
+      "options": [
+        "che",
+        "se",
+        "cui",
+        "poiché"
+      ],
+      "answer": 1,
+      "explanation": "Dopo un’espressione di incertezza si introduce una domanda indiretta con “se”."
+    },
+    {
+      "id": "it-b2-g-03",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Il rapporto è stato redatto affinché ogni ipotesi ___ verificabile.",
+      "options": [
+        "è",
+        "sarà",
+        "fosse",
+        "essere"
+      ],
+      "answer": 2,
+      "explanation": "La proposizione finale introdotta da “affinché” richiede il congiuntivo."
+    },
+    {
+      "id": "it-b2-g-04",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Benché la proposta ___ ragionevole, non fu approvata.",
+      "options": [
+        "sembrava",
+        "sembra",
+        "sembrerà",
+        "sembrasse"
+      ],
+      "answer": 3,
+      "explanation": "“Benché” introduce una concessiva al congiuntivo imperfetto, coerente con il passato."
+    },
+    {
+      "id": "it-b2-g-05",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Più le regole sono dettagliate, più diventa difficile ___ ai casi insoliti.",
+      "options": [
+        "adattarle",
+        "le adattavano",
+        "adattate",
+        "che adattano"
+      ],
+      "answer": 0,
+      "explanation": "Dopo “diventa difficile” serve l’infinito con il pronome oggetto: “adattarle”."
+    },
+    {
+      "id": "it-b2-g-06",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "Il gruppo ha presentato varie opzioni, nessuna delle quali ___ tutti i requisiti.",
+      "options": [
+        "soddisfacendo",
+        "soddisfaceva",
+        "soddisfatta",
+        "avrebbe soddisfatto ieri"
+      ],
+      "answer": 1,
+      "explanation": "La relativa richiede una forma verbale finita all’imperfetto: “soddisfaceva”."
+    },
+    {
+      "id": "it-b2-g-07",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "A meno che non emergano nuovi elementi, la decisione ___ invariata.",
+      "options": [
+        "restava",
+        "sarebbe rimasta ieri",
+        "resterà",
+        "restando"
+      ],
+      "answer": 2,
+      "explanation": "La subordinata esprime una condizione futura; nella principale è naturale il futuro semplice."
+    },
+    {
+      "id": "it-b2-g-08",
+      "level": "B2",
+      "skill": "grammar",
+      "prompt": "La direttrice ha escluso che il ritardo ___ da una sola causa.",
+      "options": [
+        "dipendeva",
+        "dipenderà",
+        "dipendere",
+        "dipendesse"
+      ],
+      "answer": 3,
+      "explanation": "Dopo “ha escluso che” riferito al passato si usa il congiuntivo imperfetto."
+    },
+    {
+      "id": "it-b2-v-09",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "Una misura “proporzionata” è una misura ___.",
+      "options": [
+        "adeguata alla gravità e alla scala del problema",
+        "necessariamente più costosa",
+        "scelta senza criteri",
+        "priva di qualsiasi limite"
+      ],
+      "answer": 0,
+      "explanation": "“Proporzionata” indica un rapporto adeguato fra mezzo impiegato e problema affrontato."
+    },
+    {
+      "id": "it-b2-v-10",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "“Corroborare un’ipotesi” significa ___.",
+      "options": [
+        "sostituirla con un’opinione",
+        "rafforzarla con ulteriori elementi",
+        "evitare di verificarla",
+        "renderla segreta"
+      ],
+      "answer": 1,
+      "explanation": "Il verbo indica che nuove prove o osservazioni rendono un’ipotesi più credibile."
+    },
+    {
+      "id": "it-b2-v-11",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "Un risultato “controintuitivo” è un risultato che ___.",
+      "options": [
+        "conferma sempre il senso comune",
+        "non può essere misurato",
+        "contrasta con ciò che ci si aspetterebbe spontaneamente",
+        "è necessariamente falso"
+      ],
+      "answer": 2,
+      "explanation": "“Controintuitivo” descrive qualcosa che non coincide con l’aspettativa immediata."
+    },
+    {
+      "id": "it-b2-v-12",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "“Mitigare un rischio” significa ___.",
+      "options": [
+        "ignorarlo completamente",
+        "trasferirlo senza valutarlo",
+        "dimostrare che non esiste",
+        "ridurne la probabilità o l’impatto"
+      ],
+      "answer": 3,
+      "explanation": "Mitigare significa limitare il rischio, non necessariamente eliminarlo."
+    },
+    {
+      "id": "it-b2-v-13",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "Una conclusione “prematura” è formulata ___.",
+      "options": [
+        "prima che vi siano elementi sufficienti",
+        "dopo una verifica completa",
+        "con assoluta certezza",
+        "senza alcun riferimento temporale"
+      ],
+      "answer": 0,
+      "explanation": "“Prematura” indica una conclusione tratta troppo presto rispetto alle prove disponibili."
+    },
+    {
+      "id": "it-b2-v-14",
+      "level": "B2",
+      "skill": "vocabulary",
+      "prompt": "“Rendere conto di una decisione” significa ___.",
+      "options": [
+        "annunciarla senza giustificazione",
+        "spiegarne motivi e conseguenze",
+        "delegarla automaticamente",
+        "modificarla in segreto"
+      ],
+      "answer": 1,
+      "explanation": "La locuzione richiama responsabilità e trasparenza nella spiegazione della scelta."
+    },
+    {
+      "id": "it-b2-r-15",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Quale cautela suggerisce il testo nell’interpretare il miglioramento?",
+      "options": [
+        "Dimostra già una crescita permanente",
+        "Rende inutile ogni confronto",
+        "Potrebbe dipendere da un fattore eccezionale e non da una tendenza stabile",
+        "Dipende certamente da un errore contabile"
+      ],
+      "answer": 2,
+      "explanation": "Il testo distingue il dato positivo dalla sua possibile spiegazione e invita a non generalizzare troppo presto.",
+      "passage": "Nel trimestre le vendite sono aumentate del dodici per cento. Tuttavia quasi metà della crescita deriva da un unico contratto straordinario, difficilmente ripetibile. Prima di parlare di inversione di tendenza sarà necessario osservare almeno altri due trimestri."
+    },
+    {
+      "id": "it-b2-r-16",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Qual è il limite principale della procedura uniforme?",
+      "options": [
+        "Impedisce sempre gli errori",
+        "Elimina ogni discrezionalità positiva",
+        "Costa più di qualunque alternativa",
+        "Può produrre decisioni poco adatte nei casi atipici"
+      ],
+      "answer": 3,
+      "explanation": "La procedura aumenta la coerenza, ma il testo sottolinea il rischio di rigidità nei casi diversi dalla norma.",
+      "passage": "Una procedura comune riduce le differenze ingiustificate fra uffici e facilita il controllo. Nei casi insoliti, però, l’applicazione meccanica della stessa regola può ignorare circostanze rilevanti e portare a decisioni poco adeguate."
+    },
+    {
+      "id": "it-b2-r-17",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Quale posizione assume l’autore sul lavoro da remoto?",
+      "options": [
+        "Ne riconosce benefici e costi organizzativi",
+        "Lo considera soltanto dannoso",
+        "Sostiene che non abbia prodotto cambiamenti",
+        "Propone di eliminare gli uffici"
+      ],
+      "answer": 0,
+      "explanation": "L’autore presenta un bilancio: maggiore concentrazione individuale, ma minori scambi informali.",
+      "passage": "Dopo sei mesi di lavoro ibrido, molti dipendenti riferiscono una maggiore capacità di concentrazione. Allo stesso tempo, i responsabili osservano meno scambi informali e una circolazione più lenta delle informazioni non documentate. Il risultato non è quindi univoco."
+    },
+    {
+      "id": "it-b2-r-18",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Che cosa viene messo in discussione?",
+      "options": [
+        "La legittimità di qualunque obiettivo",
+        "L’adeguatezza dello strumento rispetto all’obiettivo",
+        "L’esistenza del problema",
+        "La competenza tecnica del personale"
+      ],
+      "answer": 1,
+      "explanation": "Il testo accetta il fine, ma dubita che il mezzo scelto sia proporzionato.",
+      "passage": "Nessuno contesta la necessità di ridurre gli abusi. Resta però da capire se il controllo generalizzato di tutte le comunicazioni sia uno strumento proporzionato o se esistano misure meno invasive e altrettanto efficaci."
+    },
+    {
+      "id": "it-b2-r-19",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Perché il confronto fra i due reparti non è conclusivo?",
+      "options": [
+        "I dati sono stati completamente inventati",
+        "Entrambi hanno usato lo stesso sistema",
+        "I reparti differiscono anche per esperienza e tipo di clienti",
+        "Non è stata misurata alcuna prestazione"
+      ],
+      "answer": 2,
+      "explanation": "Più variabili cambiano contemporaneamente, quindi non è possibile attribuire con certezza l’effetto a una sola causa.",
+      "passage": "Il reparto che ha adottato il nuovo software ha ridotto i tempi di risposta del venti per cento. Tuttavia impiega operatori più esperti e gestisce richieste meno complesse rispetto al reparto di controllo. Il confronto suggerisce un beneficio, ma non ne prova da solo la causa."
+    },
+    {
+      "id": "it-b2-r-20",
+      "level": "B2",
+      "skill": "reading",
+      "prompt": "Quale soluzione propone il testo?",
+      "options": [
+        "Libertà totale senza controlli",
+        "Una regola diversa per ogni persona",
+        "L’eliminazione di ogni procedura",
+        "Regole comuni con eccezioni motivate e verificabili"
+      ],
+      "answer": 3,
+      "explanation": "La proposta combina coerenza generale e flessibilità controllata.",
+      "passage": "Per evitare arbitrarietà servono criteri comuni. Tuttavia le regole dovrebbero consentire deroghe nei casi realmente eccezionali, purché la decisione sia motivata, documentata e successivamente verificabile."
+    },
+    {
+      "id": "it-c1-g-01",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Non è tanto la quantità dei dati a contare, quanto il modo in cui essi ___.",
+      "options": [
+        "vengono selezionati e contestualizzati",
+        "selezionano",
+        "siano selezionando",
+        "avrebbero selezionare"
+      ],
+      "answer": 0,
+      "explanation": "La struttura correlativa richiede qui una forma passiva finita e coerente con il soggetto plurale."
+    },
+    {
+      "id": "it-c1-g-02",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Per quanto la misura ___ efficace nel breve periodo, restano dubbi sui suoi effetti strutturali.",
+      "options": [
+        "può risultare",
+        "possa risultare",
+        "risulterebbe ieri",
+        "risultando"
+      ],
+      "answer": 1,
+      "explanation": "“Per quanto” concessivo richiede il congiuntivo presente."
+    },
+    {
+      "id": "it-c1-g-03",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Il rapporto distingue ciò che è stato osservato da ciò che se ne ___.",
+      "options": [
+        "potrà dedotto",
+        "deduceva necessariamente",
+        "può ragionevolmente dedurre",
+        "sia dedurre"
+      ],
+      "answer": 2,
+      "explanation": "La costruzione impersonale con modale richiede “può … dedurre”."
+    },
+    {
+      "id": "it-c1-g-04",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Qualora ___ nuove prove, la conclusione dovrebbe essere riesaminata.",
+      "options": [
+        "emergeranno",
+        "emergevano",
+        "emergendo",
+        "emergessero"
+      ],
+      "answer": 3,
+      "explanation": "“Qualora” introduce una condizione ipotetica formale al congiuntivo imperfetto."
+    },
+    {
+      "id": "it-c1-g-05",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "L’autore non nega il problema; contesta, semmai, che la soluzione proposta ___ l’unica possibile.",
+      "options": [
+        "sia",
+        "è",
+        "sarà certamente",
+        "essere"
+      ],
+      "answer": 0,
+      "explanation": "Dopo “contesta che” è richiesto il congiuntivo presente."
+    },
+    {
+      "id": "it-c1-g-06",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Aver pubblicato i criteri non implica che essi ___ comprensibili ai destinatari.",
+      "options": [
+        "sono diventati",
+        "siano diventati",
+        "diventeranno per forza",
+        "diventando"
+      ],
+      "answer": 1,
+      "explanation": "La subordinata oggettiva negata richiede il congiuntivo passato."
+    },
+    {
+      "id": "it-c1-g-07",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Il risultato sarebbe più convincente se il campione ___ in modo casuale.",
+      "options": [
+        "era selezionato",
+        "verrà selezionato",
+        "fosse stato selezionato",
+        "sia selezionando"
+      ],
+      "answer": 2,
+      "explanation": "L’ipotesi contraria al passato richiede il congiuntivo trapassato nella subordinata."
+    },
+    {
+      "id": "it-c1-g-08",
+      "level": "C1",
+      "skill": "grammar",
+      "prompt": "Non appena si ___ di chiarire i criteri, emersero divergenze prima invisibili.",
+      "options": [
+        "tentava sempre",
+        "sia tentato domani",
+        "tenterebbe",
+        "tentò"
+      ],
+      "answer": 3,
+      "explanation": "La narrazione di un evento puntuale concluso richiede il passato remoto."
+    },
+    {
+      "id": "it-c1-v-09",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "Una tesi “circoscritta” è una tesi ___.",
+      "options": [
+        "limitata a condizioni e casi specifici",
+        "valida senza eccezioni",
+        "espressa in modo ambiguo",
+        "priva di qualsiasi prova"
+      ],
+      "answer": 0,
+      "explanation": "“Circoscritta” indica una portata delimitata, non universale."
+    },
+    {
+      "id": "it-c1-v-10",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "“Esplicitare un presupposto” significa ___.",
+      "options": [
+        "eliminare tutti i dati",
+        "rendere chiara un’idea implicita da cui dipende il ragionamento",
+        "sostituire una prova con un’opinione",
+        "evitare di definire i termini"
+      ],
+      "answer": 1,
+      "explanation": "Esplicitare significa rendere manifesto ciò che prima era sottinteso."
+    },
+    {
+      "id": "it-c1-v-11",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "Un’argomentazione “fallace” è ___.",
+      "options": [
+        "necessariamente falsa in ogni premessa",
+        "espressa con parole semplici",
+        "apparentemente plausibile ma logicamente difettosa",
+        "priva di qualunque conclusione"
+      ],
+      "answer": 2,
+      "explanation": "La fallacia riguarda il modo in cui si passa dalle premesse alla conclusione."
+    },
+    {
+      "id": "it-c1-v-12",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "“Sottostimare un effetto” significa ___.",
+      "options": [
+        "attribuirgli una causa certa",
+        "descriverlo con precisione",
+        "eliminarlo statisticamente",
+        "valutarne l’entità come inferiore a quella reale"
+      ],
+      "answer": 3,
+      "explanation": "Il verbo indica una stima troppo bassa rispetto al valore effettivo."
+    },
+    {
+      "id": "it-c1-v-13",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "Una distinzione “dirimente” è una distinzione che ___.",
+      "options": [
+        "risolve un punto decisivo della discussione",
+        "aggiunge un dettaglio irrilevante",
+        "rende ogni tesi equivalente",
+        "evita qualsiasi scelta"
+      ],
+      "answer": 0,
+      "explanation": "“Dirimente” indica ciò che permette di sciogliere una questione decisiva."
+    },
+    {
+      "id": "it-c1-v-14",
+      "level": "C1",
+      "skill": "vocabulary",
+      "prompt": "“Ridimensionare una conclusione” significa ___.",
+      "options": [
+        "renderla più categorica",
+        "limitarne la portata alla luce di nuovi elementi",
+        "eliminare le premesse",
+        "trasformarla in una domanda"
+      ],
+      "answer": 1,
+      "explanation": "Ridimensionare significa formulare la conclusione in modo più prudente o limitato."
+    },
+    {
+      "id": "it-c1-r-15",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Qual è la principale riserva dell’autore rispetto alla trasparenza descritta?",
+      "options": [
+        "Ogni pubblicazione di dati è dannosa",
+        "I cittadini non dovrebbero accedere ai documenti",
+        "La pubblicazione è poco utile se i criteri decisivi restano opachi",
+        "La quantità di documenti è sempre insufficiente"
+      ],
+      "answer": 2,
+      "explanation": "La critica riguarda la qualità informativa e la comprensibilità, non la semplice quantità di materiale disponibile.",
+      "passage": "L’amministrazione ha pubblicato migliaia di pagine di documenti, ma non ha indicato quali criteri abbiano determinato la graduatoria finale. L’accesso formale alle informazioni è aumentato; la possibilità di ricostruire la decisione, invece, è rimasta quasi invariata."
+    },
+    {
+      "id": "it-c1-r-16",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Che effetto hanno le obiezioni sulla tesi iniziale?",
+      "options": [
+        "La rendono automaticamente falsa",
+        "Non hanno alcun rapporto con la tesi",
+        "Dimostrano che i dati sono inventati",
+        "Ne limitano la portata senza confutarla del tutto"
+      ],
+      "answer": 3,
+      "explanation": "Le obiezioni impongono una formulazione più circoscritta, ma non eliminano il nucleo dell’argomento.",
+      "passage": "Le critiche mostrano che il beneficio non si verifica in ogni settore e che dipende dalla qualità dell’attuazione. Ciò non annulla l’ipotesi iniziale, ma impedisce di presentarla come una regola universale."
+    },
+    {
+      "id": "it-c1-r-17",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Quale inferenza sarebbe ingiustificata?",
+      "options": [
+        "Estendere automaticamente il risultato a contesti diversi",
+        "Affermare che nel campione è stato osservato un effetto",
+        "Chiedere ulteriori verifiche",
+        "Distinguere osservazione e generalizzazione"
+      ],
+      "answer": 0,
+      "explanation": "Il campione può sostenere una conclusione locale, non necessariamente una generalizzazione universale.",
+      "passage": "Lo studio rileva una riduzione degli errori fra operatori volontari, già motivati e formati. Il risultato è reale per il gruppo osservato, ma non dimostra che lo stesso effetto si produrrebbe con personale scelto casualmente o in organizzazioni differenti."
+    },
+    {
+      "id": "it-c1-r-18",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Quale tensione mette in evidenza il testo?",
+      "options": [
+        "Velocità e costo della connessione",
+        "Coerenza delle regole e sensibilità alle differenze rilevanti",
+        "Teoria linguistica e traduzione",
+        "Numero di dipendenti e dimensione degli uffici"
+      ],
+      "answer": 1,
+      "explanation": "Il testo oppone il valore dell’uniformità al rischio di ignorare differenze sostanziali.",
+      "passage": "Applicare la stessa regola a tutti rende le decisioni comparabili e riduce favoritismi. Tuttavia, quando le condizioni di partenza sono molto diverse, l’uniformità formale può produrre conseguenze sproporzionate."
+    },
+    {
+      "id": "it-c1-r-19",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Perché il miglioramento osservato non dimostra da solo l’efficacia della riforma?",
+      "options": [
+        "Il risultato è necessariamente casuale",
+        "La riforma non è mai entrata in vigore",
+        "Nello stesso periodo sono cambiati anche altri fattori",
+        "Non esistono dati precedenti"
+      ],
+      "answer": 2,
+      "explanation": "La coincidenza temporale non basta a isolare la causa quando più condizioni mutano insieme.",
+      "passage": "Dopo la riforma i tempi di attesa sono diminuiti. Nello stesso trimestre, però, l’organico è aumentato e le richieste sono calate. Senza un confronto capace di separare questi fattori, attribuire tutto il miglioramento alla riforma sarebbe eccessivo."
+    },
+    {
+      "id": "it-c1-r-20",
+      "level": "C1",
+      "skill": "reading",
+      "prompt": "Quale modello decisionale sostiene il testo?",
+      "options": [
+        "Decisioni totalmente discrezionali",
+        "Regole rigide senza eccezioni",
+        "Assenza di documentazione",
+        "Criteri comuni, deroghe motivate e controllo successivo"
+      ],
+      "answer": 3,
+      "explanation": "La proposta combina prevedibilità, flessibilità giustificata e responsabilità.",
+      "passage": "Una buona procedura non dovrebbe scegliere fra uniformità assoluta e libertà incontrollata. Può stabilire criteri comuni, consentire eccezioni motivate e rendere ogni deroga verificabile in un controllo successivo."
+    },
+    {
+      "id": "it-c2-g-01",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "Che la conclusione appaia plausibile non significa che le premesse da cui ___ siano sufficienti.",
+      "options": [
+        "discenda",
+        "discende",
+        "discenderà certamente",
+        "fosse discendere"
+      ],
+      "answer": 0,
+      "explanation": "La subordinata relativa ha valore valutativo e non assertivo; il congiuntivo “discenda” segnala tale distanza."
+    },
+    {
+      "id": "it-c2-g-02",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "La misura, quand’anche ___ efficace, non risolverebbe il problema degli incentivi.",
+      "options": [
+        "si rivela",
+        "si rivelasse",
+        "si rivelerà",
+        "rivelandosi"
+      ],
+      "answer": 1,
+      "explanation": "“Quand’anche” introduce una concessiva ipotetica al congiuntivo imperfetto."
+    },
+    {
+      "id": "it-c2-g-03",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "Non perché i dati ___ falsi, ma perché non rispondono alla domanda decisiva.",
+      "options": [
+        "sono",
+        "saranno",
+        "siano",
+        "essendo stati domani"
+      ],
+      "answer": 2,
+      "explanation": "La negazione di una causa presunta richiede qui il congiuntivo."
+    },
+    {
+      "id": "it-c2-g-04",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "Se pure si ___ che l’effetto esiste, resterebbe da stabilirne la portata.",
+      "options": [
+        "ammetteva",
+        "ammetterà",
+        "ammettendo",
+        "ammettesse"
+      ],
+      "answer": 3,
+      "explanation": "“Se pure” introduce una concessione ipotetica al congiuntivo imperfetto."
+    },
+    {
+      "id": "it-c2-g-05",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "La tesi è formulata in modo tale da non poter essere ___.",
+      "options": [
+        "confutata da alcun dato contrario",
+        "confutare",
+        "si confuta",
+        "avendo confutato"
+      ],
+      "answer": 0,
+      "explanation": "Dopo “poter essere” è richiesto il participio passato nella costruzione passiva."
+    },
+    {
+      "id": "it-c2-g-06",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "A rigore, non è il risultato a essere neutrale, bensì il criterio con cui lo si ___.",
+      "options": [
+        "interpretasse",
+        "interpreta",
+        "sia interpretando",
+        "avrebbe interpretare"
+      ],
+      "answer": 1,
+      "explanation": "La frase definisce una proprietà generale e richiede l’indicativo presente."
+    },
+    {
+      "id": "it-c2-g-07",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "Il fatto che nessuno abbia protestato non implica che tutti ___ davvero d’accordo.",
+      "options": [
+        "erano",
+        "saranno",
+        "fossero",
+        "essere"
+      ],
+      "answer": 2,
+      "explanation": "La subordinata dipende da una negazione dell’implicazione e richiede il congiuntivo imperfetto."
+    },
+    {
+      "id": "it-c2-g-08",
+      "level": "C2",
+      "skill": "grammar",
+      "prompt": "Qualunque cosa se ne ___, il compromesso non elimina il conflitto di fondo.",
+      "options": [
+        "dice",
+        "dirà",
+        "dicendo",
+        "dica"
+      ],
+      "answer": 3,
+      "explanation": "La costruzione concessiva indefinita richiede il congiuntivo presente."
+    },
+    {
+      "id": "it-c2-v-09",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "Una spiegazione “ad hoc” è costruita ___.",
+      "options": [
+        "per salvare una tesi da un’obiezione specifica senza supporto indipendente",
+        "prima di conoscere il problema",
+        "con criteri universalmente applicabili",
+        "per semplificare il lessico"
+      ],
+      "answer": 0,
+      "explanation": "In argomentazione, “ad hoc” indica una giustificazione introdotta appositamente per evitare la confutazione."
+    },
+    {
+      "id": "it-c2-v-10",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "“Ipostatizzare una categoria” significa ___.",
+      "options": [
+        "definire con precisione un termine",
+        "trattare un concetto astratto come se fosse una realtà autonoma",
+        "misurare un fenomeno direttamente",
+        "distinguere due casi empirici"
+      ],
+      "answer": 1,
+      "explanation": "Il verbo indica la trasformazione indebita di un’astrazione in un’entità considerata reale e indipendente."
+    },
+    {
+      "id": "it-c2-v-11",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "Un criterio “autoassolutorio” è formulato in modo da ___.",
+      "options": [
+        "aumentare la possibilità di critica",
+        "rendere pubblici tutti i presupposti",
+        "escludere preventivamente la responsabilità di chi lo applica",
+        "separare fatti e valori"
+      ],
+      "answer": 2,
+      "explanation": "L’aggettivo descrive un criterio che tende a giustificare chi lo usa qualunque sia l’esito."
+    },
+    {
+      "id": "it-c2-v-12",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "Una distinzione “capziosa” è ___.",
+      "options": [
+        "necessaria per chiarire un concetto",
+        "sostenuta da dati indipendenti",
+        "priva di implicazioni pratiche",
+        "formalmente sottile ma usata per trarre in inganno"
+      ],
+      "answer": 3,
+      "explanation": "“Capziosa” indica una distinzione apparentemente rigorosa ma orientata a ingannare o confondere."
+    },
+    {
+      "id": "it-c2-v-13",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "“Neutralizzare un’obiezione” significa ___.",
+      "options": [
+        "mostrarne l’irrilevanza o assorbirla nel ragionamento",
+        "evitare di menzionarla",
+        "trasformarla in una prova contraria",
+        "accettarla senza modifiche"
+      ],
+      "answer": 0,
+      "explanation": "Neutralizzare significa impedirle di indebolire la conclusione, rispondendo al suo contenuto."
+    },
+    {
+      "id": "it-c2-v-14",
+      "level": "C2",
+      "skill": "vocabulary",
+      "prompt": "Un’affermazione “non falsificabile” è tale che ___.",
+      "options": [
+        "è già stata dimostrata vera",
+        "nessuna osservazione possibile potrebbe mostrarla falsa",
+        "usa esclusivamente dati numerici",
+        "non contiene alcun concetto astratto"
+      ],
+      "answer": 1,
+      "explanation": "Una tesi non falsificabile è protetta da qualunque possibile evidenza contraria."
+    },
+    {
+      "id": "it-c2-r-15",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "Qual è il problema strutturale che la riforma potrebbe lasciare intatto?",
+      "options": [
+        "La visibilità delle modifiche formali",
+        "Il numero di pagine del regolamento",
+        "Gli incentivi che continuano a produrre il comportamento indesiderato",
+        "La competenza grammaticale degli operatori"
+      ],
+      "answer": 2,
+      "explanation": "Il testo distingue la correzione degli effetti visibili dalla modifica delle cause che li generano.",
+      "passage": "La riforma elimina alcune pratiche manifestamente scorrette e introduce controlli più frequenti. Tuttavia i premi continuano a dipendere dagli stessi indicatori che incoraggiavano quelle pratiche. Il comportamento può quindi cambiare forma senza cambiare logica."
+    },
+    {
+      "id": "it-c2-r-16",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "In che senso la trasparenza può diventare una rappresentazione?",
+      "options": [
+        "Ogni documento pubblico è falso",
+        "La pubblicazione rende impossibile ogni scelta",
+        "Le informazioni secondarie sono sempre inutili",
+        "Può mostrare un’apparenza di apertura nascondendo ciò che determina davvero la decisione"
+      ],
+      "answer": 3,
+      "explanation": "L’apertura formale può essere usata come scena pubblica mentre criteri e passaggi decisivi restano difficili da individuare.",
+      "passage": "Un ente può pubblicare enormi quantità di materiale e dichiararsi pienamente trasparente. Se le informazioni decisive sono disperse fra dettagli secondari, l’apertura diventa però una rappresentazione: visibile come gesto, poco utile come strumento di controllo."
+    },
+    {
+      "id": "it-c2-r-17",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "Quale presupposto viene criticato?",
+      "options": [
+        "Che una regola identica produca necessariamente effetti equivalenti",
+        "Che le differenze di partenza possano essere rilevanti",
+        "Che le conseguenze debbano essere osservate",
+        "Che le decisioni abbiano bisogno di criteri"
+      ],
+      "answer": 0,
+      "explanation": "Il testo contesta l’equivalenza automatica fra uguaglianza formale e uguaglianza degli effetti.",
+      "passage": "La regola è uguale per tutti, ma richiede risorse che alcuni gruppi possiedono e altri no. Presentarla come neutrale significa assumere che condizioni di partenza differenti non modifichino gli effetti della stessa prescrizione."
+    },
+    {
+      "id": "it-c2-r-18",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "Perché il compromesso descritto è considerato fragile?",
+      "options": [
+        "Raggiunge un accordo completo",
+        "Rinvia il conflitto senza chiarire quali obiettivi siano incompatibili",
+        "Elimina ogni differenza di interesse",
+        "Rende inutili ulteriori decisioni"
+      ],
+      "answer": 1,
+      "explanation": "Il compromesso permette di agire, ma può occultare il disaccordo invece di gestirlo apertamente.",
+      "passage": "Le parti hanno scelto una formula abbastanza vaga da poter essere accettata da tutti. Proprio questa ambiguità consente l’accordo immediato, ma rinvia il momento in cui si dovrà decidere fra obiettivi che non possono essere realizzati insieme."
+    },
+    {
+      "id": "it-c2-r-19",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "Qual è la debolezza del ragionamento?",
+      "options": [
+        "Confronta ipotesi concorrenti",
+        "Distingue risultati e intenzioni",
+        "Definisce il successo in modo da rendere impossibile ogni smentita",
+        "Indica criteri verificabili prima dell’analisi"
+      ],
+      "answer": 2,
+      "explanation": "La definizione viene modificata dopo ogni esito negativo, proteggendo la tesi da qualunque prova contraria.",
+      "passage": "Quando l’indicatore migliora, il programma viene dichiarato efficace. Quando peggiora, si afferma che senza il programma il calo sarebbe stato ancora maggiore. Poiché ogni risultato conferma la stessa tesi, non è chiaro quale dato potrebbe mai smentirla."
+    },
+    {
+      "id": "it-c2-r-20",
+      "level": "C2",
+      "skill": "reading",
+      "prompt": "Quale distinzione è necessaria per valutare correttamente l’argomento?",
+      "options": [
+        "Trattare ogni interpretazione come un fatto",
+        "Ignorare le alternative",
+        "Valutare soltanto le intenzioni dichiarate",
+        "Separare dati osservati, interpretazioni e presupposti normativi"
+      ],
+      "answer": 3,
+      "explanation": "Il testo invita a distinguere livelli diversi del ragionamento per evitare che giudizi impliciti appaiano come semplici dati.",
+      "passage": "Il rapporto presenta alcune osservazioni empiriche, ma passa poi a conclusioni normative senza dichiarare i valori che guidano il passaggio. Per valutarlo occorre separare ciò che è stato misurato, l’interpretazione proposta e i criteri con cui si giudica desiderabile un esito."
+    }
+  ]
+}

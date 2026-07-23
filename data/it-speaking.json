@@ -1,1 +1,231 @@
-{"language":"it","version":"3.0.0-professional","questionCount":28,"questions":[{"id":"it-a1-s-01","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Buongiorno, mi chiamo Laura e abito a Roma.","maxDurationSec":55},{"id":"it-a1-s-02","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il negozio apre alle nove e chiude alle diciotto.","maxDurationSec":55},{"id":"it-a1-s-03","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Vorrei un caffè e un bicchiere d’acqua, per favore.","maxDurationSec":55},{"id":"it-a1-s-04","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Domani prendo il treno delle otto per Milano.","maxDurationSec":55},{"id":"it-a1-s-05","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"La mia famiglia vive in una piccola città vicino al mare.","maxDurationSec":55},{"id":"it-a1-s-06","level":"A1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Oggi fa freddo, quindi porto una giacca.","maxDurationSec":55},{"id":"it-a2-s-01","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"L’appuntamento è stato spostato a mercoledì mattina. Per favore, confermi se il nuovo orario va bene.","maxDurationSec":55},{"id":"it-a2-s-02","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il pacco non è stato consegnato. Può ritirarlo domani presso l’ufficio postale centrale.","maxDurationSec":55},{"id":"it-a2-s-03","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Da lunedì l’ufficio avrà un orario flessibile, ma tutti dovranno completare le ore previste.","maxDurationSec":55},{"id":"it-a2-s-04","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Ho prenotato una camera per due notti con colazione inclusa.","maxDurationSec":55},{"id":"it-a2-s-05","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Prima della visita può bere acqua, ma non deve mangiare.","maxDurationSec":55},{"id":"it-a2-s-06","level":"A2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il corso comincia online e prosegue in presenza dalla terza lezione.","maxDurationSec":55},{"id":"it-b1-s-01","level":"B1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"A causa di un problema tecnico, la formazione inizierà trenta minuti più tardi. Informate anche i colleghi che non sono ancora in ufficio.","maxDurationSec":55},{"id":"it-b1-s-02","level":"B1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il cliente ha ricevuto il pacco in tempo, ma due articoli erano danneggiati. Verificheremo il caso e proporremo una soluzione entro domani.","maxDurationSec":55},{"id":"it-b1-s-03","level":"B1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Se non può venire all’appuntamento, lo annulli almeno ventiquattro ore prima. Altrimenti potrebbe essere applicata una tariffa.","maxDurationSec":55},{"id":"it-b1-s-04","level":"B1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"L’orario flessibile facilita la vita quotidiana, ma il gruppo ha bisogno di regole chiare per condividere il lavoro.","maxDurationSec":55},{"id":"it-b2-s-01","level":"B2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"L’introduzione del nuovo sistema è stata rinviata perché alcune integrazioni non funzionano ancora in modo affidabile. Prima del lancio faremo un’altra fase di prova.","maxDurationSec":80},{"id":"it-b2-s-02","level":"B2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"I risultati indicano un miglioramento, ma una parte importante della crescita dipende da un ordine eccezionale. È quindi presto per parlare di una svolta stabile.","maxDurationSec":80},{"id":"it-b2-s-03","level":"B2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Valutare attentamente i rischi non significa rallentare ogni decisione. Spesso evita errori costosi in una fase successiva.","maxDurationSec":80},{"id":"it-b2-s-04","level":"B2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il reclamo non riguarda soltanto il ritardo, ma soprattutto la mancanza di comunicazione chiara con il cliente.","maxDurationSec":80},{"id":"it-c1-s-01","level":"C1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Una maggiore quantità di dati non garantisce automaticamente più obiettività. Contano anche il modo in cui i dati sono raccolti e il contesto in cui vengono interpretati.","maxDurationSec":80},{"id":"it-c1-s-02","level":"C1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Le obiezioni sono comprensibili, ma non annullano la conclusione principale. Ne limitano piuttosto la portata e richiedono una formulazione più precisa.","maxDurationSec":80},{"id":"it-c1-s-03","level":"C1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"La trasparenza non dipende dal numero di documenti pubblicati, ma dalla chiarezza dei criteri e delle procedure decisionali.","maxDurationSec":80},{"id":"it-c1-s-04","level":"C1","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Le procedure standard aumentano la coerenza, ma devono lasciare spazio a eccezioni motivate quando le circostanze sono davvero diverse.","maxDurationSec":80},{"id":"it-c2-s-01","level":"C2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Una trasparenza solo apparente può nascondere le informazioni decisive sotto una massa di dettagli secondari, rendendo più difficile capire come è stata presa una decisione.","maxDurationSec":80},{"id":"it-c2-s-02","level":"C2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"La riforma corregge alcuni difetti evidenti, ma resta da dimostrare che modifichi gli incentivi che continuano a generare il problema.","maxDurationSec":80},{"id":"it-c2-s-03","level":"C2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Una regola formalmente uguale può avere effetti molto diversi su persone che partono da condizioni differenti; per questo uguaglianza e giustizia non coincidono sempre.","maxDurationSec":80},{"id":"it-c2-s-04","level":"C2","skill":"speaking","prompt":"Leggi il testo ad alta voce.","passage":"Il compromesso permette di agire senza un accordo completo, ma perde valore quando serve soltanto a nascondere obiettivi che non possono essere conciliati.","maxDurationSec":80}]}
+{
+  "language": "it",
+  "version": "4.1.0-professional-direct",
+  "questionCount": 28,
+  "questions": [
+    {
+      "id": "it-a1-s-01",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Buongiorno, mi chiamo Laura e abito a Roma.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a1-s-02",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Il negozio apre alle nove e chiude alle diciotto.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a1-s-03",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Vorrei prenotare un tavolo tranquillo per due persone, possibilmente vicino alla finestra.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a1-s-04",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Domani prendo il treno delle otto per Milano.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a1-s-05",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "La mia famiglia vive in una piccola città vicino al mare.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a1-s-06",
+      "level": "A1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Oggi fa freddo, quindi porto una giacca.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-01",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "L’appuntamento è stato spostato a mercoledì mattina. Per favore, confermi se il nuovo orario va bene.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-02",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Il pacco non è stato consegnato. Può ritirarlo domani presso l’ufficio postale centrale.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-03",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Da lunedì l’ufficio avrà un orario flessibile, ma tutti dovranno completare le ore previste.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-04",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Ho prenotato una camera per due notti con colazione inclusa.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-05",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Prima della visita può bere acqua, ma non deve mangiare.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-a2-s-06",
+      "level": "A2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce.",
+      "passage": "Il corso comincia online e prosegue in presenza dalla terza lezione.",
+      "maxDurationSec": 55
+    },
+    {
+      "id": "it-b1-s-01",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "A causa di un guasto tecnico, la formazione inizierà trenta minuti più tardi. Avvisate anche i colleghi che stanno raggiungendo l’ufficio e controllate l’aggiornamento nel calendario condiviso.",
+      "maxDurationSec": 70
+    },
+    {
+      "id": "it-b1-s-02",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Il cliente ha ricevuto il pacco nei tempi previsti, ma due articoli erano danneggiati. Verificheremo le fotografie, contatteremo il corriere e proporremo una soluzione entro domani pomeriggio.",
+      "maxDurationSec": 70
+    },
+    {
+      "id": "it-b1-s-03",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Se non può presentarsi all’appuntamento, lo annulli almeno ventiquattro ore prima. In caso contrario potrebbe essere applicata una tariffa, salvo situazioni eccezionali debitamente documentate.",
+      "maxDurationSec": 70
+    },
+    {
+      "id": "it-b1-s-04",
+      "level": "B1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "L’orario flessibile facilita la vita quotidiana, ma il gruppo ha bisogno di regole chiare per condividere informazioni, responsabilità e scadenze senza creare incomprensioni.",
+      "maxDurationSec": 70
+    },
+    {
+      "id": "it-b2-s-01",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "L’introduzione del nuovo sistema è stata rinviata perché alcune integrazioni non funzionano ancora in modo affidabile. Prima del lancio svolgeremo un’altra fase di prova, controlleremo i dati trasferiti e verificheremo che gli operatori sappiano gestire anche le eccezioni.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "it-b2-s-02",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "I risultati indicano un miglioramento, ma una parte rilevante della crescita dipende da un ordine eccezionale. Prima di parlare di una svolta stabile sarà necessario confrontare più trimestri e distinguere gli effetti temporanei dai cambiamenti strutturali.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "it-b2-s-03",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Valutare attentamente i rischi non significa rallentare ogni decisione. Una verifica iniziale può evitare errori costosi, chiarire le responsabilità e rendere più semplice correggere il progetto prima che venga esteso a tutta l’organizzazione.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "it-b2-s-04",
+      "level": "B2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Il reclamo non riguarda soltanto il ritardo, ma soprattutto la mancanza di comunicazione chiara. Il cliente avrebbe accettato un rinvio ragionevole, purché fosse stato informato tempestivamente e avesse ricevuto indicazioni coerenti.",
+      "maxDurationSec": 95
+    },
+    {
+      "id": "it-c1-s-01",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Una maggiore quantità di dati non garantisce automaticamente più obiettività. Contano il modo in cui le informazioni sono raccolte, i criteri con cui vengono selezionate e il contesto nel quale vengono interpretate. Senza queste precisazioni, una presentazione apparentemente neutrale può orientare il lettore in modo invisibile.  Questa distinzione aiuta anche a riconoscere eventuali omissioni metodologiche.",
+      "maxDurationSec": 110
+    },
+    {
+      "id": "it-c1-s-02",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Le obiezioni sono comprensibili e meritano una risposta puntuale, ma non annullano necessariamente la conclusione principale. Possono invece limitarne la portata, chiarire le condizioni in cui vale e impedire che un risultato circoscritto venga trasformato in una regola universale.  In questo modo la conclusione resta precisa senza diventare eccessivamente categorica.",
+      "maxDurationSec": 110
+    },
+    {
+      "id": "it-c1-s-03",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "La trasparenza non dipende dal numero di documenti pubblicati, bensì dalla possibilità di ricostruire criteri, passaggi e responsabilità. Un archivio enorme, privo di una struttura comprensibile, può soddisfare un obbligo formale senza consentire un controllo effettivo.  Solo così la pubblicazione diventa realmente utile per chi deve valutarla.",
+      "maxDurationSec": 110
+    },
+    {
+      "id": "it-c1-s-04",
+      "level": "C1",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Le procedure standard aumentano la coerenza e riducono l’arbitrarietà, ma devono lasciare spazio a eccezioni motivate. La difficoltà consiste nel distinguere una deroga giustificata da un trattamento di favore, documentando in modo verificabile le ragioni della decisione.  Tale controllo riduce il rischio che l’eccezione diventi una pratica arbitraria.",
+      "maxDurationSec": 110
+    },
+    {
+      "id": "it-c2-s-01",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Una trasparenza soltanto apparente può nascondere le informazioni decisive sotto una massa di dettagli secondari. In tal modo l’istituzione mostra di aver aperto i propri archivi, ma rende più difficile comprendere quali criteri abbiano realmente determinato la scelta e chi ne debba rispondere.  Questa verifica rende più difficile confondere visibilità e responsabilità effettiva.",
+      "maxDurationSec": 125
+    },
+    {
+      "id": "it-c2-s-02",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "La riforma corregge alcuni difetti evidenti, ma resta da dimostrare che modifichi gli incentivi che continuano a generare il problema. Se premi, sanzioni e obiettivi rimangono invariati, gli operatori possono adattare il comportamento alla nuova regola senza abbandonare la logica precedente.  Senza tale analisi, il cambiamento rischia di essere soltanto superficiale.",
+      "maxDurationSec": 125
+    },
+    {
+      "id": "it-c2-s-03",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Una regola formalmente uguale può produrre effetti molto diversi su persone che partono da condizioni differenti. Per questo uguaglianza e giustizia non coincidono sempre: valutare la neutralità di una misura richiede di osservare non soltanto il testo, ma anche risorse, vincoli e conseguenze concrete.  Gli effetti concreti restano quindi il criterio decisivo della valutazione.",
+      "maxDurationSec": 125
+    },
+    {
+      "id": "it-c2-s-04",
+      "level": "C2",
+      "skill": "speaking",
+      "prompt": "Leggi il testo ad alta voce. Presta attenzione a ritmo, accenti, doppie consonanti e collegamenti fra le parole.",
+      "passage": "Il compromesso permette di agire senza un accordo completo, ma perde valore quando serve soltanto a nascondere obiettivi incompatibili. Una formula volutamente ambigua può facilitare l’intesa iniziale e, nello stesso tempo, rinviare il conflitto al momento dell’attuazione, quando i costi diventano più difficili da gestire.  L’ambiguità iniziale può così trasformarsi in un costo operativo rilevante.",
+      "maxDurationSec": 125
+    }
+  ]
+}
